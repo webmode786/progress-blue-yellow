@@ -76,7 +76,7 @@ function AboutPage() {
         <VisionSection />
         <SupplySection />
         <IndustriesSection />
-        <WhyChoose />
+        <WhyChoose title="Why Choose Skyline?" />
         <StatsBand items={aboutStats} />
         <BrandsSection
           title="Brands & Product Partners"
