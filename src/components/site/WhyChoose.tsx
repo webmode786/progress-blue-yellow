@@ -20,7 +20,9 @@ const icons: Record<string, LucideIcon> = {
   Users,
 };
 
-export function WhyChoose() {
+type Props = { title?: string };
+
+export function WhyChoose({ title = "Why Choose Us" }: Props) {
   return (
     <section id="why-us" className="bg-background scroll-mt-20 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
