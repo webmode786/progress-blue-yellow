@@ -1,12 +1,23 @@
 import { useEffect, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { mainNav, whatsappLink } from "@/data/company";
+import { mainNav, routes, whatsappLink } from "@/data/company";
 import { Logo } from "./Logo";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isHome = pathname === "/";
+  /** Pages that exist get real URLs; the rest fall back to homepage anchors. */
+  const navHref = (item: { href: string; hash: string }) =>
+    item.href === routes.about
+      ? routes.about
+      : isHome
+        ? item.hash
+        : `/${item.hash}`;
+  const quoteHref = isHome ? "#enquiry" : "/#enquiry";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
