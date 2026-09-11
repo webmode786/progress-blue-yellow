@@ -26,7 +26,7 @@ export function WhyChoose() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Why Skyline"
-          title="Why Choose Us"
+          title={title}
           description="A supply partner built around reliability, range and responsive service."
           align="center"
         />
