@@ -79,7 +79,7 @@ function AboutPage() {
         <WhyChoose />
         <StatsBand items={aboutStats} />
         <BrandsSection
-          title="Brands &amp; Product Partners"
+          title="Brands & Product Partners"
           description="Selected brands we supply. Listings are updated as ranges are confirmed."
           showExplore
         />
