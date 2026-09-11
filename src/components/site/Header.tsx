@@ -1,12 +1,23 @@
 import { useEffect, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { mainNav, whatsappLink } from "@/data/company";
+import { mainNav, routes, whatsappLink } from "@/data/company";
 import { Logo } from "./Logo";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isHome = pathname === "/";
+  /** Pages that exist get real URLs; the rest fall back to homepage anchors. */
+  const navHref = (item: { href: string; hash: string }) =>
+    item.href === routes.about
+      ? routes.about
+      : isHome
+        ? item.hash
+        : `/${item.hash}`;
+  const quoteHref = isHome ? "#enquiry" : "/#enquiry";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -34,7 +45,7 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
-        <a href="#top" aria-label={`${"Skyline"} home`} className="shrink-0">
+        <a href="/" aria-label="Skyline home" className="shrink-0">
           <Logo tone={solid ? "dark" : "light"} />
         </a>
 
@@ -42,7 +53,7 @@ export function Header() {
           {mainNav.map((item) => (
             <a
               key={item.label}
-              href={item.hash}
+              href={navHref(item)}
               className={cn(
                 "relative py-1 text-sm font-semibold transition-colors duration-300",
                 "after:bg-accent after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100",
@@ -73,7 +84,7 @@ export function Header() {
           </a>
 
           <a
-            href="#enquiry"
+            href={quoteHref}
             className="bg-accent text-accent-foreground hover:shadow-lift inline-flex h-10 items-center rounded-md px-4 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 sm:px-5"
           >
             Request a Quote
@@ -111,7 +122,7 @@ export function Header() {
             {mainNav.map((item, i) => (
               <li key={item.label}>
                 <a
-                  href={item.hash}
+                  href={navHref(item)}
                   onClick={() => setOpen(false)}
                   style={{ ["--reveal-delay" as string]: `${i * 40}ms` }}
                   className={cn(
