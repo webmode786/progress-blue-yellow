@@ -1,46 +1,28 @@
-import catElectrical from "@/assets/cat-electrical.jpg";
-import catBuilding from "@/assets/cat-building.jpg";
-import prodCable from "@/assets/prod-cable.jpg";
-import prodBoard from "@/assets/prod-board.jpg";
-import prodFasteners from "@/assets/prod-fasteners.jpg";
-import prodPlumbing from "@/assets/prod-plumbing.jpg";
+/**
+ * Shared site data: brands, industries, benefits and headline stats.
+ *
+ * Product categories and products now live in `src/data/products.ts` and are
+ * re-exported here so existing sections keep a single import path.
+ */
 
-export type Subcategory = {
-  id: string;
-  name: string;
-  slug: string;
-  categorySlug: string;
-};
+export type {
+  Subcategory,
+  Product,
+  ProductCategory as Category,
+} from "./products";
 
-export type Category = {
-  id: string;
-  name: string;
-  slug: string;
-  href: string;
-  image: string;
-  shortDescription: string;
-  ctaLabel: string;
-  subcategories: Subcategory[];
-};
-
-export type Product = {
-  id: string;
-  name: string;
-  slug: string;
-  category: string;
-  subcategory: string;
-  /** null when a brand has not been confirmed. */
-  brand: string | null;
-  image: string;
-  gallery: string[];
-  shortDescription: string;
-  description: string;
-  /** Left empty on purpose — no unverified specifications. */
-  specifications: { label: string; value: string }[];
-  features: string[];
-  applications: string[];
-  sku: string;
-};
+export {
+  productCategories as categories,
+  products,
+  featuredProducts,
+  getCategory,
+  getProduct,
+  getProductsByCategory,
+  productCount,
+  productPath,
+  relatedProducts,
+  searchProducts,
+} from "./products";
 
 export type Brand = {
   id: string;
@@ -57,134 +39,6 @@ export type Industry = {
   description: string;
   icon: string;
 };
-
-const sub = (categorySlug: string, name: string, slug: string): Subcategory => ({
-  id: `${categorySlug}-${slug}`,
-  name,
-  slug,
-  categorySlug,
-});
-
-export const categories: Category[] = [
-  {
-    id: "electrical",
-    name: "Electrical",
-    slug: "electrical",
-    href: "/products/electrical",
-    image: catElectrical,
-    shortDescription:
-      "Powering projects with reliable electrical products and accessories.",
-    ctaLabel: "Explore Electrical",
-    subcategories: [
-      sub("electrical", "Electrical Cables & Wires", "cables-wires"),
-      sub("electrical", "Switches & Sockets", "switches-sockets"),
-      sub("electrical", "Circuit Breakers", "circuit-breakers"),
-      sub("electrical", "Distribution Boards", "distribution-boards"),
-      sub("electrical", "Electrical Accessories", "electrical-accessories"),
-      sub("electrical", "Conduits & Accessories", "conduits-accessories"),
-      sub("electrical", "Cable Management", "cable-management"),
-      sub("electrical", "Lighting", "lighting"),
-      sub("electrical", "Industrial Electrical Products", "industrial-electrical"),
-    ],
-  },
-  {
-    id: "building-materials",
-    name: "Building Materials",
-    slug: "building-materials",
-    href: "/products/building-materials",
-    image: catBuilding,
-    shortDescription:
-      "Essential materials and products for construction and development projects.",
-    ctaLabel: "Explore Building Materials",
-    subcategories: [
-      sub("building-materials", "Construction Materials", "construction-materials"),
-      sub("building-materials", "Cement & Related Products", "cement"),
-      sub("building-materials", "Steel / Metal Products", "steel-metal"),
-      sub("building-materials", "Hardware", "hardware"),
-      sub("building-materials", "Fasteners", "fasteners"),
-      sub("building-materials", "Tools", "tools"),
-      sub("building-materials", "Plumbing Materials", "plumbing"),
-      sub("building-materials", "Building Accessories", "building-accessories"),
-      sub("building-materials", "Adhesives & Sealants", "adhesives-sealants"),
-      sub("building-materials", "Safety Products", "safety"),
-    ],
-  },
-];
-
-/** Representative placeholder products. No pricing, specs or claims. */
-export const products: Product[] = [
-  {
-    id: "p-001",
-    name: "Electrical Cable & Wire",
-    slug: "electrical-cable-wire",
-    category: "electrical",
-    subcategory: "cables-wires",
-    brand: null,
-    image: prodCable,
-    gallery: [prodCable],
-    shortDescription:
-      "Cables and wires for power and lighting circuits across project types.",
-    description:
-      "Placeholder description. Cable and wire options can be supplied in a range of sizes and configurations based on your project requirement.",
-    specifications: [],
-    features: ["Multiple size options", "Suitable for power and lighting circuits"],
-    applications: ["Residential", "Commercial", "Industrial"],
-    sku: "[SKU]",
-  },
-  {
-    id: "p-002",
-    name: "Distribution Board",
-    slug: "distribution-board",
-    category: "electrical",
-    subcategory: "distribution-boards",
-    brand: null,
-    image: prodBoard,
-    gallery: [prodBoard],
-    shortDescription:
-      "Distribution boards and enclosures for organised circuit protection.",
-    description:
-      "Placeholder description. Board sizes and configurations available on request.",
-    specifications: [],
-    features: ["Modular configurations", "Circuit protection ready"],
-    applications: ["Fit-out projects", "Facility maintenance"],
-    sku: "[SKU]",
-  },
-  {
-    id: "p-003",
-    name: "Fasteners & Fixings",
-    slug: "fasteners-fixings",
-    category: "building-materials",
-    subcategory: "fasteners",
-    brand: null,
-    image: prodFasteners,
-    gallery: [prodFasteners],
-    shortDescription:
-      "Bolts, screws, anchors and fixings for general construction work.",
-    description:
-      "Placeholder description. Assorted fastener types and sizes supplied to requirement.",
-    specifications: [],
-    features: ["Assorted sizes", "General construction use"],
-    applications: ["Construction", "Maintenance", "Fit-out"],
-    sku: "[SKU]",
-  },
-  {
-    id: "p-004",
-    name: "Plumbing Pipes & Fittings",
-    slug: "plumbing-pipes-fittings",
-    category: "building-materials",
-    subcategory: "plumbing",
-    brand: null,
-    image: prodPlumbing,
-    gallery: [prodPlumbing],
-    shortDescription: "Pipes, fittings and accessories for plumbing installations.",
-    description:
-      "Placeholder description. Pipe and fitting ranges available on enquiry.",
-    specifications: [],
-    features: ["Range of diameters", "Fittings and accessories"],
-    applications: ["Plumbing", "MEP", "Maintenance"],
-    sku: "[SKU]",
-  },
-];
 
 /**
  * Brand partners are placeholders until confirmed.

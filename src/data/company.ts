@@ -5,7 +5,7 @@
  */
 
 export const company = {
-  name: "Skyline Building Material Trading",
+  name: "Skyline Building Material & Electrical Trading",
   shortName: "Skyline",
   tagline: "Building Quality. Powering Progress.",
   supportingMessage:
@@ -13,7 +13,7 @@ export const company = {
   // Digits only, international format, no "+" — used to build wa.me links.
   whatsappNumber: "971000000000",
   whatsappMessage:
-    "Hello Skyline Building Material Trading, I would like to enquire about your products.",
+    "Hello Skyline Building Material & Electrical Trading, I would like to enquire about your products.",
   phone: "[Phone Number]",
   whatsappDisplay: "[WhatsApp Number]",
   email: "[Email Address]",
@@ -21,17 +21,27 @@ export const company = {
   workingHours: "[Working Hours]",
 } as const;
 
-export const whatsappLink = `https://wa.me/${company.whatsappNumber}?text=${encodeURIComponent(
-  company.whatsappMessage,
-)}`;
+/** Build a WhatsApp link with any pre-filled message. */
+export const waLink = (message: string) =>
+  `https://wa.me/${company.whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+export const whatsappLink = waLink(company.whatsappMessage);
+
+/** Pre-filled WhatsApp enquiry for a specific product. */
+export const productWhatsappLink = (productName: string) =>
+  waLink(
+    `Hello ${company.name}, I am interested in ${productName}. Please share the price and availability.`,
+  );
+
+/** Quote-request link that pre-selects a product in the enquiry form. */
+export const quoteLinkFor = (productName: string) =>
+  `/?product=${encodeURIComponent(productName)}#enquiry`;
 
 /** Future URL structure — pages are added progressively. */
 export const routes = {
   home: "/",
   about: "/about-us",
   products: "/products",
-  electrical: "/products/electrical",
-  buildingMaterials: "/products/building-materials",
   brands: "/brands",
   industries: "/industries",
   contact: "/contact-us",
@@ -42,8 +52,6 @@ export const mainNav = [
   { label: "Home", href: routes.home, hash: "#top" },
   { label: "About Us", href: routes.about, hash: "#about" },
   { label: "Products", href: routes.products, hash: "#categories" },
-  { label: "Electrical", href: routes.electrical, hash: "#categories" },
-  { label: "Building Materials", href: routes.buildingMaterials, hash: "#categories" },
   { label: "Brands", href: routes.brands, hash: "#brands" },
   { label: "Contact Us", href: routes.contact, hash: "#enquiry" },
 ] as const;
