@@ -7,7 +7,13 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { ProductTile } from "@/components/site/products/ProductTile";
 import { getProduct, relatedProducts } from "@/data/products";
-import { company, productWhatsappLink, quoteLinkFor } from "@/data/company";
+import { ProductImage } from "@/components/site/products/ProductImage";
+import {
+  company,
+  hasWhatsapp,
+  productWhatsappLink,
+  quoteLinkFor,
+} from "@/data/company";
 
 export const Route = createFileRoute("/products/$category/$product")({
   loader: ({ params }) => {
