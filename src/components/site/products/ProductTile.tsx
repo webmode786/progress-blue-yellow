@@ -34,6 +34,8 @@ export function ProductTile({ product }: { product: Product }) {
         </h3>
         <span className="text-muted-foreground mt-1 text-xs font-medium">
           {product.subcategoryName}
+          {product.productCode ? ` · ${product.productCode}` : ""}
+          {product.brand ? ` · ${product.brand}` : ""}
         </span>
         <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
           {product.shortDescription}
@@ -49,13 +51,11 @@ export function ProductTile({ product }: { product: Product }) {
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
           </Link>
           <a
-            href={productWhatsappLink(product.name)}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={quoteLinkFor(product)}
             className="bg-accent text-accent-foreground inline-flex h-9 items-center gap-1.5 rounded-md px-3 text-xs font-bold transition-transform duration-300 hover:-translate-y-0.5"
           >
-            <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
-            Send Inquiry
+            <FileText className="h-3.5 w-3.5" aria-hidden="true" />
+            Request a Quote
           </a>
         </div>
       </div>
