@@ -1,7 +1,8 @@
 import { MessageCircle } from "lucide-react";
-import { whatsappLink } from "@/data/company";
+import { hasWhatsapp, whatsappLink } from "@/data/company";
 
 export function WhatsAppFloat() {
+  if (!hasWhatsapp) return null;
   return (
     <a
       href={whatsappLink}
