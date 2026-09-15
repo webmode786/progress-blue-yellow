@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
-import { useRouterState } from "@tanstack/react-router";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Link, useRouterState } from "@tanstack/react-router";
+import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { mainNav, routes, whatsappLink } from "@/data/company";
+import { productCategories } from "@/data/products";
 import { Logo } from "./Logo";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isHome = pathname === "/";
   /** Pages that exist get real URLs; the rest fall back to homepage anchors. */
-  const navHref = (item: { href: string; hash: string }) =>
-    item.href === routes.about
-      ? routes.about
+  const navHref = (item: { label: string; href: string; hash: string }) =>
+    item.href === routes.about || item.href === routes.products
+      ? item.href
       : isHome
         ? item.hash
         : `/${item.hash}`;
@@ -45,26 +47,80 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
-        <a href="/" aria-label="Skyline home" className="shrink-0">
+        <Link to="/" aria-label="Skyline home" className="shrink-0">
           <Logo tone={solid ? "dark" : "light"} />
-        </a>
+        </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
-          {mainNav.map((item) => (
-            <a
-              key={item.label}
-              href={navHref(item)}
-              className={cn(
-                "relative py-1 text-sm font-semibold transition-colors duration-300",
-                "after:bg-accent after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100",
-                solid
-                  ? "text-foreground hover:text-primary"
-                  : "text-primary-foreground/90 hover:text-primary-foreground",
-              )}
-            >
-              {item.label}
-            </a>
-          ))}
+          {mainNav.map((item) =>
+            item.href === routes.products ? (
+              <div
+                key={item.label}
+                className="relative"
+                onMouseEnter={() => setProductsOpen(true)}
+                onMouseLeave={() => setProductsOpen(false)}
+              >
+                <Link
+                  to="/products"
+                  onFocus={() => setProductsOpen(true)}
+                  aria-expanded={productsOpen}
+                  className={cn(
+                    "inline-flex items-center gap-1 py-1 text-sm font-semibold transition-colors duration-300",
+                    solid
+                      ? "text-foreground hover:text-primary"
+                      : "text-primary-foreground/90 hover:text-primary-foreground",
+                  )}
+                >
+                  {item.label}
+                  <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
+                </Link>
+
+                <div
+                  hidden={!productsOpen}
+                  className="border-border bg-card absolute top-full left-1/2 z-50 mt-3 w-[34rem] -translate-x-1/2 rounded-xl border p-3 shadow-[var(--shadow-card)]"
+                >
+                  <ul className="grid grid-cols-2 gap-1">
+                    {productCategories.map((c) => (
+                      <li key={c.id}>
+                        <Link
+                          to="/products/$category"
+                          params={{ category: c.slug }}
+                          onClick={() => setProductsOpen(false)}
+                          className="hover:bg-secondary block rounded-lg px-3 py-2.5 transition-colors duration-200"
+                        >
+                          <span className="block text-sm font-semibold">{c.name}</span>
+                          <span className="text-muted-foreground mt-0.5 block text-xs leading-snug">
+                            {c.shortDescription}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    to="/products"
+                    onClick={() => setProductsOpen(false)}
+                    className="text-primary mt-1 block px-3 py-2 text-sm font-bold"
+                  >
+                    View all products →
+                  </Link>
+                </div>
+              </div>
+            ) : (
+              <a
+                key={item.label}
+                href={navHref(item)}
+                className={cn(
+                  "relative py-1 text-sm font-semibold transition-colors duration-300",
+                  "after:bg-accent after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100",
+                  solid
+                    ? "text-foreground hover:text-primary"
+                    : "text-primary-foreground/90 hover:text-primary-foreground",
+                )}
+              >
+                {item.label}
+              </a>
+            ),
+          )}
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -115,23 +171,62 @@ export function Header() {
       <div
         id="mobile-nav"
         hidden={!open}
-        className="border-border bg-background overflow-hidden border-t lg:hidden"
+        className="border-border bg-background max-h-[80vh] overflow-y-auto border-t lg:hidden"
       >
         <nav aria-label="Mobile" className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
           <ul className="flex flex-col">
-            {mainNav.map((item, i) => (
+            {mainNav.map((item) => (
               <li key={item.label}>
-                <a
-                  href={navHref(item)}
-                  onClick={() => setOpen(false)}
-                  style={{ ["--reveal-delay" as string]: `${i * 40}ms` }}
-                  className={cn(
-                    "border-border/70 text-foreground hover:text-primary block border-b py-3 text-base font-semibold",
-                    open && "reveal reveal-in",
-                  )}
-                >
-                  {item.label}
-                </a>
+                {item.href === routes.products ? (
+                  <div className="border-border/70 border-b py-3">
+                    <div className="flex items-center justify-between">
+                      <Link
+                        to="/products"
+                        onClick={() => setOpen(false)}
+                        className="text-foreground hover:text-primary text-base font-semibold"
+                      >
+                        Products
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={() => setProductsOpen((v) => !v)}
+                        aria-expanded={productsOpen}
+                        aria-label="Toggle product categories"
+                        className="text-muted-foreground inline-flex h-8 w-8 items-center justify-center"
+                      >
+                        <ChevronDown
+                          className={cn(
+                            "h-4 w-4 transition-transform duration-300",
+                            productsOpen && "rotate-180",
+                          )}
+                          aria-hidden="true"
+                        />
+                      </button>
+                    </div>
+                    <ul hidden={!productsOpen} className="mt-2 space-y-1 pl-3">
+                      {productCategories.map((c) => (
+                        <li key={c.id}>
+                          <Link
+                            to="/products/$category"
+                            params={{ category: c.slug }}
+                            onClick={() => setOpen(false)}
+                            className="text-muted-foreground hover:text-primary block py-2 text-sm font-medium"
+                          >
+                            {c.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <a
+                    href={navHref(item)}
+                    onClick={() => setOpen(false)}
+                    className="border-border/70 text-foreground hover:text-primary block border-b py-3 text-base font-semibold"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

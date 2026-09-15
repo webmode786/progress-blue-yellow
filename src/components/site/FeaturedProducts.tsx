@@ -1,5 +1,6 @@
-import { products } from "@/data/catalog";
-import { ProductCard } from "./ProductCard";
+import { Link } from "@tanstack/react-router";
+import { featuredProducts } from "@/data/products";
+import { ProductTile } from "./products/ProductTile";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
@@ -15,19 +16,19 @@ export function FeaturedProducts() {
             className="max-w-xl"
           />
           <Reveal delay={120}>
-            <a
-              href="#enquiry"
+            <Link
+              to="/products"
               className="border-border text-foreground hover:border-accent inline-flex h-11 items-center rounded-md border px-5 text-sm font-semibold transition-colors duration-300"
             >
-              Request a Quote
-            </a>
+              Browse All Products
+            </Link>
           </Reveal>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((p, i) => (
-            <Reveal key={p.id} delay={i * 110} className="h-full">
-              <ProductCard product={p} />
+          {featuredProducts.slice(0, 8).map((p, i) => (
+            <Reveal key={p.id} delay={i * 90} className="h-full">
+              <ProductTile product={p} />
             </Reveal>
           ))}
         </div>
