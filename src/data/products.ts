@@ -240,7 +240,7 @@ function buildProduct(cat: CategoryInput, p: ProductInput): Product {
     shortDescription: p.shortDescription,
     description: p.description ?? p.shortDescription,
     features: p.features ?? [],
-    specifications: p.specifications ?? [],
+    specifications: specs,
     sizes: p.sizes ?? [],
     variants: p.sizes ?? [],
     material: p.material ?? null,
