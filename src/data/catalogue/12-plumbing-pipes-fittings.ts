@@ -364,7 +364,7 @@ export const category: CategoryInput = {
       keywords: ["female adaptor", "ppr rak"],
     },
     {
-      name: "Gate Valve",
+      name: "PPR Gate Valve",
       slug: "ppr-gate-valve",
       subcategory: "ppr-pipes-fittings-welding",
       shortDescription: "PPR gate valve for isolating water supply lines.",
