@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { mainNav, routes, whatsappLink } from "@/data/company";
+import { hasWhatsapp, mainNav, routes, whatsappLink } from "@/data/company";
 import { productCategories } from "@/data/products";
 import { Logo } from "./Logo";
 
@@ -13,13 +13,10 @@ export function Header() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isHome = pathname === "/";
   /** Pages that exist get real URLs; the rest fall back to homepage anchors. */
+  const realPages: string[] = [routes.about, routes.products, routes.contact];
   const navHref = (item: { label: string; href: string; hash: string }) =>
-    item.href === routes.about || item.href === routes.products
-      ? item.href
-      : isHome
-        ? item.hash
-        : `/${item.hash}`;
-  const quoteHref = isHome ? "#enquiry" : "/#enquiry";
+    realPages.includes(item.href) ? item.href : isHome ? item.hash : `/${item.hash}`;
+  const quoteHref = routes.contact;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -77,21 +74,18 @@ export function Header() {
 
                 <div
                   hidden={!productsOpen}
-                  className="border-border bg-card absolute top-full left-1/2 z-50 mt-3 w-[34rem] -translate-x-1/2 rounded-xl border p-3 shadow-[var(--shadow-card)]"
+                  className="border-border bg-card absolute top-full left-1/2 z-50 mt-3 max-h-[70vh] w-[52rem] -translate-x-1/2 overflow-y-auto rounded-xl border p-3 shadow-[var(--shadow-card)]"
                 >
-                  <ul className="grid grid-cols-2 gap-1">
+                  <ul className="grid grid-cols-3 gap-1">
                     {productCategories.map((c) => (
                       <li key={c.id}>
                         <Link
                           to="/products/$category"
                           params={{ category: c.slug }}
                           onClick={() => setProductsOpen(false)}
-                          className="hover:bg-secondary block rounded-lg px-3 py-2.5 transition-colors duration-200"
+                          className="hover:bg-secondary block rounded-lg px-3 py-2 transition-colors duration-200"
                         >
                           <span className="block text-sm font-semibold">{c.name}</span>
-                          <span className="text-muted-foreground mt-0.5 block text-xs leading-snug">
-                            {c.shortDescription}
-                          </span>
                         </Link>
                       </li>
                     ))}
@@ -124,24 +118,26 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat with us on WhatsApp"
-            className={cn(
-              "hidden h-10 w-10 items-center justify-center rounded-full border transition-colors duration-300 sm:flex",
-              solid
-                ? "border-border text-primary hover:bg-secondary"
-                : "border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10",
-            )}
-          >
-            <MessageCircle className="h-[18px] w-[18px]" aria-hidden="true" />
-          </a>
+          {hasWhatsapp ? (
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp"
+              className={cn(
+                "hidden h-10 w-10 items-center justify-center rounded-full border transition-colors duration-300 sm:flex",
+                solid
+                  ? "border-border text-primary hover:bg-secondary"
+                  : "border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10",
+              )}
+            >
+              <MessageCircle className="h-[18px] w-[18px]" aria-hidden="true" />
+            </a>
+          ) : null}
 
           <a
             href={quoteHref}
-            className="bg-accent text-accent-foreground hover:shadow-lift inline-flex h-10 items-center rounded-md px-4 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 sm:px-5"
+            className="bg-accent text-accent-foreground hover:shadow-lift hidden h-10 items-center rounded-md px-4 text-sm font-bold whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 sm:inline-flex sm:px-5"
           >
             Request a Quote
           </a>
@@ -231,15 +227,24 @@ export function Header() {
             ))}
           </ul>
           <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={quoteHref}
             onClick={() => setOpen(false)}
-            className="text-primary mt-4 inline-flex items-center gap-2 text-sm font-semibold"
+            className="bg-accent text-accent-foreground mt-5 flex h-11 items-center justify-center rounded-md px-5 text-sm font-bold sm:hidden"
           >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            WhatsApp Us
+            Request a Quote
           </a>
+          {hasWhatsapp ? (
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="text-primary mt-4 inline-flex items-center gap-2 text-sm font-semibold"
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              WhatsApp Us
+            </a>
+          ) : null}
         </nav>
       </div>
     </header>

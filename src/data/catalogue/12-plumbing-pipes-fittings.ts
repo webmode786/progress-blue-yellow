@@ -92,7 +92,7 @@ export const category: CategoryInput = {
       keywords: ["elbow", "pvc elbow", "pipe fitting"],
     },
     {
-      name: "Socket",
+      name: "PVC Socket",
       slug: "socket-pvc-upvc",
       subcategory: "pvc-upvc-fittings",
       shortDescription: "PVC/UPVC pipe sockets and couplers in various sizes.",
@@ -101,7 +101,7 @@ export const category: CategoryInput = {
       keywords: ["socket", "pipe coupler", "pvc socket"],
     },
     {
-      name: "Tee",
+      name: "PVC Tee",
       slug: "tee-pvc-upvc",
       subcategory: "pvc-upvc-fittings",
       shortDescription: "PVC and UPVC tee fittings for branch connections.",
@@ -323,7 +323,7 @@ export const category: CategoryInput = {
       keywords: ["female elbow", "ppr fitting"],
     },
     {
-      name: "Tee",
+      name: "PPR Tee",
       slug: "ppr-tee",
       subcategory: "ppr-pipes-fittings-welding",
       shortDescription: "PPR tee fitting for branch connections in various sizes.",
@@ -333,7 +333,7 @@ export const category: CategoryInput = {
       keywords: ["ppr tee"],
     },
     {
-      name: "Socket",
+      name: "PPR Socket",
       slug: "ppr-socket",
       subcategory: "ppr-pipes-fittings-welding",
       shortDescription: "PPR socket fitting for joining pipe lengths.",
@@ -364,7 +364,7 @@ export const category: CategoryInput = {
       keywords: ["female adaptor", "ppr rak"],
     },
     {
-      name: "Gate Valve",
+      name: "PPR Gate Valve",
       slug: "ppr-gate-valve",
       subcategory: "ppr-pipes-fittings-welding",
       shortDescription: "PPR gate valve for isolating water supply lines.",

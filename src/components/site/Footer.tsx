@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
-import { company, mainNav, routes, whatsappLink } from "@/data/company";
+import { company, hasWhatsapp, mainNav, routes, whatsappLink } from "@/data/company";
 import { categories } from "@/data/catalog";
 import { Logo } from "./Logo";
 
@@ -15,15 +15,17 @@ export function Footer() {
           <p className="text-primary-foreground/70 mt-5 max-w-xs text-sm leading-relaxed">
             {company.supportingMessage}
           </p>
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent mt-5 inline-flex items-center gap-2 text-sm font-semibold"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            WhatsApp Us
-          </a>
+          {hasWhatsapp ? (
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent mt-5 inline-flex items-center gap-2 text-sm font-semibold"
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              WhatsApp Us
+            </a>
+          ) : null}
         </div>
 
         <div>
@@ -40,7 +42,11 @@ export function Footer() {
                   </Link>
                 ) : (
                   <a
-                    href={item.href === routes.about ? routes.about : `/${item.hash}`}
+                    href={
+                      item.href === routes.about || item.href === routes.contact
+                        ? item.href
+                        : `/${item.hash}`
+                    }
                     className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
                   >
                     {item.label}
@@ -54,7 +60,7 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-bold tracking-[0.16em] uppercase">Products</h3>
           <ul className="mt-5 space-y-3">
-            {categories.map((c) => (
+            {categories.slice(0, 8).map((c) => (
               <li key={c.id}>
                 <Link
                   to="/products/$category"

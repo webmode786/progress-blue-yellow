@@ -210,7 +210,7 @@ export const category: CategoryInput = {
       keywords: ["GI tee", "conduit tee", "conduit fitting"],
     },
     {
-      name: "Reducer Bush",
+      name: "Conduit Reducer Bush",
       slug: "reducer-bush",
       subcategory: "gi-conduit-fittings-accessories",
       shortDescription: "Reducer bush for connecting conduit sections of different diameters.",

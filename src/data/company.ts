@@ -43,9 +43,21 @@ export const productWhatsappLink = (productName: string) =>
     `Hello ${company.name}, I am interested in ${productName}. Please share the price and availability.`,
   );
 
-/** Quote-request link that pre-selects a product in the enquiry form. */
-export const quoteLinkFor = (productName: string) =>
-  `/?product=${encodeURIComponent(productName)}#enquiry`;
+type QuoteProduct = {
+  name: string;
+  productCode?: string | null;
+  categoryName?: string | null;
+  categorySlug?: string | null;
+};
+
+/** Quote-request link that pre-fills the Contact Us enquiry form. */
+export const quoteLinkFor = (product: QuoteProduct | string) => {
+  const p: QuoteProduct = typeof product === "string" ? { name: product } : product;
+  const params = new URLSearchParams({ product: p.name });
+  if (p.productCode) params.set("code", p.productCode);
+  if (p.categorySlug) params.set("category", p.categorySlug);
+  return `/contact-us?${params.toString()}#enquiry-form`;
+};
 
 /** Future URL structure — pages are added progressively. */
 export const routes = {

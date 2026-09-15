@@ -211,6 +211,17 @@ function buildProduct(cat: CategoryInput, p: ProductInput): Product {
   const subName =
     cat.subcategories.find((s) => s.slug === p.subcategory)?.name ?? p.subcategory;
   const brands = p.brands ?? [];
+  const specs = [...(p.specifications ?? [])];
+  const addSpec = (label: string, value?: string) => {
+    if (value && !specs.some((s) => s.label.toLowerCase() === label.toLowerCase())) {
+      specs.push({ label, value });
+    }
+  };
+  addSpec("Material", p.material);
+  addSpec("Colour", p.colour);
+  addSpec("Packaging", p.packaging);
+  if (p.standards?.length) addSpec("Standards", p.standards.join(", "));
+  if (p.productCode) addSpec("Product code", p.productCode);
   return {
     id: `${cat.slug}-${p.slug}`,
     name: p.name,
@@ -229,7 +240,7 @@ function buildProduct(cat: CategoryInput, p: ProductInput): Product {
     shortDescription: p.shortDescription,
     description: p.description ?? p.shortDescription,
     features: p.features ?? [],
-    specifications: p.specifications ?? [],
+    specifications: specs,
     sizes: p.sizes ?? [],
     variants: p.sizes ?? [],
     material: p.material ?? null,

@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, MessageCircle } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 import type { Product } from "@/data/products";
-import { productWhatsappLink } from "@/data/company";
+import { quoteLinkFor } from "@/data/company";
+import { ProductImage } from "./ProductImage";
 
 export function ProductTile({ product }: { product: Product }) {
   return (
@@ -12,14 +13,9 @@ export function ProductTile({ product }: { product: Product }) {
         className="bg-secondary relative block aspect-[4/3] overflow-hidden"
         aria-label={`View details for ${product.name}`}
       >
-        <img
-          src={product.image}
-          alt={`${product.name} — ${product.categoryName} supplied by Skyline`}
-          loading="lazy"
-          decoding="async"
-          width={1200}
-          height={900}
-          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+        <ProductImage
+          product={product}
+          className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.04]"
         />
       </Link>
 
@@ -38,6 +34,8 @@ export function ProductTile({ product }: { product: Product }) {
         </h3>
         <span className="text-muted-foreground mt-1 text-xs font-medium">
           {product.subcategoryName}
+          {product.productCode ? ` · ${product.productCode}` : ""}
+          {product.brand ? ` · ${product.brand}` : ""}
         </span>
         <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
           {product.shortDescription}
@@ -53,13 +51,11 @@ export function ProductTile({ product }: { product: Product }) {
             <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
           </Link>
           <a
-            href={productWhatsappLink(product.name)}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={quoteLinkFor(product)}
             className="bg-accent text-accent-foreground inline-flex h-9 items-center gap-1.5 rounded-md px-3 text-xs font-bold transition-transform duration-300 hover:-translate-y-0.5"
           >
-            <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
-            Send Inquiry
+            <FileText className="h-3.5 w-3.5" aria-hidden="true" />
+            Request a Quote
           </a>
         </div>
       </div>

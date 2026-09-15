@@ -1,18 +1,18 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
-import { whatsappLink } from "@/data/company";
+import { hasWhatsapp, routes, whatsappLink } from "@/data/company";
 import { Reveal } from "./Reveal";
 
 type Props = {
   title?: string;
   description?: string;
-  /** Where "Request a Quote" points — use "/#enquiry" from inner pages. */
+  /** Where "Request a Quote" points — defaults to the Contact Us page. */
   quoteHref?: string;
 };
 
 export function QuoteCTA({
   title = "Need a price for your next project?",
   description = "Send us your requirement list and our team will come back with a quotation and availability.",
-  quoteHref = "#enquiry",
+  quoteHref = routes.contact,
 }: Props) {
   return (
     <section
@@ -41,15 +41,17 @@ export function QuoteCTA({
             Request a Quote
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-primary-foreground/35 text-primary-foreground hover:bg-primary-foreground/10 inline-flex h-12 items-center justify-center gap-2 rounded-md border px-6 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            WhatsApp Us
-          </a>
+          {hasWhatsapp ? (
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-primary-foreground/35 text-primary-foreground hover:bg-primary-foreground/10 inline-flex h-12 items-center justify-center gap-2 rounded-md border px-6 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              WhatsApp Us
+            </a>
+          ) : null}
         </Reveal>
       </div>
     </section>

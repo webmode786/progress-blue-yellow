@@ -28,6 +28,7 @@ export function ProductBrowser({
   const [category, setCategory] = useState("");
   const [subcategory, setSubcategory] = useState("");
   const [type, setType] = useState("");
+  const [brand, setBrand] = useState("");
   const [visible, setVisible] = useState(pageSize);
 
   const subOptions = useMemo(() => {
@@ -44,29 +45,36 @@ export function ProductBrowser({
     [items],
   );
 
+  const brandOptions = useMemo(
+    () => [...new Set(items.flatMap((p) => p.brands))].sort(),
+    [items],
+  );
+
   const results = useMemo(() => {
     let list = items;
     if (category) list = list.filter((p) => p.categorySlug === category);
     if (subcategory) list = list.filter((p) => p.subcategory === subcategory);
     if (type) list = list.filter((p) => p.productType === type);
+    if (brand) list = list.filter((p) => p.brands.includes(brand));
     return searchProducts(query, list);
-  }, [items, category, subcategory, type, query]);
+  }, [items, category, subcategory, type, brand, query]);
 
   const shown = results.slice(0, visible);
-  const hasFilters = Boolean(query || category || subcategory || type);
+  const hasFilters = Boolean(query || category || subcategory || type || brand);
 
   function reset() {
     setQuery("");
     setCategory("");
     setSubcategory("");
     setType("");
+    setBrand("");
     setVisible(pageSize);
   }
 
   return (
     <div>
       <div className="border-border bg-card rounded-xl border p-4 sm:p-5">
-        <div className="grid gap-3 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1fr]">
           <div className="relative">
             <Search
               className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2"
@@ -156,6 +164,30 @@ export function ProductBrowser({
               ))}
             </select>
           </div>
+
+          {brandOptions.length > 0 ? (
+            <div>
+              <label htmlFor="filter-brand" className="sr-only">
+                Filter by brand
+              </label>
+              <select
+                id="filter-brand"
+                value={brand}
+                onChange={(e) => {
+                  setBrand(e.target.value);
+                  setVisible(pageSize);
+                }}
+                className={selectClass}
+              >
+                <option value="">All brands</option>
+                {brandOptions.map((b) => (
+                  <option key={b} value={b}>
+                    {b}
+                  </option>
+                ))}
+              </select>
+            </div>
+          ) : null}
         </div>
 
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3">

@@ -7,7 +7,13 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { ProductTile } from "@/components/site/products/ProductTile";
 import { getProduct, relatedProducts } from "@/data/products";
-import { company, productWhatsappLink, quoteLinkFor } from "@/data/company";
+import { ProductImage } from "@/components/site/products/ProductImage";
+import {
+  company,
+  hasWhatsapp,
+  productWhatsappLink,
+  quoteLinkFor,
+} from "@/data/company";
 
 export const Route = createFileRoute("/products/$category/$product")({
   loader: ({ params }) => {
@@ -97,13 +103,10 @@ function ProductDetail() {
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div>
               <div className="border-border bg-secondary overflow-hidden rounded-xl border">
-                <img
-                  src={product.image}
-                  alt={`${product.name} — ${product.subcategoryName} supplied by Skyline`}
-                  width={1200}
-                  height={900}
-                  decoding="async"
-                  className="aspect-[4/3] h-full w-full object-cover"
+                <ProductImage
+                  product={product}
+                  priority
+                  className="aspect-[4/3] h-full w-full"
                 />
               </div>
               {product.gallery.length > 1 ? (
@@ -132,28 +135,62 @@ function ProductDetail() {
               <h1 className="font-display mt-3 text-3xl leading-tight font-extrabold sm:text-4xl">
                 {product.name}
               </h1>
+              <dl className="mt-5 flex flex-wrap gap-x-8 gap-y-2 text-sm">
+                {product.productCode ? (
+                  <div className="flex gap-2">
+                    <dt className="text-muted-foreground font-semibold">Product code</dt>
+                    <dd className="font-bold">{product.productCode}</dd>
+                  </div>
+                ) : null}
+                <div className="flex gap-2">
+                  <dt className="text-muted-foreground font-semibold">Brand</dt>
+                  <dd className="font-bold">
+                    {product.brands.length > 0
+                      ? product.brands.join(", ")
+                      : "Available on request"}
+                  </dd>
+                </div>
+              </dl>
+
               <p className="text-muted-foreground mt-5 text-base leading-relaxed">
                 {product.description}
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href={quoteLinkFor(product.name)}
+                  href={quoteLinkFor(product)}
                   className="bg-accent text-accent-foreground hover:shadow-lift inline-flex h-12 items-center gap-2 rounded-md px-6 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5"
                 >
                   Request a Quote
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </a>
-                <a
-                  href={productWhatsappLink(product.name)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-whatsapp text-primary-foreground inline-flex h-12 items-center gap-2 rounded-md px-6 text-sm font-bold transition-transform duration-300 hover:-translate-y-0.5"
-                >
-                  <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                  WhatsApp Inquiry
-                </a>
+                {hasWhatsapp ? (
+                  <a
+                    href={productWhatsappLink(product.name)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-whatsapp text-primary-foreground inline-flex h-12 items-center gap-2 rounded-md px-6 text-sm font-bold transition-transform duration-300 hover:-translate-y-0.5"
+                  >
+                    <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                    WhatsApp Inquiry
+                  </a>
+                ) : null}
               </div>
+
+              {product.features.length > 0 ? (
+                <section className="mt-10">
+                  <h2 className="text-lg font-bold">Key Features</h2>
+                  <ul className="mt-3 grid gap-2">
+                    {product.features.map((f) => (
+                      <li key={f} className="flex gap-2 text-sm">
+                        <Check className="text-primary mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+
 
               {product.specifications.length > 0 ? (
                 <section className="mt-10">
