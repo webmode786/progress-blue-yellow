@@ -164,6 +164,30 @@ export function ProductBrowser({
               ))}
             </select>
           </div>
+
+          {brandOptions.length > 0 ? (
+            <div>
+              <label htmlFor="filter-brand" className="sr-only">
+                Filter by brand
+              </label>
+              <select
+                id="filter-brand"
+                value={brand}
+                onChange={(e) => {
+                  setBrand(e.target.value);
+                  setVisible(pageSize);
+                }}
+                className={selectClass}
+              >
+                <option value="">All brands</option>
+                {brandOptions.map((b) => (
+                  <option key={b} value={b}>
+                    {b}
+                  </option>
+                ))}
+              </select>
+            </div>
+          ) : null}
         </div>
 
         <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
