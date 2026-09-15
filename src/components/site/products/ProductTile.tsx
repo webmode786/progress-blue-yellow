@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, MessageCircle } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 import type { Product } from "@/data/products";
-import { productWhatsappLink } from "@/data/company";
+import { quoteLinkFor } from "@/data/company";
+import { ProductImage } from "./ProductImage";
 
 export function ProductTile({ product }: { product: Product }) {
   return (
