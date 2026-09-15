@@ -226,16 +226,18 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-            className="text-primary mt-4 inline-flex items-center gap-2 text-sm font-semibold"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            WhatsApp Us
-          </a>
+          {hasWhatsapp ? (
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="text-primary mt-4 inline-flex items-center gap-2 text-sm font-semibold"
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              WhatsApp Us
+            </a>
+          ) : null}
         </nav>
       </div>
     </header>
