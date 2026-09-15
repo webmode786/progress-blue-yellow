@@ -13,14 +13,9 @@ export function ProductTile({ product }: { product: Product }) {
         className="bg-secondary relative block aspect-[4/3] overflow-hidden"
         aria-label={`View details for ${product.name}`}
       >
-        <img
-          src={product.image}
-          alt={`${product.name} — ${product.categoryName} supplied by Skyline`}
-          loading="lazy"
-          decoding="async"
-          width={1200}
-          height={900}
-          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+        <ProductImage
+          product={product}
+          className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.04]"
         />
       </Link>
 
