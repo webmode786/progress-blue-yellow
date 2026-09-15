@@ -31,12 +31,21 @@ export function Footer() {
           <ul className="mt-5 space-y-3">
             {mainNav.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.hash}
-                  className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
-                >
-                  {item.label}
-                </a>
+                {item.href === routes.products ? (
+                  <Link
+                    to="/products"
+                    className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={item.href === routes.about ? routes.about : `/${item.hash}`}
+                    className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
