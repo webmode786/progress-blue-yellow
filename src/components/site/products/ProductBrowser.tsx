@@ -28,6 +28,7 @@ export function ProductBrowser({
   const [category, setCategory] = useState("");
   const [subcategory, setSubcategory] = useState("");
   const [type, setType] = useState("");
+  const [brand, setBrand] = useState("");
   const [visible, setVisible] = useState(pageSize);
 
   const subOptions = useMemo(() => {
