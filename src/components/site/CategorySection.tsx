@@ -17,7 +17,10 @@ export function CategorySection() {
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {productCategories.slice(0, 6).map((c, i) => (
+          {productCategories
+            .filter((c) => c.featured)
+            .slice(0, 6)
+            .map((c, i) => (
             <Reveal key={c.id} delay={i * 90} className="h-full">
               <CategoryTile category={c} />
             </Reveal>
