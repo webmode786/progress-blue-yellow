@@ -118,20 +118,22 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat with us on WhatsApp"
-            className={cn(
-              "hidden h-10 w-10 items-center justify-center rounded-full border transition-colors duration-300 sm:flex",
-              solid
-                ? "border-border text-primary hover:bg-secondary"
-                : "border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10",
-            )}
-          >
-            <MessageCircle className="h-[18px] w-[18px]" aria-hidden="true" />
-          </a>
+          {hasWhatsapp ? (
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp"
+              className={cn(
+                "hidden h-10 w-10 items-center justify-center rounded-full border transition-colors duration-300 sm:flex",
+                solid
+                  ? "border-border text-primary hover:bg-secondary"
+                  : "border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10",
+              )}
+            >
+              <MessageCircle className="h-[18px] w-[18px]" aria-hidden="true" />
+            </a>
+          ) : null}
 
           <a
             href={quoteHref}
