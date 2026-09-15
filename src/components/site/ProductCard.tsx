@@ -1,24 +1,25 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import type { Product } from "@/data/catalog";
-import { categories } from "@/data/catalog";
+import { quoteLinkFor } from "@/data/company";
+import { ProductImage } from "@/components/site/products/ProductImage";
 
 export function ProductCard({ product }: { product: Product }) {
-  const categoryName =
-    categories.find((c) => c.slug === product.category)?.name ?? product.category;
+  const categoryName = product.categoryName;
 
   return (
     <article className="border-border bg-card hover:shadow-lift group flex h-full flex-col overflow-hidden rounded-xl border transition-all duration-500 hover:-translate-y-1.5">
-      <div className="bg-secondary relative aspect-square overflow-hidden">
-        <img
-          src={product.image}
-          alt={product.name}
-          loading="lazy"
-          decoding="async"
-          width={900}
-          height={900}
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+      <Link
+        to="/products/$category/$product"
+        params={{ category: product.categorySlug, product: product.slug }}
+        className="bg-secondary relative block aspect-square overflow-hidden"
+        aria-label={`View details for ${product.name}`}
+      >
+        <ProductImage
+          product={product}
+          className="h-full w-full transition-transform duration-700 ease-out group-hover:scale-[1.06]"
         />
-      </div>
+      </Link>
 
       <div className="flex flex-1 flex-col p-5">
         <span className="text-primary text-[0.68rem] font-bold tracking-[0.16em] uppercase">
