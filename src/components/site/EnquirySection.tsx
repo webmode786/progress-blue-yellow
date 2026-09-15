@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { CheckCircle2, Mail, MapPin, Phone, Clock } from "lucide-react";
 import { company } from "@/data/company";
 import { categories } from "@/data/catalog";
@@ -13,6 +13,18 @@ const fieldClass =
 export function EnquirySection() {
   const [errors, setErrors] = useState<Errors>({});
   const [sent, setSent] = useState(false);
+  const [message, setMessage] = useState("");
+
+  /** Pre-fills the requirement when arriving from a product "Request a Quote". */
+  useEffect(() => {
+    const product = new URLSearchParams(window.location.search).get("product");
+    if (product) {
+      setMessage(
+        `I would like a quotation for: ${product}. Please share price and availability.`,
+      );
+    }
+  }, []);
+
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -36,6 +48,7 @@ export function EnquirySection() {
     if (Object.keys(next).length > 0) return;
 
     setSent(true);
+    setMessage("");
     form.reset();
   }
 
@@ -158,6 +171,8 @@ export function EnquirySection() {
                     id="message"
                     name="message"
                     rows={5}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className={fieldClass}
                     placeholder="Products, quantities, delivery location and timeline."
                   />

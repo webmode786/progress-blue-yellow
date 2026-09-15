@@ -1,5 +1,6 @@
+import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
-import { company, mainNav, whatsappLink } from "@/data/company";
+import { company, mainNav, routes, whatsappLink } from "@/data/company";
 import { categories } from "@/data/catalog";
 import { Logo } from "./Logo";
 
@@ -30,12 +31,21 @@ export function Footer() {
           <ul className="mt-5 space-y-3">
             {mainNav.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.hash}
-                  className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
-                >
-                  {item.label}
-                </a>
+                {item.href === routes.products ? (
+                  <Link
+                    to="/products"
+                    className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={item.href === routes.about ? routes.about : `/${item.hash}`}
+                    className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -44,18 +54,25 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-bold tracking-[0.16em] uppercase">Products</h3>
           <ul className="mt-5 space-y-3">
-            {categories.flatMap((c) =>
-              c.subcategories.slice(0, 4).map((s) => (
-                <li key={s.id}>
-                  <a
-                    href="#categories"
-                    className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
-                  >
-                    {s.name}
-                  </a>
-                </li>
-              )),
-            )}
+            {categories.map((c) => (
+              <li key={c.id}>
+                <Link
+                  to="/products/$category"
+                  params={{ category: c.slug }}
+                  className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
+                >
+                  {c.name}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                to="/products"
+                className="text-accent text-sm font-semibold transition-colors duration-300"
+              >
+                View all products
+              </Link>
+            </li>
           </ul>
         </div>
 
