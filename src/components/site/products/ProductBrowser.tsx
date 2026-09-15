@@ -45,22 +45,29 @@ export function ProductBrowser({
     [items],
   );
 
+  const brandOptions = useMemo(
+    () => [...new Set(items.flatMap((p) => p.brands))].sort(),
+    [items],
+  );
+
   const results = useMemo(() => {
     let list = items;
     if (category) list = list.filter((p) => p.categorySlug === category);
     if (subcategory) list = list.filter((p) => p.subcategory === subcategory);
     if (type) list = list.filter((p) => p.productType === type);
+    if (brand) list = list.filter((p) => p.brands.includes(brand));
     return searchProducts(query, list);
-  }, [items, category, subcategory, type, query]);
+  }, [items, category, subcategory, type, brand, query]);
 
   const shown = results.slice(0, visible);
-  const hasFilters = Boolean(query || category || subcategory || type);
+  const hasFilters = Boolean(query || category || subcategory || type || brand);
 
   function reset() {
     setQuery("");
     setCategory("");
     setSubcategory("");
     setType("");
+    setBrand("");
     setVisible(pageSize);
   }
 
