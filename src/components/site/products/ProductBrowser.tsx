@@ -74,7 +74,7 @@ export function ProductBrowser({
   return (
     <div>
       <div className="border-border bg-card rounded-xl border p-4 sm:p-5">
-        <div className="grid gap-3 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1fr]">
           <div className="relative">
             <Search
               className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2"
