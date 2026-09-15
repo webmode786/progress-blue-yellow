@@ -137,7 +137,7 @@ export function Header() {
 
           <a
             href={quoteHref}
-            className="bg-accent text-accent-foreground hover:shadow-lift inline-flex h-10 items-center rounded-md px-4 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 sm:px-5"
+            className="bg-accent text-accent-foreground hover:shadow-lift hidden h-10 items-center rounded-md px-4 text-sm font-bold whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 sm:inline-flex sm:px-5"
           >
             Request a Quote
           </a>
