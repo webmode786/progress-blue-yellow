@@ -6,20 +6,30 @@
 
 export const company = {
   name: "Skyline Building Material & Electrical Trading",
+  /** Registered trading entity. */
+  legalName: "Skyline Building Material Trading FZC",
   shortName: "Skyline",
   tagline: "Building Quality. Powering Progress.",
   supportingMessage:
     "Your trusted partner for quality electrical products, building materials and construction solutions.",
   // Digits only, international format, no "+" — used to build wa.me links.
-  whatsappNumber: "971000000000",
+  // Set to "" while unknown so WhatsApp buttons stay hidden instead of broken.
+  whatsappNumber: "",
   whatsappMessage:
-    "Hello Skyline Building Material & Electrical Trading, I would like to enquire about your products.",
+    "Hello Skyline Building Material Trading FZC, I would like to enquire about your products.",
   phone: "[Phone Number]",
   whatsappDisplay: "[WhatsApp Number]",
   email: "[Email Address]",
   address: "[Company Address]",
   workingHours: "[Working Hours]",
+  /** Paste a Google Maps embed URL here once the location is confirmed. */
+  mapEmbedUrl: "",
+  /** Optional link to the location on Google Maps. */
+  mapLink: "",
 } as const;
+
+/** True only when a real WhatsApp number has been configured above. */
+export const hasWhatsapp = company.whatsappNumber.length > 0;
 
 /** Build a WhatsApp link with any pre-filled message. */
 export const waLink = (message: string) =>
