@@ -37,7 +37,7 @@ export function Logo({
             tone === "light" ? "text-primary-foreground/70" : "text-muted-foreground",
           )}
         >
-          Building Material Trading
+          Building Material &amp; Electrical Trading
         </span>
       </span>
       <span className="sr-only">{company.name}</span>
