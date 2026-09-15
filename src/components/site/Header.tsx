@@ -226,6 +226,13 @@ export function Header() {
               </li>
             ))}
           </ul>
+          <a
+            href={quoteHref}
+            onClick={() => setOpen(false)}
+            className="bg-accent text-accent-foreground mt-5 flex h-11 items-center justify-center rounded-md px-5 text-sm font-bold sm:hidden"
+          >
+            Request a Quote
+          </a>
           {hasWhatsapp ? (
             <a
               href={whatsappLink}
