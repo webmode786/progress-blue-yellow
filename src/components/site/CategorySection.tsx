@@ -21,10 +21,10 @@ export function CategorySection() {
             .filter((c) => c.featured)
             .slice(0, 6)
             .map((c, i) => (
-            <Reveal key={c.id} delay={i * 90} className="h-full">
-              <CategoryTile category={c} />
-            </Reveal>
-          ))}
+              <Reveal key={c.id} delay={i * 90} className="h-full">
+                <CategoryTile category={c} />
+              </Reveal>
+            ))}
         </div>
 
         <Reveal delay={160} className="mt-12 flex justify-center">
