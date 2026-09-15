@@ -15,15 +15,17 @@ export function Footer() {
           <p className="text-primary-foreground/70 mt-5 max-w-xs text-sm leading-relaxed">
             {company.supportingMessage}
           </p>
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent mt-5 inline-flex items-center gap-2 text-sm font-semibold"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            WhatsApp Us
-          </a>
+          {hasWhatsapp ? (
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent mt-5 inline-flex items-center gap-2 text-sm font-semibold"
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              WhatsApp Us
+            </a>
+          ) : null}
         </div>
 
         <div>
@@ -40,7 +42,11 @@ export function Footer() {
                   </Link>
                 ) : (
                   <a
-                    href={item.href === routes.about ? routes.about : `/${item.hash}`}
+                    href={
+                      item.href === routes.about || item.href === routes.contact
+                        ? item.href
+                        : `/${item.hash}`
+                    }
                     className="text-primary-foreground/70 hover:text-accent text-sm transition-colors duration-300"
                   >
                     {item.label}
