@@ -60,7 +60,7 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-bold tracking-[0.16em] uppercase">Products</h3>
           <ul className="mt-5 space-y-3">
-            {categories.map((c) => (
+            {categories.slice(0, 8).map((c) => (
               <li key={c.id}>
                 <Link
                   to="/products/$category"
