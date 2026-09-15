@@ -283,9 +283,9 @@ function Field({
 }: {
   id: string;
   label: string;
-  error?: string;
-  type?: string;
-  autoComplete?: string;
+  error?: string | undefined;
+  type?: string | undefined;
+  autoComplete?: string | undefined;
 }) {
   return (
     <div>
