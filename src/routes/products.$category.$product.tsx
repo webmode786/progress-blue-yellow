@@ -103,13 +103,10 @@ function ProductDetail() {
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div>
               <div className="border-border bg-secondary overflow-hidden rounded-xl border">
-                <img
-                  src={product.image}
-                  alt={`${product.name} — ${product.subcategoryName} supplied by Skyline`}
-                  width={1200}
-                  height={900}
-                  decoding="async"
-                  className="aspect-[4/3] h-full w-full object-cover"
+                <ProductImage
+                  product={product}
+                  priority
+                  className="aspect-[4/3] h-full w-full"
                 />
               </div>
               {product.gallery.length > 1 ? (
