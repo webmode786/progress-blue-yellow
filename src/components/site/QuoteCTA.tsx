@@ -1,18 +1,18 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
-import { whatsappLink } from "@/data/company";
+import { hasWhatsapp, routes, whatsappLink } from "@/data/company";
 import { Reveal } from "./Reveal";
 
 type Props = {
   title?: string;
   description?: string;
-  /** Where "Request a Quote" points — use "/#enquiry" from inner pages. */
+  /** Where "Request a Quote" points — defaults to the Contact Us page. */
   quoteHref?: string;
 };
 
 export function QuoteCTA({
   title = "Need a price for your next project?",
   description = "Send us your requirement list and our team will come back with a quotation and availability.",
-  quoteHref = "#enquiry",
+  quoteHref = routes.contact,
 }: Props) {
   return (
     <section
