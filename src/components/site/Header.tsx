@@ -74,21 +74,18 @@ export function Header() {
 
                 <div
                   hidden={!productsOpen}
-                  className="border-border bg-card absolute top-full left-1/2 z-50 mt-3 w-[34rem] -translate-x-1/2 rounded-xl border p-3 shadow-[var(--shadow-card)]"
+                  className="border-border bg-card absolute top-full left-1/2 z-50 mt-3 max-h-[70vh] w-[52rem] -translate-x-1/2 overflow-y-auto rounded-xl border p-3 shadow-[var(--shadow-card)]"
                 >
-                  <ul className="grid grid-cols-2 gap-1">
+                  <ul className="grid grid-cols-3 gap-1">
                     {productCategories.map((c) => (
                       <li key={c.id}>
                         <Link
                           to="/products/$category"
                           params={{ category: c.slug }}
                           onClick={() => setProductsOpen(false)}
-                          className="hover:bg-secondary block rounded-lg px-3 py-2.5 transition-colors duration-200"
+                          className="hover:bg-secondary block rounded-lg px-3 py-2 transition-colors duration-200"
                         >
                           <span className="block text-sm font-semibold">{c.name}</span>
-                          <span className="text-muted-foreground mt-0.5 block text-xs leading-snug">
-                            {c.shortDescription}
-                          </span>
                         </Link>
                       </li>
                     ))}
