@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { mainNav, routes, whatsappLink } from "@/data/company";
+import { hasWhatsapp, mainNav, routes, whatsappLink } from "@/data/company";
 import { productCategories } from "@/data/products";
 import { Logo } from "./Logo";
 
@@ -13,13 +13,10 @@ export function Header() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isHome = pathname === "/";
   /** Pages that exist get real URLs; the rest fall back to homepage anchors. */
+  const realPages: string[] = [routes.about, routes.products, routes.contact];
   const navHref = (item: { label: string; href: string; hash: string }) =>
-    item.href === routes.about || item.href === routes.products
-      ? item.href
-      : isHome
-        ? item.hash
-        : `/${item.hash}`;
-  const quoteHref = isHome ? "#enquiry" : "/#enquiry";
+    realPages.includes(item.href) ? item.href : isHome ? item.hash : `/${item.hash}`;
+  const quoteHref = routes.contact;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
