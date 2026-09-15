@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
-import { company, mainNav, routes, whatsappLink } from "@/data/company";
+import { company, hasWhatsapp, mainNav, routes, whatsappLink } from "@/data/company";
 import { categories } from "@/data/catalog";
 import { Logo } from "./Logo";
 
