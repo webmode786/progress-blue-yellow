@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutUsRouteImport } from './routes/about-us'
+import { Route as ContactUsRouteImport } from './routes/contact-us'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as ProductsCategoryIndexRouteImport } from './routes/products.$category.index'
 import { Route as ProductsCategoryProductRouteImport } from './routes/products.$category.$product'
@@ -23,6 +24,11 @@ const IndexRoute = IndexRouteImport.update({
 const AboutUsRoute = AboutUsRouteImport.update({
   id: '/about-us',
   path: '/about-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactUsRoute = ContactUsRouteImport.update({
+  id: '/contact-us',
+  path: '/contact-us',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProductsIndexRoute = ProductsIndexRouteImport.update({
@@ -44,6 +50,7 @@ const ProductsCategoryProductRoute = ProductsCategoryProductRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/contact-us': typeof ContactUsRoute
   '/products/': typeof ProductsIndexRoute
   '/products/$category/$product': typeof ProductsCategoryProductRoute
   '/products/$category/': typeof ProductsCategoryIndexRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/contact-us': typeof ContactUsRoute
   '/products': typeof ProductsIndexRoute
   '/products/$category/$product': typeof ProductsCategoryProductRoute
   '/products/$category': typeof ProductsCategoryIndexRoute
@@ -59,6 +67,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about-us': typeof AboutUsRoute
+  '/contact-us': typeof ContactUsRoute
   '/products/': typeof ProductsIndexRoute
   '/products/$category/$product': typeof ProductsCategoryProductRoute
   '/products/$category/': typeof ProductsCategoryIndexRoute
@@ -68,6 +77,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about-us'
+    | '/contact-us'
     | '/products/'
     | '/products/$category/$product'
     | '/products/$category/'
@@ -75,6 +85,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about-us'
+    | '/contact-us'
     | '/products'
     | '/products/$category/$product'
     | '/products/$category'
@@ -82,6 +93,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about-us'
+    | '/contact-us'
     | '/products/'
     | '/products/$category/$product'
     | '/products/$category/'
@@ -90,6 +102,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutUsRoute: typeof AboutUsRoute
+  ContactUsRoute: typeof ContactUsRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
   ProductsCategoryProductRoute: typeof ProductsCategoryProductRoute
   ProductsCategoryIndexRoute: typeof ProductsCategoryIndexRoute
@@ -109,6 +122,13 @@ declare module '@tanstack/react-router' {
       path: '/about-us'
       fullPath: '/about-us'
       preLoaderRoute: typeof AboutUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact-us': {
+      id: '/contact-us'
+      path: '/contact-us'
+      fullPath: '/contact-us'
+      preLoaderRoute: typeof ContactUsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/products/': {
@@ -138,6 +158,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutUsRoute: AboutUsRoute,
+  ContactUsRoute: ContactUsRoute,
   ProductsIndexRoute: ProductsIndexRoute,
   ProductsCategoryProductRoute: ProductsCategoryProductRoute,
   ProductsCategoryIndexRoute: ProductsCategoryIndexRoute,
