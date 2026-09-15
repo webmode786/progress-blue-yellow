@@ -37,13 +37,14 @@ export function ProductCard({ product }: { product: Product }) {
 
         <div className="mt-5 flex flex-wrap items-center gap-3 pt-1">
           <a
-            href="#enquiry"
+            href={quoteLinkFor(product)}
             className="bg-accent text-accent-foreground inline-flex h-9 items-center rounded-md px-4 text-xs font-bold transition-transform duration-300 hover:-translate-y-0.5"
           >
             Request Quote
           </a>
-          <a
-            href="#enquiry"
+          <Link
+            to="/products/$category/$product"
+            params={{ category: product.categorySlug, product: product.slug }}
             className="text-primary inline-flex items-center gap-1 text-xs font-bold"
           >
             View Product
@@ -51,7 +52,7 @@ export function ProductCard({ product }: { product: Product }) {
               className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               aria-hidden="true"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </article>
