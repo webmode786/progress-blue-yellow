@@ -151,16 +151,6 @@ export const category: CategoryInput = {
       keywords: ["isolator", "electrical isolator", "Hager", "Schneider", "ABB", "Onka"],
     },
     {
-      name: "Overload Relay",
-      slug: "overload-relay",
-      subcategory: "electrical-switchgear",
-      brands: ["Hager", "Schneider", "ABB", "Onka"],
-      shortDescription: "Overload relays protecting motors and circuits from sustained overcurrent.",
-      description:
-        "The overload relay is a switchgear item used to control, protect and isolate electrical equipment from sustained overcurrent conditions, commonly used alongside contactors in motor control circuits.",
-      keywords: ["overload relay", "motor protection relay", "Hager", "Schneider", "ABB", "Onka"],
-    },
-    {
       name: "Distribution Board",
       slug: "distribution-board",
       subcategory: "electrical-switchgear",
