@@ -48,6 +48,7 @@ export function EnquirySection() {
     if (Object.keys(next).length > 0) return;
 
     setSent(true);
+    setMessage("");
     form.reset();
   }
 
@@ -170,6 +171,8 @@ export function EnquirySection() {
                     id="message"
                     name="message"
                     rows={5}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className={fieldClass}
                     placeholder="Products, quantities, delivery location and timeline."
                   />
