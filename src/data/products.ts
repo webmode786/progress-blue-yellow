@@ -173,7 +173,28 @@ const categoryIcons: Record<string, string> = {
  * Verified product photography, keyed by `"<category-slug>/<product-slug>"`.
  * Add entries here to replace a placeholder tile with a real image.
  */
-const productImages: Record<string, string> = {};
+const productImages: Record<string, string> = {
+  "control-screen-specialty-cables/control-cable-ysly-jz": imgControlCable,
+  "silicone-high-temperature-cables/silicone-cable-fg4-2": imgSiliconeCable,
+  "rubber-pvc-armoured-cables/armoured-cables-lv-range": imgArmouredCable,
+  "enclosures-panel-accessories/metal-enclosures": imgMetalEnclosure,
+  "cable-termination/bimetallic-cable-lugs": imgBimetallicLugs,
+  "cable-termination/bw-cable-glands": imgBwGlands,
+  "industrial-plugs-sockets-switchgear/miniature-circuit-breaker-mcb": imgMcb,
+  "conduit-pipes-wiring-accessories/electrical-pvc-conduit-pipe": imgPvcConduit,
+  "switchgear-protection-control/magnetic-contactor": imgContactor,
+  "lighting-lamps/square-recessed-led-panel": imgLedPanel,
+  "lighting-lamps/led-floodlight": imgFloodlight,
+  "lighting-lamps/led-bulb-e27": imgLedBulb,
+  "fans-ventilation-hvac/exhaust-fan-square": imgExhaustFan,
+  "plumbing-pipes-fittings/upvc-pipe": imgUpvcPipe,
+  "plumbing-pipes-fittings/ppr-pipe": imgPprPipe,
+  "sanitaryware-bathroom-water-heating/electric-storage-water-heater": imgWaterHeater,
+  "hardware-fasteners-fixings/gi-bolt": imgGiBolt,
+  "ppe-safety-site-industrial-supplies/safety-shoes": imgSafetyShoes,
+  "earthing-lightning-protection/earth-rod": imgEarthRod,
+  "networking-communication/rj45-connector": imgRj45,
+};
 
 const categoriesWithFeatured = new Set([
   "control-screen-specialty-cables",
