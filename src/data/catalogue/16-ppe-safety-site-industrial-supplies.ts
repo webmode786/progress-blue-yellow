@@ -79,6 +79,8 @@ export const category: CategoryInput = {
       slug: "safety-shoes",
       subcategory: "ppe-workwear",
       shortDescription: "Heavy-duty safety shoes for site and industrial use.",
+      description:
+        "Heavy-duty protective footwear for construction sites, workshops and industrial facilities. Worn as standard site PPE to protect against impact, compression and rough ground conditions. Sizes, brand and protection ratings are confirmed at the time of enquiry.",
       sizes: ["Heavy-duty"],
       keywords: ["safety shoes", "steel toe boots"],
       featured: true,

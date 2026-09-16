@@ -32,6 +32,8 @@ export const category: CategoryInput = {
       slug: "exhaust-fan-square",
       subcategory: "exhaust-wall-pedestal-industrial-fans",
       shortDescription: "Square-panel exhaust fans for kitchen, bathroom and utility ventilation.",
+      description:
+        "Wall-mounted exhaust fan with a square front panel, used to extract stale air, steam and odours. Common in kitchens, bathrooms, pantries, store rooms and small utility spaces. Supplied in 8, 10 and 12 inch sizes; airflow and electrical details are confirmed at the time of enquiry.",
       sizes: ["8 in", "10 in", "12 in"],
       keywords: ["exhaust fan", "square exhaust fan", "ventilation fan"],
       featured: true,

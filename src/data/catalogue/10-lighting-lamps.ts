@@ -67,6 +67,8 @@ export const category: CategoryInput = {
       slug: "square-recessed-led-panel",
       subcategory: "led-panel-lights",
       shortDescription: "Recessed square LED panels for false ceilings in offices and commercial fit-outs.",
+      description:
+        "Square LED panel light designed for recessed installation in false ceilings, giving an even, glare-controlled spread of light across the space. Commonly specified for offices, retail units, clinics and commercial fit-outs where a flush ceiling finish is required. Available in a range of wattages; exact dimensions and colour temperature are confirmed at the time of enquiry.",
       sizes: ["12 W", "15 W", "18 W", "20 W", "30 W", "50 W", "60 W", "96 W"],
       keywords: ["recessed panel", "square LED panel", "false ceiling light"],
       featured: true,
@@ -102,6 +104,8 @@ export const category: CategoryInput = {
       slug: "led-floodlight",
       subcategory: "led-floodlights-highbay",
       shortDescription: "General-purpose LED floodlights for outdoor and site area lighting.",
+      description:
+        "Bracket-mounted LED floodlight for general outdoor and area lighting. Typically used on building façades, car parks, yards, warehouses and construction sites where a wide, high-output beam is needed. Supplied across a range of wattages; mounting details and protection rating are confirmed at the time of enquiry.",
       sizes: ["50 W", "100 W", "200 W", "400 W", "600 W", "1000 W"],
       keywords: ["LED floodlight", "outdoor light", "area light"],
       featured: true,
@@ -382,6 +386,8 @@ export const category: CategoryInput = {
       slug: "led-bulb-e27",
       subcategory: "lamps-ballasts-ignitors-starters",
       shortDescription: "Standard E27 LED bulbs for general lighting.",
+      description:
+        "LED bulb with a standard E27 screw base, used as a direct replacement for conventional incandescent and CFL lamps. Suited to general lighting in residential, office and light commercial fittings. Offered in several wattages; colour temperature and lumen output are confirmed at the time of enquiry.",
       sizes: ["7 W", "9 W", "10 W", "50 W"],
       keywords: ["LED bulb", "E27 bulb"],
       featured: true,
