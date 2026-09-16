@@ -34,6 +34,26 @@ import { category as c18 } from "./catalogue/18-earthing-lightning-protection";
 import { category as c19 } from "./catalogue/19-networking-communication";
 
 import imgCables from "@/assets/cat-cables-wires.jpg";
+import imgControlCable from "@/assets/products/control-cable-ysly-jz.jpg";
+import imgSiliconeCable from "@/assets/products/silicone-cable-fg4-2.jpg";
+import imgArmouredCable from "@/assets/products/armoured-cables-lv-range.jpg";
+import imgMetalEnclosure from "@/assets/products/metal-enclosures.jpg";
+import imgBimetallicLugs from "@/assets/products/bimetallic-cable-lugs.jpg";
+import imgBwGlands from "@/assets/products/bw-cable-glands.jpg";
+import imgMcb from "@/assets/products/miniature-circuit-breaker-mcb.jpg";
+import imgPvcConduit from "@/assets/products/electrical-pvc-conduit-pipe.jpg";
+import imgContactor from "@/assets/products/magnetic-contactor.jpg";
+import imgLedPanel from "@/assets/products/square-recessed-led-panel.jpg";
+import imgFloodlight from "@/assets/products/led-floodlight.jpg";
+import imgLedBulb from "@/assets/products/led-bulb-e27.jpg";
+import imgExhaustFan from "@/assets/products/exhaust-fan-square.jpg";
+import imgUpvcPipe from "@/assets/products/upvc-pipe.jpg";
+import imgPprPipe from "@/assets/products/ppr-pipe.jpg";
+import imgWaterHeater from "@/assets/products/electric-storage-water-heater.jpg";
+import imgGiBolt from "@/assets/products/gi-bolt.jpg";
+import imgSafetyShoes from "@/assets/products/safety-shoes.jpg";
+import imgEarthRod from "@/assets/products/earth-rod.jpg";
+import imgRj45 from "@/assets/products/rj45-connector.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -173,7 +193,28 @@ const categoryIcons: Record<string, string> = {
  * Verified product photography, keyed by `"<category-slug>/<product-slug>"`.
  * Add entries here to replace a placeholder tile with a real image.
  */
-const productImages: Record<string, string> = {};
+const productImages: Record<string, string> = {
+  "control-screen-specialty-cables/control-cable-ysly-jz": imgControlCable,
+  "silicone-high-temperature-cables/silicone-cable-fg4-2": imgSiliconeCable,
+  "rubber-pvc-armoured-cables/armoured-cables-lv-range": imgArmouredCable,
+  "enclosures-panel-accessories/metal-enclosures": imgMetalEnclosure,
+  "cable-termination/bimetallic-cable-lugs": imgBimetallicLugs,
+  "cable-termination/bw-cable-glands": imgBwGlands,
+  "industrial-plugs-sockets-switchgear/miniature-circuit-breaker-mcb": imgMcb,
+  "conduit-pipes-wiring-accessories/electrical-pvc-conduit-pipe": imgPvcConduit,
+  "switchgear-protection-control/magnetic-contactor": imgContactor,
+  "lighting-lamps/square-recessed-led-panel": imgLedPanel,
+  "lighting-lamps/led-floodlight": imgFloodlight,
+  "lighting-lamps/led-bulb-e27": imgLedBulb,
+  "fans-ventilation-hvac/exhaust-fan-square": imgExhaustFan,
+  "plumbing-pipes-fittings/upvc-pipe": imgUpvcPipe,
+  "plumbing-pipes-fittings/ppr-pipe": imgPprPipe,
+  "sanitaryware-bathroom-water-heating/electric-storage-water-heater": imgWaterHeater,
+  "hardware-fasteners-fixings/gi-bolt": imgGiBolt,
+  "ppe-safety-site-industrial-supplies/safety-shoes": imgSafetyShoes,
+  "earthing-lightning-protection/earth-rod": imgEarthRod,
+  "networking-communication/rj45-connector": imgRj45,
+};
 
 const categoriesWithFeatured = new Set([
   "control-screen-specialty-cables",
