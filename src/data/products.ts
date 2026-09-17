@@ -87,6 +87,16 @@ import imgPvcJunctionBox from "@/assets/products/pvc-junction-box.jpg";
 import imgGrommet from "@/assets/products/grommet.jpg";
 import imgWeatherproofCover from "@/assets/products/weatherproof-cover.jpg";
 import imgBendingSpring from "@/assets/products/bending-spring.jpg";
+import imgGiElbow from "@/assets/products/gi-elbow.jpg";
+import imgGiAdaptor from "@/assets/products/gi-adaptor.jpg";
+import imgBrassAdaptor from "@/assets/products/brass-adaptor.jpg";
+import imgSwivelAdaptor from "@/assets/products/mechanical-swivel-adaptor-nickel.jpg";
+import imgGiCoupler from "@/assets/products/gi-coupler.jpg";
+import imgGiCovers from "@/assets/products/gi-covers.jpg";
+import imgLockNut from "@/assets/products/lock-nut-check-nut.jpg";
+import imgGiTee from "@/assets/products/gi-tee.jpg";
+import imgReducerBush from "@/assets/products/reducer-bush.jpg";
+import imgBrassBush from "@/assets/products/brass-bush.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -282,6 +292,16 @@ const productImages: Record<string, string> = {
   "conduit-pipes-wiring-accessories/grommet": imgGrommet,
   "conduit-pipes-wiring-accessories/weatherproof-cover": imgWeatherproofCover,
   "conduit-pipes-wiring-accessories/bending-spring": imgBendingSpring,
+  "conduit-pipes-wiring-accessories/gi-elbow": imgGiElbow,
+  "conduit-pipes-wiring-accessories/gi-adaptor": imgGiAdaptor,
+  "conduit-pipes-wiring-accessories/brass-adaptor": imgBrassAdaptor,
+  "conduit-pipes-wiring-accessories/mechanical-swivel-adaptor-nickel": imgSwivelAdaptor,
+  "conduit-pipes-wiring-accessories/gi-coupler": imgGiCoupler,
+  "conduit-pipes-wiring-accessories/gi-covers": imgGiCovers,
+  "conduit-pipes-wiring-accessories/lock-nut-check-nut": imgLockNut,
+  "conduit-pipes-wiring-accessories/gi-tee": imgGiTee,
+  "conduit-pipes-wiring-accessories/reducer-bush": imgReducerBush,
+  "conduit-pipes-wiring-accessories/brass-bush": imgBrassBush,
 };
 
 const categoriesWithFeatured = new Set([
