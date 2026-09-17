@@ -35,7 +35,9 @@ import { category as c19 } from "./catalogue/19-networking-communication";
 
 import imgCables from "@/assets/cat-cables-wires.jpg";
 import imgControlCable from "@/assets/products/control-cable-ysly-jz.jpg";
+import imgFlatCable from "@/assets/products/flat-cable-h05vvh6-f-h07vvh6-f.jpg";
 import imgSiliconeCable from "@/assets/products/silicone-cable-fg4-2.jpg";
+import imgMulticoreSiliconeCable from "@/assets/products/multicore-silicone-cable-fg4og4-2.jpg";
 import imgArmouredCable from "@/assets/products/armoured-cables-lv-range.jpg";
 import imgMetalEnclosure from "@/assets/products/metal-enclosures.jpg";
 import imgBimetallicLugs from "@/assets/products/bimetallic-cable-lugs.jpg";
@@ -206,7 +208,10 @@ const categoryIcons: Record<string, string> = {
  */
 const productImages: Record<string, string> = {
   "control-screen-specialty-cables/control-cable-ysly-jz": imgControlCable,
+  "control-screen-specialty-cables/flat-cable-h05vvh6-f-h07vvh6-f": imgFlatCable,
   "silicone-high-temperature-cables/silicone-cable-fg4-2": imgSiliconeCable,
+  "silicone-high-temperature-cables/multicore-silicone-cable-fg4og4-2":
+    imgMulticoreSiliconeCable,
   "rubber-pvc-armoured-cables/armoured-cables-lv-range": imgArmouredCable,
   "enclosures-panel-accessories/metal-enclosures": imgMetalEnclosure,
   "cable-termination/bimetallic-cable-lugs": imgBimetallicLugs,
