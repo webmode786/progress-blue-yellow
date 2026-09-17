@@ -54,6 +54,17 @@ import imgGiBolt from "@/assets/products/gi-bolt.jpg";
 import imgSafetyShoes from "@/assets/products/safety-shoes.jpg";
 import imgEarthRod from "@/assets/products/earth-rod.jpg";
 import imgRj45 from "@/assets/products/rj45-connector.jpg";
+import imgGiConduit from "@/assets/products/gi-conduit-pipe.jpg";
+import imgCableTray from "@/assets/products/gi-cable-tray.jpg";
+import imgCeilingFan from "@/assets/products/ceiling-fan.jpg";
+import imgHandGloves from "@/assets/products/hand-gloves.jpg";
+import imgPlywood from "@/assets/products/plywood.jpg";
+import imgScrewdriver from "@/assets/products/screwdriver.jpg";
+import imgLadder from "@/assets/products/ladder.jpg";
+import imgCrimpingTool from "@/assets/products/crimping-tool.jpg";
+import imgSiliconeSealant from "@/assets/products/silicone-sealant.jpg";
+import imgInsulationTape from "@/assets/products/insulation-tape.jpg";
+import imgDrillBit from "@/assets/products/steel-drill-bit.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -214,6 +225,18 @@ const productImages: Record<string, string> = {
   "ppe-safety-site-industrial-supplies/safety-shoes": imgSafetyShoes,
   "earthing-lightning-protection/earth-rod": imgEarthRod,
   "networking-communication/rj45-connector": imgRj45,
+  "conduit-pipes-wiring-accessories/gi-conduit-pipe": imgGiConduit,
+  "cable-management-jointing-led-lighting/gi-ss-cable-tray-trunking-unistrut-channel":
+    imgCableTray,
+  "fans-ventilation-hvac/ceiling-fan": imgCeilingFan,
+  "ppe-safety-site-industrial-supplies/hand-gloves": imgHandGloves,
+  "building-materials-paints-chemicals/plywood": imgPlywood,
+  "building-materials-paints-chemicals/silicone-sealant": imgSiliconeSealant,
+  "building-materials-paints-chemicals/insulation-tape": imgInsulationTape,
+  "tools-equipment/screwdriver": imgScrewdriver,
+  "tools-equipment/ladder": imgLadder,
+  "tools-equipment/crimping-tool": imgCrimpingTool,
+  "tools-equipment/steel-drill-bit": imgDrillBit,
 };
 
 const categoriesWithFeatured = new Set([
