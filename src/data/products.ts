@@ -67,6 +67,16 @@ import imgCrimpingTool from "@/assets/products/crimping-tool.jpg";
 import imgSiliconeSealant from "@/assets/products/silicone-sealant.jpg";
 import imgInsulationTape from "@/assets/products/insulation-tape.jpg";
 import imgDrillBit from "@/assets/products/steel-drill-bit.jpg";
+import imgScreenCable from "@/assets/products/screen-cable-liycy.jpg";
+import imgRubberCable from "@/assets/products/rubber-cable-h07rn-f.jpg";
+import imgPvcFlexCable from "@/assets/products/multicore-pvc-flexible-cable-h05vv-f.jpg";
+import imgSsEnclosure from "@/assets/products/stainless-steel-enclosures.jpg";
+import imgPanelTrunking from "@/assets/products/slotted-panel-trunking.jpg";
+import imgNylonTies from "@/assets/products/nylon-cable-ties.jpg";
+import imgSsTies from "@/assets/products/stainless-steel-cable-ties.jpg";
+import imgSpiralWrap from "@/assets/products/spiral-wrap.jpg";
+import imgCopperLugs from "@/assets/products/copper-cable-lugs.jpg";
+import imgCwGlands from "@/assets/products/cw-cable-glands.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -242,6 +252,16 @@ const productImages: Record<string, string> = {
   "tools-equipment/ladder": imgLadder,
   "tools-equipment/crimping-tool": imgCrimpingTool,
   "tools-equipment/steel-drill-bit": imgDrillBit,
+  "control-screen-specialty-cables/screen-cable-liycy": imgScreenCable,
+  "rubber-pvc-armoured-cables/rubber-cable-h07rn-f": imgRubberCable,
+  "rubber-pvc-armoured-cables/multicore-pvc-flexible-cable-h05vv-f": imgPvcFlexCable,
+  "enclosures-panel-accessories/stainless-steel-enclosures": imgSsEnclosure,
+  "enclosures-panel-accessories/slotted-panel-trunking": imgPanelTrunking,
+  "enclosures-panel-accessories/nylon-cable-ties": imgNylonTies,
+  "enclosures-panel-accessories/stainless-steel-cable-ties": imgSsTies,
+  "enclosures-panel-accessories/spiral-wrap": imgSpiralWrap,
+  "cable-termination/copper-cable-lugs": imgCopperLugs,
+  "cable-termination/cw-cable-glands": imgCwGlands,
 };
 
 const categoriesWithFeatured = new Set([
