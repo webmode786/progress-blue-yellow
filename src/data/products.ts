@@ -225,6 +225,18 @@ const productImages: Record<string, string> = {
   "ppe-safety-site-industrial-supplies/safety-shoes": imgSafetyShoes,
   "earthing-lightning-protection/earth-rod": imgEarthRod,
   "networking-communication/rj45-connector": imgRj45,
+  "conduit-pipes-wiring-accessories/gi-conduit-pipe": imgGiConduit,
+  "cable-management-jointing-led-lighting/gi-ss-cable-tray-trunking-unistrut-channel":
+    imgCableTray,
+  "fans-ventilation-hvac/ceiling-fan": imgCeilingFan,
+  "ppe-safety-site-industrial-supplies/hand-gloves": imgHandGloves,
+  "building-materials-paints-chemicals/plywood": imgPlywood,
+  "building-materials-paints-chemicals/silicone-sealant": imgSiliconeSealant,
+  "building-materials-paints-chemicals/insulation-tape": imgInsulationTape,
+  "tools-equipment/screwdriver": imgScrewdriver,
+  "tools-equipment/ladder": imgLadder,
+  "tools-equipment/crimping-tool": imgCrimpingTool,
+  "tools-equipment/steel-drill-bit": imgDrillBit,
 };
 
 const categoriesWithFeatured = new Set([
