@@ -97,6 +97,16 @@ import imgLockNut from "@/assets/products/lock-nut-check-nut.jpg";
 import imgGiTee from "@/assets/products/gi-tee.jpg";
 import imgReducerBush from "@/assets/products/reducer-bush.jpg";
 import imgBrassBush from "@/assets/products/brass-bush.jpg";
+import imgEmtClamp from "@/assets/products/emt-two-hole-clamp.jpg";
+import imgRClamp from "@/assets/products/r-clamp.jpg";
+import imgBandItStrap from "@/assets/products/band-it-strap-carbon-steel.jpg";
+import imgPvcFlexiblePipe from "@/assets/products/pvc-flexible-pipe.jpg";
+import imgPvcBox from "@/assets/products/pvc-box.jpg";
+import imgLoopInBox from "@/assets/products/loop-in-box.jpg";
+import imgPvcConnector from "@/assets/products/pvc-connector.jpg";
+import imgPvcClip from "@/assets/products/pvc-clip.jpg";
+import imgExpansionCoupler from "@/assets/products/expansion-coupler-dd.jpg";
+import imgEndCap from "@/assets/products/end-cap.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -302,6 +312,16 @@ const productImages: Record<string, string> = {
   "conduit-pipes-wiring-accessories/gi-tee": imgGiTee,
   "conduit-pipes-wiring-accessories/reducer-bush": imgReducerBush,
   "conduit-pipes-wiring-accessories/brass-bush": imgBrassBush,
+  "conduit-pipes-wiring-accessories/emt-two-hole-clamp": imgEmtClamp,
+  "conduit-pipes-wiring-accessories/r-clamp": imgRClamp,
+  "conduit-pipes-wiring-accessories/band-it-strap-carbon-steel": imgBandItStrap,
+  "conduit-pipes-wiring-accessories/pvc-flexible-pipe": imgPvcFlexiblePipe,
+  "conduit-pipes-wiring-accessories/pvc-box": imgPvcBox,
+  "conduit-pipes-wiring-accessories/loop-in-box": imgLoopInBox,
+  "conduit-pipes-wiring-accessories/pvc-connector": imgPvcConnector,
+  "conduit-pipes-wiring-accessories/pvc-clip": imgPvcClip,
+  "conduit-pipes-wiring-accessories/expansion-coupler-dd": imgExpansionCoupler,
+  "conduit-pipes-wiring-accessories/end-cap": imgEndCap,
 };
 
 const categoriesWithFeatured = new Set([
