@@ -77,6 +77,16 @@ import imgSsTies from "@/assets/products/stainless-steel-cable-ties.jpg";
 import imgSpiralWrap from "@/assets/products/spiral-wrap.jpg";
 import imgCopperLugs from "@/assets/products/copper-cable-lugs.jpg";
 import imgCwGlands from "@/assets/products/cw-cable-glands.jpg";
+import imgEmtConduit from "@/assets/products/emt-conduit-pipe.jpg";
+import imgGiFlexConduit from "@/assets/products/gi-flexible-conduit.jpg";
+import imgConduitBend from "@/assets/products/conduit-bend.jpg";
+import imgGiCircularBox from "@/assets/products/gi-circular-box.jpg";
+import imgGiSaddle from "@/assets/products/gi-saddle.jpg";
+import imgGiJunctionBox from "@/assets/products/gi-junction-box.jpg";
+import imgPvcJunctionBox from "@/assets/products/pvc-junction-box.jpg";
+import imgGrommet from "@/assets/products/grommet.jpg";
+import imgWeatherproofCover from "@/assets/products/weatherproof-cover.jpg";
+import imgBendingSpring from "@/assets/products/bending-spring.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -262,6 +272,16 @@ const productImages: Record<string, string> = {
   "enclosures-panel-accessories/spiral-wrap": imgSpiralWrap,
   "cable-termination/copper-cable-lugs": imgCopperLugs,
   "cable-termination/cw-cable-glands": imgCwGlands,
+  "conduit-pipes-wiring-accessories/emt-conduit-pipe": imgEmtConduit,
+  "conduit-pipes-wiring-accessories/gi-flexible-conduit": imgGiFlexConduit,
+  "conduit-pipes-wiring-accessories/conduit-bend": imgConduitBend,
+  "conduit-pipes-wiring-accessories/gi-circular-box": imgGiCircularBox,
+  "conduit-pipes-wiring-accessories/gi-saddle": imgGiSaddle,
+  "conduit-pipes-wiring-accessories/gi-junction-box": imgGiJunctionBox,
+  "conduit-pipes-wiring-accessories/pvc-junction-box": imgPvcJunctionBox,
+  "conduit-pipes-wiring-accessories/grommet": imgGrommet,
+  "conduit-pipes-wiring-accessories/weatherproof-cover": imgWeatherproofCover,
+  "conduit-pipes-wiring-accessories/bending-spring": imgBendingSpring,
 };
 
 const categoriesWithFeatured = new Set([
