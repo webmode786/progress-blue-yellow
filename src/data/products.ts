@@ -127,6 +127,15 @@ import imgWallSocketPlug from "@/assets/products/wall-type-socket-plug.jpg";
 import imgPanelSocket from "@/assets/products/panel-type-socket.jpg";
 import imgExtensionPlug from "@/assets/products/extension-plug-3way.jpg";
 import imgInterlockSocket from "@/assets/products/interlock-socket-32a.jpg";
+import imgMaleFemaleIsolator from "@/assets/products/male-female-isolator-32a.jpg";
+import imgRccb from "@/assets/products/residual-current-circuit-breaker-rccb.jpg";
+import imgElcb from "@/assets/products/earth-leakage-circuit-breaker-elcb.jpg";
+import imgMccb from "@/assets/products/moulded-case-circuit-breaker-mccb.jpg";
+import imgIsolator from "@/assets/products/isolator-switch.jpg";
+import imgDistributionBoard from "@/assets/products/distribution-board.jpg";
+import imgRailConnectors from "@/assets/products/rail-connectors.jpg";
+import imgThreadedPlug from "@/assets/products/threaded-plug.jpg";
+import imgCookerSwitch from "@/assets/products/cooker-switch.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -363,6 +372,16 @@ const productImages: Record<string, string> = {
   "industrial-plugs-sockets-switchgear/panel-type-socket": imgPanelSocket,
   "industrial-plugs-sockets-switchgear/2-way-3-way-extension-plug": imgExtensionPlug,
   "industrial-plugs-sockets-switchgear/32-amp-3-pin-interlock-socket": imgInterlockSocket,
+  "industrial-plugs-sockets-switchgear/32-amp-3-pin-male-female-isolator": imgMaleFemaleIsolator,
+  "industrial-plugs-sockets-switchgear/residual-current-circuit-breaker-rccb": imgRccb,
+  "industrial-plugs-sockets-switchgear/earth-leakage-circuit-breaker-elcb": imgElcb,
+  "industrial-plugs-sockets-switchgear/moulded-case-circuit-breaker-mccb": imgMccb,
+  "industrial-plugs-sockets-switchgear/contactor-magnetic-contactor": imgContactor,
+  "industrial-plugs-sockets-switchgear/isolator": imgIsolator,
+  "industrial-plugs-sockets-switchgear/distribution-board": imgDistributionBoard,
+  "industrial-plugs-sockets-switchgear/rail-connectors": imgRailConnectors,
+  "conduit-pipes-wiring-accessories/threaded-plug": imgThreadedPlug,
+  "conduit-pipes-wiring-accessories/cooker-switch": imgCookerSwitch,
 };
 
 const categoriesWithFeatured = new Set([
