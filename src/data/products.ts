@@ -117,6 +117,16 @@ import imgLugsBlade from "@/assets/products/insulated-lugs-blade.jpg";
 import imgLugsPin from "@/assets/products/insulated-lugs-pin.jpg";
 import imgLugsFork from "@/assets/products/insulated-lugs-fork.jpg";
 import imgLugsRing from "@/assets/products/insulated-lugs-ring.jpg";
+import imgPinLugsFerrules from "@/assets/products/pin-lugs-copper-ferrules.jpg";
+import imgE1wGlands from "@/assets/products/e1w-cable-glands.jpg";
+import imgA1a2Glands from "@/assets/products/a1-a2-cable-glands.jpg";
+import imgNickelBrassGlands from "@/assets/products/nickel-brass-cable-glands.jpg";
+import imgNylonGlands from "@/assets/products/pvc-nylon-cable-glands.jpg";
+import imgMobilePlugSocket from "@/assets/products/mobile-plug-socket.jpg";
+import imgWallSocketPlug from "@/assets/products/wall-type-socket-plug.jpg";
+import imgPanelSocket from "@/assets/products/panel-type-socket.jpg";
+import imgExtensionPlug from "@/assets/products/extension-plug-3way.jpg";
+import imgInterlockSocket from "@/assets/products/interlock-socket-32a.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -343,6 +353,16 @@ const productImages: Record<string, string> = {
   "cable-termination/insulated-cable-lugs-pin-type": imgLugsPin,
   "cable-termination/insulated-cable-lugs-fork-type": imgLugsFork,
   "cable-termination/insulated-cable-lugs-ring-type": imgLugsRing,
+  "cable-termination/pin-type-cable-lugs-copper-ferrules": imgPinLugsFerrules,
+  "cable-termination/e1w-cable-glands": imgE1wGlands,
+  "cable-termination/a1-a2-cable-glands": imgA1a2Glands,
+  "cable-termination/nickel-plated-brass-cable-glands": imgNickelBrassGlands,
+  "cable-termination/pvc-nylon-cable-glands": imgNylonGlands,
+  "industrial-plugs-sockets-switchgear/mobile-type-plug-socket": imgMobilePlugSocket,
+  "industrial-plugs-sockets-switchgear/wall-type-socket-plug": imgWallSocketPlug,
+  "industrial-plugs-sockets-switchgear/panel-type-socket": imgPanelSocket,
+  "industrial-plugs-sockets-switchgear/2-way-3-way-extension-plug": imgExtensionPlug,
+  "industrial-plugs-sockets-switchgear/32-amp-3-pin-interlock-socket": imgInterlockSocket,
 };
 
 const categoriesWithFeatured = new Set([
