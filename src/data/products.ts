@@ -136,6 +136,16 @@ import imgDistributionBoard from "@/assets/products/distribution-board.jpg";
 import imgRailConnectors from "@/assets/products/rail-connectors.jpg";
 import imgThreadedPlug from "@/assets/products/threaded-plug.jpg";
 import imgCookerSwitch from "@/assets/products/cooker-switch.jpg";
+import imgOutletSwitch from "@/assets/products/outlet-switch.jpg";
+import imgFlexOutlet from "@/assets/products/flex-outlet.jpg";
+import imgDoublePoleSurfaceSwitch from "@/assets/products/double-pole-surface-switch.jpg";
+import imgGridMountingFrame from "@/assets/products/grid-mounting-frame.jpg";
+import imgModuleSwitchPlate from "@/assets/products/module-switch-plate.jpg";
+import imgPlateAssemblyMoulded from "@/assets/products/plate-assembly-moulded.jpg";
+import imgBlankPlateAluminiumSilver from "@/assets/products/blank-plate-aluminium-silver.jpg";
+import imgMetalCladBox from "@/assets/products/metal-clad-box.jpg";
+import imgShaverSocket from "@/assets/products/shaver-socket.jpg";
+import imgResinJointKit from "@/assets/products/resin-filled-lv-cable-joint-kit.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -382,6 +392,16 @@ const productImages: Record<string, string> = {
   "industrial-plugs-sockets-switchgear/rail-connectors": imgRailConnectors,
   "conduit-pipes-wiring-accessories/threaded-plug": imgThreadedPlug,
   "conduit-pipes-wiring-accessories/cooker-switch": imgCookerSwitch,
+  "conduit-pipes-wiring-accessories/outlet-switch": imgOutletSwitch,
+  "conduit-pipes-wiring-accessories/flex-outlet": imgFlexOutlet,
+  "conduit-pipes-wiring-accessories/double-pole-surface-switch": imgDoublePoleSurfaceSwitch,
+  "conduit-pipes-wiring-accessories/grid-mounting-frame": imgGridMountingFrame,
+  "conduit-pipes-wiring-accessories/module-switch-plate": imgModuleSwitchPlate,
+  "conduit-pipes-wiring-accessories/plate-assembly-moulded": imgPlateAssemblyMoulded,
+  "conduit-pipes-wiring-accessories/blank-plate-aluminium-silver": imgBlankPlateAluminiumSilver,
+  "conduit-pipes-wiring-accessories/metal-clad-box": imgMetalCladBox,
+  "conduit-pipes-wiring-accessories/shaver-socket": imgShaverSocket,
+  "cable-management-jointing-led-lighting/resin-filled-lv-cable-joint-kit": imgResinJointKit,
 };
 
 const categoriesWithFeatured = new Set([
