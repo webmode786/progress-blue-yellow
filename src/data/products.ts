@@ -107,6 +107,16 @@ import imgPvcConnector from "@/assets/products/pvc-connector.jpg";
 import imgPvcClip from "@/assets/products/pvc-clip.jpg";
 import imgExpansionCoupler from "@/assets/products/expansion-coupler-dd.jpg";
 import imgEndCap from "@/assets/products/end-cap.jpg";
+import imgLiftPendant from "@/assets/products/lift-2s-pendant-cable.jpg";
+import imgSiliconeSleeves from "@/assets/products/silicone-fibreglass-sleeves.jpg";
+import imgDieCastConnectors from "@/assets/products/heavy-duty-die-cast-connectors.jpg";
+import imgCableMarkers from "@/assets/products/cable-markers.jpg";
+import imgMetalIronPlugs from "@/assets/products/metal-iron-plugs.jpg";
+import imgPorcelainConnectors from "@/assets/products/porcelain-connectors.jpg";
+import imgLugsBlade from "@/assets/products/insulated-lugs-blade.jpg";
+import imgLugsPin from "@/assets/products/insulated-lugs-pin.jpg";
+import imgLugsFork from "@/assets/products/insulated-lugs-fork.jpg";
+import imgLugsRing from "@/assets/products/insulated-lugs-ring.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -322,6 +332,17 @@ const productImages: Record<string, string> = {
   "conduit-pipes-wiring-accessories/pvc-clip": imgPvcClip,
   "conduit-pipes-wiring-accessories/expansion-coupler-dd": imgExpansionCoupler,
   "conduit-pipes-wiring-accessories/end-cap": imgEndCap,
+  "control-screen-specialty-cables/lift-2s-pendant-cable": imgLiftPendant,
+  "silicone-high-temperature-cables/silicone-fibreglass-sleeves-fg4t2-2":
+    imgSiliconeSleeves,
+  "enclosures-panel-accessories/heavy-duty-die-cast-connectors": imgDieCastConnectors,
+  "enclosures-panel-accessories/cable-markers": imgCableMarkers,
+  "enclosures-panel-accessories/metal-iron-plugs": imgMetalIronPlugs,
+  "enclosures-panel-accessories/porcelain-connectors": imgPorcelainConnectors,
+  "cable-termination/insulated-cable-lugs-blade-type": imgLugsBlade,
+  "cable-termination/insulated-cable-lugs-pin-type": imgLugsPin,
+  "cable-termination/insulated-cable-lugs-fork-type": imgLugsFork,
+  "cable-termination/insulated-cable-lugs-ring-type": imgLugsRing,
 };
 
 const categoriesWithFeatured = new Set([
