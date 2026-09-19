@@ -148,6 +148,8 @@ import imgShaverSocket from "@/assets/products/shaver-socket.jpg";
 import imgResinJointKit from "@/assets/products/resin-filled-lv-cable-joint-kit.jpg";
 import imgCableSocks from "@/assets/products/cable-socks.jpg";
 import imgPullingSpring from "@/assets/products/pulling-spring.jpg";
+import imgFestoonCChannel from "@/assets/products/festoon-c-channel.jpg";
+import imgFestoonMiddleTrolley from "@/assets/products/festoon-middle-trolley.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -406,6 +408,8 @@ const productImages: Record<string, string> = {
   "cable-management-jointing-led-lighting/resin-filled-lv-cable-joint-kit": imgResinJointKit,
   "cable-management-jointing-led-lighting/cable-socks": imgCableSocks,
   "cable-management-jointing-led-lighting/pulling-spring": imgPullingSpring,
+  "cable-management-jointing-led-lighting/festoon-c-channel": imgFestoonCChannel,
+  "cable-management-jointing-led-lighting/festoon-middle-trolley": imgFestoonMiddleTrolley,
 };
 
 const categoriesWithFeatured = new Set([
