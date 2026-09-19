@@ -150,6 +150,11 @@ import imgCableSocks from "@/assets/products/cable-socks.jpg";
 import imgPullingSpring from "@/assets/products/pulling-spring.jpg";
 import imgFestoonCChannel from "@/assets/products/festoon-c-channel.jpg";
 import imgFestoonMiddleTrolley from "@/assets/products/festoon-middle-trolley.jpg";
+import imgFestoonSupportBracket from "@/assets/products/festoon-support-bracket-hanger.jpg";
+import imgFestoonTrackJoint from "@/assets/products/festoon-track-joint.jpg";
+import imgDragChain from "@/assets/products/drag-chain.jpg";
+import imgPvcShroud from "@/assets/products/pvc-shroud.jpg";
+import imgBootLug from "@/assets/products/boot-lug.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -410,6 +415,11 @@ const productImages: Record<string, string> = {
   "cable-management-jointing-led-lighting/pulling-spring": imgPullingSpring,
   "cable-management-jointing-led-lighting/festoon-c-channel": imgFestoonCChannel,
   "cable-management-jointing-led-lighting/festoon-middle-trolley": imgFestoonMiddleTrolley,
+  "cable-management-jointing-led-lighting/festoon-support-bracket-hanger": imgFestoonSupportBracket,
+  "cable-management-jointing-led-lighting/festoon-track-joint": imgFestoonTrackJoint,
+  "cable-management-jointing-led-lighting/drag-chain": imgDragChain,
+  "cable-management-jointing-led-lighting/pvc-shroud": imgPvcShroud,
+  "cable-management-jointing-led-lighting/boot-lug": imgBootLug,
 };
 
 const categoriesWithFeatured = new Set([
