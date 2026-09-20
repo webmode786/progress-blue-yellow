@@ -165,6 +165,16 @@ import imgFerrule4mm from "@/assets/products/ferrule-4mm.jpg";
 import imgPreInsulatedRingTerminal from "@/assets/products/pre-insulated-ring-terminal.jpg";
 import imgSpadeTerminalFlagType from "@/assets/products/spade-terminal-flag-type.jpg";
 import imgFemaleTerminalFdd from "@/assets/products/female-terminal-fdd.jpg";
+import imgFemaleTerminalFdfd from "@/assets/products/female-terminal-fdfd.jpg";
+import imgConnectorFldnyRed from "@/assets/products/connector-fldny-red.jpg";
+import imgPinTerminalUType from "@/assets/products/pin-terminal-u-type.jpg";
+import imgWireConnector6Way from "@/assets/products/wire-connector-6-way.jpg";
+import imgScrewTerminalE5 from "@/assets/products/screw-terminal-e5.jpg";
+import imgTerminalBlockScrewStrip from "@/assets/products/terminal-block-screw-strip.jpg";
+import imgEndCoverTerminalBlock from "@/assets/products/end-cover-terminal-block.jpg";
+import imgGroundLineTerminal from "@/assets/products/ground-line-terminal.jpg";
+import imgFuseTerminalRailMounted from "@/assets/products/fuse-terminal-rail-mounted.jpg";
+import imgWaterproofConnectorStraight from "@/assets/products/waterproof-connector-straight.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -440,6 +450,16 @@ const productImages: Record<string, string> = {
   "cable-management-jointing-led-lighting/pre-insulated-ring-terminal": imgPreInsulatedRingTerminal,
   "cable-management-jointing-led-lighting/spade-terminal-flag-type": imgSpadeTerminalFlagType,
   "cable-management-jointing-led-lighting/female-terminal-fdd": imgFemaleTerminalFdd,
+  "cable-management-jointing-led-lighting/female-terminal-fdfd": imgFemaleTerminalFdfd,
+  "cable-management-jointing-led-lighting/connector-fldny-red": imgConnectorFldnyRed,
+  "cable-management-jointing-led-lighting/pin-terminal-u-type": imgPinTerminalUType,
+  "cable-management-jointing-led-lighting/wire-connector-6-way": imgWireConnector6Way,
+  "cable-management-jointing-led-lighting/screw-terminal-e5": imgScrewTerminalE5,
+  "cable-management-jointing-led-lighting/terminal-block-screw-strip": imgTerminalBlockScrewStrip,
+  "cable-management-jointing-led-lighting/end-cover-terminal-block": imgEndCoverTerminalBlock,
+  "cable-management-jointing-led-lighting/ground-line-terminal": imgGroundLineTerminal,
+  "cable-management-jointing-led-lighting/fuse-terminal-rail-mounted": imgFuseTerminalRailMounted,
+  "cable-management-jointing-led-lighting/waterproof-connector-straight": imgWaterproofConnectorStraight,
 };
 
 const categoriesWithFeatured = new Set([
