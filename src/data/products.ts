@@ -175,6 +175,16 @@ import imgEndCoverTerminalBlock from "@/assets/products/end-cover-terminal-block
 import imgGroundLineTerminal from "@/assets/products/ground-line-terminal.jpg";
 import imgFuseTerminalRailMounted from "@/assets/products/fuse-terminal-rail-mounted.jpg";
 import imgWaterproofConnectorStraight from "@/assets/products/waterproof-connector-straight.jpg";
+import imgCablePullingLubricant from "@/assets/products/cable-pulling-lubricant.jpg";
+import imgWaterproofConnectorTWay from "@/assets/products/waterproof-connector-t-way.jpg";
+import imgWaterproofConnector4Core from "@/assets/products/waterproof-connector-4-core.jpg";
+import imgMetalConnectorMaleFemale from "@/assets/products/metal-connector-male-female.jpg";
+import imgCapacitorDutyContactor from "@/assets/products/capacitor-duty-contactor.jpg";
+import imgAuxiliaryContactBlock from "@/assets/products/auxiliary-contact-block.jpg";
+import imgRotaryIsolator from "@/assets/products/rotary-isolator.jpg";
+import imgSwitchDisconnector from "@/assets/products/switch-disconnector.jpg";
+import imgChangeoverSwitch from "@/assets/products/changeover-switch.jpg";
+import imgReverseForwardSwitch from "@/assets/products/reverse-forward-switch.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -460,6 +470,16 @@ const productImages: Record<string, string> = {
   "cable-management-jointing-led-lighting/ground-line-terminal": imgGroundLineTerminal,
   "cable-management-jointing-led-lighting/fuse-terminal-rail-mounted": imgFuseTerminalRailMounted,
   "cable-management-jointing-led-lighting/waterproof-connector-straight": imgWaterproofConnectorStraight,
+  "cable-management-jointing-led-lighting/cable-pulling-lubricant": imgCablePullingLubricant,
+  "cable-management-jointing-led-lighting/waterproof-connector-t-way": imgWaterproofConnectorTWay,
+  "cable-management-jointing-led-lighting/waterproof-connector-4-core": imgWaterproofConnector4Core,
+  "cable-management-jointing-led-lighting/metal-connector-male-female": imgMetalConnectorMaleFemale,
+  "switchgear-protection-control/capacitor-duty-contactor": imgCapacitorDutyContactor,
+  "switchgear-protection-control/auxiliary-contact-block": imgAuxiliaryContactBlock,
+  "switchgear-protection-control/rotary-isolator": imgRotaryIsolator,
+  "switchgear-protection-control/switch-disconnector": imgSwitchDisconnector,
+  "switchgear-protection-control/changeover-switch": imgChangeoverSwitch,
+  "switchgear-protection-control/reverse-forward-switch": imgReverseForwardSwitch,
 };
 
 const categoriesWithFeatured = new Set([
