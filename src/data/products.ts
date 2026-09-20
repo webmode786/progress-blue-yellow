@@ -155,6 +155,16 @@ import imgFestoonTrackJoint from "@/assets/products/festoon-track-joint.jpg";
 import imgDragChain from "@/assets/products/drag-chain.jpg";
 import imgPvcShroud from "@/assets/products/pvc-shroud.jpg";
 import imgBootLug from "@/assets/products/boot-lug.jpg";
+import imgEndSleeve from "@/assets/products/end-sleeve.jpg";
+import imgHeatShrinkSleeve from "@/assets/products/heat-shrink-sleeve.jpg";
+import imgCableSleeve from "@/assets/products/cable-sleeve.jpg";
+import imgFiberSleeveWhite from "@/assets/products/fiber-sleeve-white.jpg";
+import imgSoftSleeveYellow from "@/assets/products/soft-sleeve-yellow.jpg";
+import imgHeatProofRibbonFiberglass from "@/assets/products/heat-proof-ribbon-fiberglass.jpg";
+import imgFerrule4mm from "@/assets/products/ferrule-4mm.jpg";
+import imgPreInsulatedRingTerminal from "@/assets/products/pre-insulated-ring-terminal.jpg";
+import imgSpadeTerminalFlagType from "@/assets/products/spade-terminal-flag-type.jpg";
+import imgFemaleTerminalFdd from "@/assets/products/female-terminal-fdd.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -420,6 +430,16 @@ const productImages: Record<string, string> = {
   "cable-management-jointing-led-lighting/drag-chain": imgDragChain,
   "cable-management-jointing-led-lighting/pvc-shroud": imgPvcShroud,
   "cable-management-jointing-led-lighting/boot-lug": imgBootLug,
+  "cable-management-jointing-led-lighting/end-sleeve": imgEndSleeve,
+  "cable-management-jointing-led-lighting/heat-shrink-sleeve": imgHeatShrinkSleeve,
+  "cable-management-jointing-led-lighting/cable-sleeve": imgCableSleeve,
+  "cable-management-jointing-led-lighting/fiber-sleeve-white": imgFiberSleeveWhite,
+  "cable-management-jointing-led-lighting/soft-sleeve-yellow": imgSoftSleeveYellow,
+  "cable-management-jointing-led-lighting/heat-proof-ribbon-fiberglass": imgHeatProofRibbonFiberglass,
+  "cable-management-jointing-led-lighting/ferrule-4mm": imgFerrule4mm,
+  "cable-management-jointing-led-lighting/pre-insulated-ring-terminal": imgPreInsulatedRingTerminal,
+  "cable-management-jointing-led-lighting/spade-terminal-flag-type": imgSpadeTerminalFlagType,
+  "cable-management-jointing-led-lighting/female-terminal-fdd": imgFemaleTerminalFdd,
 };
 
 const categoriesWithFeatured = new Set([
