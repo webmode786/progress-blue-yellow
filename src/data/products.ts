@@ -185,6 +185,16 @@ import imgRotaryIsolator from "@/assets/products/rotary-isolator.jpg";
 import imgSwitchDisconnector from "@/assets/products/switch-disconnector.jpg";
 import imgChangeoverSwitch from "@/assets/products/changeover-switch.jpg";
 import imgReverseForwardSwitch from "@/assets/products/reverse-forward-switch.jpg";
+import imgRotarySwitch from "@/assets/products/rotary-switch.jpg";
+import imgDbBox from "@/assets/products/db-box.jpg";
+import imgModularDbBox from "@/assets/products/modular-db-box.jpg";
+import imgElcbBox from "@/assets/products/elcb-box.jpg";
+import imgTpnFlushDb from "@/assets/products/tpn-flush-db.jpg";
+import imgTpSurfaceDb from "@/assets/products/tp-surface-db.jpg";
+import imgDistributionBoardMdb from "@/assets/products/distribution-board-mdb.jpg";
+import imgMeterCabinet from "@/assets/products/meter-cabinet.jpg";
+import imgMotorCircuitBreaker from "@/assets/products/motor-circuit-breaker.jpg";
+import imgOverloadRelay from "@/assets/products/overload-relay.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -480,6 +490,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/switch-disconnector": imgSwitchDisconnector,
   "switchgear-protection-control/changeover-switch": imgChangeoverSwitch,
   "switchgear-protection-control/reverse-forward-switch": imgReverseForwardSwitch,
+  "switchgear-protection-control/rotary-switch": imgRotarySwitch,
+  "switchgear-protection-control/db-box": imgDbBox,
+  "switchgear-protection-control/modular-db-box": imgModularDbBox,
+  "switchgear-protection-control/elcb-box": imgElcbBox,
+  "switchgear-protection-control/tpn-flush-db": imgTpnFlushDb,
+  "switchgear-protection-control/tp-surface-db": imgTpSurfaceDb,
+  "switchgear-protection-control/distribution-board-mdb": imgDistributionBoardMdb,
+  "switchgear-protection-control/meter-cabinet": imgMeterCabinet,
+  "switchgear-protection-control/motor-circuit-breaker": imgMotorCircuitBreaker,
+  "switchgear-protection-control/overload-relay": imgOverloadRelay,
 };
 
 const categoriesWithFeatured = new Set([
