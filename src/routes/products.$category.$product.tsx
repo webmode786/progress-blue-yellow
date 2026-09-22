@@ -16,6 +16,7 @@ import {
 } from "@/data/company";
 
 export const Route = createFileRoute("/products/$category/$product")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     const product = getProduct(params.category, params.product);
     if (!product) throw notFound();

@@ -15,6 +15,7 @@ const description =
   "Contact Skyline Building Material Trading FZC for building materials and electrical products in the UAE. Send your BOQ or product list and get a quotation.";
 
 export const Route = createFileRoute("/contact-us")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title },

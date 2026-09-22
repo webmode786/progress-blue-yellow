@@ -10,6 +10,7 @@ import { ProductBrowser } from "@/components/site/products/ProductBrowser";
 import { getCategory, getProductsByCategory } from "@/data/products";
 
 export const Route = createFileRoute("/products/$category/")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     const category = getCategory(params.category);
     if (!category) throw notFound();

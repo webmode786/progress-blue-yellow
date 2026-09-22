@@ -26,6 +26,7 @@ const description =
   "Learn more about Skyline Building Material Trading and our approach to supplying building materials, electrical products and construction solutions.";
 
 export const Route = createFileRoute("/about-us")({
+  staticData: { sitemap: true },
   component: AboutPage,
   head: () => ({
     meta: [
