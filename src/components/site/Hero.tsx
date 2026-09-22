@@ -50,13 +50,20 @@ export function Hero() {
             className="reveal reveal-in text-primary-foreground font-display text-4xl leading-[1.05] font-extrabold text-balance sm:text-6xl lg:text-7xl"
             style={{ ["--reveal-delay" as string]: "180ms" }}
           >
-            Building Quality.
+            Skyline Building Material
             <br />
-            <span className="text-accent">Powering</span> Progress.
+            <span className="text-accent">&amp; Electrical</span> Trading
           </h1>
 
           <p
-            className="reveal reveal-in text-primary-foreground/80 mt-6 max-w-xl text-base leading-relaxed sm:text-lg"
+            className="reveal reveal-in text-primary-foreground font-display mt-5 text-lg font-bold tracking-tight sm:text-2xl"
+            style={{ ["--reveal-delay" as string]: "260ms" }}
+          >
+            Building Quality. <span className="text-accent">Powering Progress.</span>
+          </p>
+
+          <p
+            className="reveal reveal-in text-primary-foreground/80 mt-4 max-w-xl text-base leading-relaxed sm:text-lg"
             style={{ ["--reveal-delay" as string]: "320ms" }}
           >
             Quality building materials and electrical products for construction,

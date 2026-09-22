@@ -20,6 +20,7 @@ const description =
   "Supplier of quality electrical products, building materials and construction supplies for contractors, developers and businesses. Request a quote today.";
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   component: Index,
   head: () => ({
     meta: [

@@ -26,6 +26,7 @@ const description =
   "Learn more about Skyline Building Material Trading and our approach to supplying building materials, electrical products and construction solutions.";
 
 export const Route = createFileRoute("/about-us")({
+  staticData: { sitemap: true },
   component: AboutPage,
   head: () => ({
     meta: [
@@ -65,9 +66,9 @@ function AboutPage() {
         <PageHero
           image={aboutHero}
           imageAlt="Commercial construction site at sunset with cable reels and pipes in the foreground"
-          title="Building Trust."
-          highlight="Supplying Quality."
-          description="Your trusted partner for electrical products, building materials and construction solutions."
+          title="About Skyline"
+          highlight="Building Material Trading"
+          description="Building Trust. Supplying Quality. Your trusted partner for electrical products, building materials and construction solutions."
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
         />
         <AboutIntro />

@@ -20,6 +20,7 @@ const description =
   "Explore the Skyline product range: electrical accessories, cables and wires, lighting, plumbing, hardware, construction materials and safety products for projects across the UAE.";
 
 export const Route = createFileRoute("/products/")({
+  staticData: { sitemap: true },
   component: ProductsPage,
   head: () => ({
     meta: [
@@ -56,8 +57,8 @@ function ProductsPage() {
         <PageHero
           image={heroImage}
           imageAlt="Building materials and electrical supplies stocked in a trading warehouse"
-          title="Our"
-          highlight="Products"
+          title="Electrical & Building Materials"
+          highlight="Product Catalogue"
           description="Quality Building Materials & Electrical Products for Every Project"
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Products" }]}
         />
