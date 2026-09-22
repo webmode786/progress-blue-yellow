@@ -56,8 +56,8 @@ function ProductsPage() {
         <PageHero
           image={heroImage}
           imageAlt="Building materials and electrical supplies stocked in a trading warehouse"
-          title="Our"
-          highlight="Products"
+          title="Electrical & Building Materials"
+          highlight="Product Catalogue"
           description="Quality Building Materials & Electrical Products for Every Project"
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Products" }]}
         />
