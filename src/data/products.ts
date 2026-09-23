@@ -205,6 +205,16 @@ import imgRelayBase from "@/assets/products/relay-base.jpg";
 import img24HourTimer from "@/assets/products/24-hour-timer.jpg";
 import imgTimerSwitch from "@/assets/products/timer-switch.jpg";
 import img3mWirePullingLubricant from "@/assets/products/3m-wire-pulling-lubricant.jpg";
+import imgOnOffDelayTimer from "@/assets/products/on-off-delay-timer.jpg";
+import imgStarDeltaTimer from "@/assets/products/star-delta-timer.jpg";
+import imgDelayUnit from "@/assets/products/delay-unit.jpg";
+import imgPushButton from "@/assets/products/push-button.jpg";
+import imgMushroomPushButton from "@/assets/products/mushroom-push-button.jpg";
+import imgEmergencyStopButton from "@/assets/products/emergency-stop-button.jpg";
+import imgIlluminatedPushButton from "@/assets/products/illuminated-push-button.jpg";
+import imgOnOffPushStation from "@/assets/products/on-off-push-station.jpg";
+import imgToggleSwitch from "@/assets/products/toggle-switch.jpg";
+import imgPowerPushButton from "@/assets/products/power-push-button.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -521,6 +531,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/24-hour-timer": img24HourTimer,
   "switchgear-protection-control/timer-switch": imgTimerSwitch,
   "cable-management-jointing-led-lighting/3m-wire-pulling-lubricant": img3mWirePullingLubricant,
+  "switchgear-protection-control/on-off-delay-timer": imgOnOffDelayTimer,
+  "switchgear-protection-control/star-delta-timer": imgStarDeltaTimer,
+  "switchgear-protection-control/delay-unit": imgDelayUnit,
+  "switchgear-protection-control/push-button": imgPushButton,
+  "switchgear-protection-control/mushroom-push-button": imgMushroomPushButton,
+  "switchgear-protection-control/emergency-stop-button": imgEmergencyStopButton,
+  "switchgear-protection-control/illuminated-push-button": imgIlluminatedPushButton,
+  "switchgear-protection-control/on-off-push-station": imgOnOffPushStation,
+  "switchgear-protection-control/toggle-switch": imgToggleSwitch,
+  "switchgear-protection-control/power-push-button": imgPowerPushButton,
 };
 
 const categoriesWithFeatured = new Set([
