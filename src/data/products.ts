@@ -195,6 +195,16 @@ import imgDistributionBoardMdb from "@/assets/products/distribution-board-mdb.jp
 import imgMeterCabinet from "@/assets/products/meter-cabinet.jpg";
 import imgMotorCircuitBreaker from "@/assets/products/motor-circuit-breaker.jpg";
 import imgOverloadRelay from "@/assets/products/overload-relay.jpg";
+import imgSpecialTypeContactor from "@/assets/products/special-type-contactor.jpg";
+import imgIsolatorEndCap from "@/assets/products/isolator-end-cap.jpg";
+import imgCompactNsx160hMccb from "@/assets/products/compact-nsx160h-mccb.jpg";
+import imgOverCurrentRelay from "@/assets/products/over-current-relay.jpg";
+import imgUnderVoltageRelay from "@/assets/products/under-voltage-relay.jpg";
+import imgControlRelayWithBase from "@/assets/products/control-relay-with-base.jpg";
+import imgRelayBase from "@/assets/products/relay-base.jpg";
+import img24HourTimer from "@/assets/products/24-hour-timer.jpg";
+import imgTimerSwitch from "@/assets/products/timer-switch.jpg";
+import img3mWirePullingLubricant from "@/assets/products/3m-wire-pulling-lubricant.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -500,6 +510,17 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/meter-cabinet": imgMeterCabinet,
   "switchgear-protection-control/motor-circuit-breaker": imgMotorCircuitBreaker,
   "switchgear-protection-control/overload-relay": imgOverloadRelay,
+  "switchgear-protection-control/special-type-contactor": imgSpecialTypeContactor,
+  "switchgear-protection-control/isolator-end-cap": imgIsolatorEndCap,
+  "switchgear-protection-control/mccb": imgMccb,
+  "switchgear-protection-control/compact-nsx160h-mccb": imgCompactNsx160hMccb,
+  "switchgear-protection-control/over-current-relay": imgOverCurrentRelay,
+  "switchgear-protection-control/under-voltage-relay": imgUnderVoltageRelay,
+  "switchgear-protection-control/control-relay-with-base": imgControlRelayWithBase,
+  "switchgear-protection-control/relay-base": imgRelayBase,
+  "switchgear-protection-control/24-hour-timer": img24HourTimer,
+  "switchgear-protection-control/timer-switch": imgTimerSwitch,
+  "cable-management-jointing-led-lighting/3m-wire-pulling-lubricant": img3mWirePullingLubricant,
 };
 
 const categoriesWithFeatured = new Set([
