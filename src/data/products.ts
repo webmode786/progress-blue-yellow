@@ -215,6 +215,16 @@ import imgIlluminatedPushButton from "@/assets/products/illuminated-push-button.
 import imgOnOffPushStation from "@/assets/products/on-off-push-station.jpg";
 import imgToggleSwitch from "@/assets/products/toggle-switch.jpg";
 import imgPowerPushButton from "@/assets/products/power-push-button.jpg";
+import imgSelectorSwitch from "@/assets/products/selector-switch.jpg";
+import imgControlBox from "@/assets/products/control-box.jpg";
+import imgIndicatorLamp from "@/assets/products/indicator-lamp.jpg";
+import imgLedPilotLight from "@/assets/products/led-pilot-light.jpg";
+import imgM22LedIndicator from "@/assets/products/m22-led-indicator.jpg";
+import imgM22ContactBlock from "@/assets/products/m22-contact-block.jpg";
+import imgRevolvingLight from "@/assets/products/revolving-light.jpg";
+import imgRotaryWarningLight from "@/assets/products/rotary-warning-light.jpg";
+import imgTowerLight from "@/assets/products/tower-light.jpg";
+import imgMiniSiren from "@/assets/products/mini-siren.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -541,6 +551,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/on-off-push-station": imgOnOffPushStation,
   "switchgear-protection-control/toggle-switch": imgToggleSwitch,
   "switchgear-protection-control/power-push-button": imgPowerPushButton,
+  "switchgear-protection-control/selector-switch": imgSelectorSwitch,
+  "switchgear-protection-control/control-box": imgControlBox,
+  "switchgear-protection-control/indicator-lamp": imgIndicatorLamp,
+  "switchgear-protection-control/led-pilot-light": imgLedPilotLight,
+  "switchgear-protection-control/m22-led-indicator": imgM22LedIndicator,
+  "switchgear-protection-control/m22-contact-block": imgM22ContactBlock,
+  "switchgear-protection-control/revolving-light": imgRevolvingLight,
+  "switchgear-protection-control/rotary-warning-light": imgRotaryWarningLight,
+  "switchgear-protection-control/tower-light": imgTowerLight,
+  "switchgear-protection-control/mini-siren": imgMiniSiren,
 };
 
 const categoriesWithFeatured = new Set([
