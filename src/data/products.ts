@@ -225,6 +225,16 @@ import imgRevolvingLight from "@/assets/products/revolving-light.jpg";
 import imgRotaryWarningLight from "@/assets/products/rotary-warning-light.jpg";
 import imgTowerLight from "@/assets/products/tower-light.jpg";
 import imgMiniSiren from "@/assets/products/mini-siren.jpg";
+import imgCopperBusbar from "@/assets/products/copper-busbar.jpg";
+import imgPvcBusbar from "@/assets/products/pvc-busbar.jpg";
+import imgBusbarInsulator from "@/assets/products/busbar-insulator.jpg";
+import imgBusbarSleeve from "@/assets/products/busbar-sleeve.jpg";
+import imgPinTypeBusbar from "@/assets/products/pin-type-busbar.jpg";
+import imgUTypeBusbar from "@/assets/products/u-type-busbar.jpg";
+import imgNeutralLink from "@/assets/products/neutral-link.jpg";
+import imgEarthBarLink from "@/assets/products/earth-bar-link.jpg";
+import imgShortLink from "@/assets/products/short-link.jpg";
+import imgWireTerminalBar from "@/assets/products/wire-terminal-bar.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -561,6 +571,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/rotary-warning-light": imgRotaryWarningLight,
   "switchgear-protection-control/tower-light": imgTowerLight,
   "switchgear-protection-control/mini-siren": imgMiniSiren,
+  "switchgear-protection-control/copper-busbar": imgCopperBusbar,
+  "switchgear-protection-control/pvc-busbar": imgPvcBusbar,
+  "switchgear-protection-control/busbar-insulator": imgBusbarInsulator,
+  "switchgear-protection-control/busbar-sleeve": imgBusbarSleeve,
+  "switchgear-protection-control/pin-type-busbar": imgPinTypeBusbar,
+  "switchgear-protection-control/u-type-busbar": imgUTypeBusbar,
+  "switchgear-protection-control/neutral-link": imgNeutralLink,
+  "switchgear-protection-control/earth-bar-link": imgEarthBarLink,
+  "switchgear-protection-control/short-link": imgShortLink,
+  "switchgear-protection-control/wire-terminal-bar": imgWireTerminalBar,
 };
 
 const categoriesWithFeatured = new Set([
