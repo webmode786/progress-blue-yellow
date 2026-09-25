@@ -235,6 +235,16 @@ import imgNeutralLink from "@/assets/products/neutral-link.jpg";
 import imgEarthBarLink from "@/assets/products/earth-bar-link.jpg";
 import imgShortLink from "@/assets/products/short-link.jpg";
 import imgWireTerminalBar from "@/assets/products/wire-terminal-bar.jpg";
+import imgBusbarEndCap from "@/assets/products/busbar-end-cap.jpg";
+import imgCurrentCollectorController from "@/assets/products/current-collector-controller.jpg";
+import imgSinglePhaseSinglePoleBusbar from "@/assets/products/single-phase-single-pole-busbar.jpg";
+import imgBottleFuse from "@/assets/products/bottle-fuse.jpg";
+import imgCeramicFuse from "@/assets/products/ceramic-fuse.jpg";
+import imgGlassFuse from "@/assets/products/glass-fuse.jpg";
+import imgCartridgeFuse from "@/assets/products/cartridge-fuse.jpg";
+import imgFuseLink10x38 from "@/assets/products/fuse-link-10x38.jpg";
+import imgFuseHolder from "@/assets/products/fuse-holder.jpg";
+import imgFuseCarrier from "@/assets/products/fuse-carrier.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -581,6 +591,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/earth-bar-link": imgEarthBarLink,
   "switchgear-protection-control/short-link": imgShortLink,
   "switchgear-protection-control/wire-terminal-bar": imgWireTerminalBar,
+  "switchgear-protection-control/busbar-end-cap": imgBusbarEndCap,
+  "switchgear-protection-control/current-collector-controller": imgCurrentCollectorController,
+  "switchgear-protection-control/single-phase-single-pole-busbar": imgSinglePhaseSinglePoleBusbar,
+  "switchgear-protection-control/bottle-fuse": imgBottleFuse,
+  "switchgear-protection-control/ceramic-fuse": imgCeramicFuse,
+  "switchgear-protection-control/glass-fuse": imgGlassFuse,
+  "switchgear-protection-control/cartridge-fuse": imgCartridgeFuse,
+  "switchgear-protection-control/fuse-link-10x38": imgFuseLink10x38,
+  "switchgear-protection-control/fuse-holder": imgFuseHolder,
+  "switchgear-protection-control/fuse-carrier": imgFuseCarrier,
 };
 
 const categoriesWithFeatured = new Set([
