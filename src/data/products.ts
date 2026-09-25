@@ -245,6 +245,16 @@ import imgCartridgeFuse from "@/assets/products/cartridge-fuse.jpg";
 import imgFuseLink10x38 from "@/assets/products/fuse-link-10x38.jpg";
 import imgFuseHolder from "@/assets/products/fuse-holder.jpg";
 import imgFuseCarrier from "@/assets/products/fuse-carrier.jpg";
+import imgFuseBase from "@/assets/products/fuse-base.jpg";
+import imgNhFuse from "@/assets/products/nh-fuse.jpg";
+import imgFuseGeneral from "@/assets/products/fuse-general.jpg";
+import imgFuseConnectionUnit from "@/assets/products/fuse-connection-unit.jpg";
+import imgBusbarMountingFuse from "@/assets/products/busbar-mounting-fuse.jpg";
+import imgControlTransformer from "@/assets/products/control-transformer.jpg";
+import imgTransformer from "@/assets/products/transformer.jpg";
+import imgSmpsPowerSupply from "@/assets/products/smps-power-supply.jpg";
+import imgDcPowerSupply from "@/assets/products/dc-power-supply.jpg";
+import imgCapacitor from "@/assets/products/capacitor.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -601,6 +611,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/fuse-link-10x38": imgFuseLink10x38,
   "switchgear-protection-control/fuse-holder": imgFuseHolder,
   "switchgear-protection-control/fuse-carrier": imgFuseCarrier,
+  "switchgear-protection-control/fuse-base": imgFuseBase,
+  "switchgear-protection-control/nh-fuse": imgNhFuse,
+  "switchgear-protection-control/fuse-general": imgFuseGeneral,
+  "switchgear-protection-control/fuse-connection-unit": imgFuseConnectionUnit,
+  "switchgear-protection-control/busbar-mounting-fuse": imgBusbarMountingFuse,
+  "switchgear-protection-control/control-transformer": imgControlTransformer,
+  "switchgear-protection-control/transformer": imgTransformer,
+  "switchgear-protection-control/smps-power-supply": imgSmpsPowerSupply,
+  "switchgear-protection-control/dc-power-supply": imgDcPowerSupply,
+  "switchgear-protection-control/capacitor": imgCapacitor,
 };
 
 const categoriesWithFeatured = new Set([
