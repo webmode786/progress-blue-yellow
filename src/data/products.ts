@@ -255,6 +255,16 @@ import imgTransformer from "@/assets/products/transformer.jpg";
 import imgSmpsPowerSupply from "@/assets/products/smps-power-supply.jpg";
 import imgDcPowerSupply from "@/assets/products/dc-power-supply.jpg";
 import imgCapacitor from "@/assets/products/capacitor.jpg";
+import imgBattery from "@/assets/products/battery.jpg";
+import imgDualCapacitor from "@/assets/products/dual-capacitor.jpg";
+import imgPfController from "@/assets/products/pf-controller.jpg";
+import imgPfRegulator from "@/assets/products/pf-regulator.jpg";
+import imgHourMeter from "@/assets/products/hour-meter.jpg";
+import imgCurrentTransformer from "@/assets/products/current-transformer.jpg";
+import imgLimitSwitch from "@/assets/products/limit-switch.jpg";
+import imgMicroLimitSwitch from "@/assets/products/micro-limit-switch.jpg";
+import imgLightMotionSensor from "@/assets/products/light-motion-sensor.jpg";
+import imgFloatSwitch from "@/assets/products/float-switch.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -621,6 +631,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/smps-power-supply": imgSmpsPowerSupply,
   "switchgear-protection-control/dc-power-supply": imgDcPowerSupply,
   "switchgear-protection-control/capacitor": imgCapacitor,
+  "switchgear-protection-control/battery": imgBattery,
+  "switchgear-protection-control/dual-capacitor": imgDualCapacitor,
+  "switchgear-protection-control/pf-controller": imgPfController,
+  "switchgear-protection-control/pf-regulator": imgPfRegulator,
+  "switchgear-protection-control/hour-meter": imgHourMeter,
+  "switchgear-protection-control/current-transformer": imgCurrentTransformer,
+  "switchgear-protection-control/limit-switch": imgLimitSwitch,
+  "switchgear-protection-control/micro-limit-switch": imgMicroLimitSwitch,
+  "switchgear-protection-control/light-motion-sensor": imgLightMotionSensor,
+  "switchgear-protection-control/float-switch": imgFloatSwitch,
 };
 
 const categoriesWithFeatured = new Set([
