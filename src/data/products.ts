@@ -265,6 +265,16 @@ import imgLimitSwitch from "@/assets/products/limit-switch.jpg";
 import imgMicroLimitSwitch from "@/assets/products/micro-limit-switch.jpg";
 import imgLightMotionSensor from "@/assets/products/light-motion-sensor.jpg";
 import imgFloatSwitch from "@/assets/products/float-switch.jpg";
+import imgPressureSwitch from "@/assets/products/pressure-switch.jpg";
+import imgDolStarter from "@/assets/products/dol-starter.jpg";
+import imgDinRail from "@/assets/products/din-rail.jpg";
+import imgCarrierStrip from "@/assets/products/carrier-strip.jpg";
+import imgPanelCoolingFan from "@/assets/products/panel-cooling-fan.jpg";
+import imgCoolingFanGrill from "@/assets/products/cooling-fan-grill.jpg";
+import imgPotentiometer from "@/assets/products/potentiometer.jpg";
+import imgRoundLedPanelLight from "@/assets/products/round-led-panel-light.jpg";
+import imgSurfaceLedPanel from "@/assets/products/surface-led-panel.jpg";
+import img60x60LedPanelFrame from "@/assets/products/60x60-led-panel-frame.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -641,6 +651,16 @@ const productImages: Record<string, string> = {
   "switchgear-protection-control/micro-limit-switch": imgMicroLimitSwitch,
   "switchgear-protection-control/light-motion-sensor": imgLightMotionSensor,
   "switchgear-protection-control/float-switch": imgFloatSwitch,
+  "switchgear-protection-control/pressure-switch": imgPressureSwitch,
+  "switchgear-protection-control/dol-starter": imgDolStarter,
+  "switchgear-protection-control/din-rail": imgDinRail,
+  "switchgear-protection-control/carrier-strip": imgCarrierStrip,
+  "switchgear-protection-control/panel-cooling-fan": imgPanelCoolingFan,
+  "switchgear-protection-control/cooling-fan-grill": imgCoolingFanGrill,
+  "switchgear-protection-control/potentiometer": imgPotentiometer,
+  "lighting-lamps/round-led-panel-light": imgRoundLedPanelLight,
+  "lighting-lamps/surface-led-panel": imgSurfaceLedPanel,
+  "lighting-lamps/60x60-led-panel-frame": img60x60LedPanelFrame,
 };
 
 const categoriesWithFeatured = new Set([
