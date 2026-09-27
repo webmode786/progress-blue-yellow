@@ -12,7 +12,19 @@ const allowed = (process.env.FRONTEND_URL || "")
   .map((s) => s.trim().replace(/\/+$/, ""))
   .filter(Boolean);
 
+const required = ["FRONTEND_URL", "DB_HOST", "DB_NAME", "DB_USER", "DB_PASSWORD", "SMTP_HOST", "SMTP_USER", "SMTP_PASSWORD", "ADMIN_EMAIL"];
+const missing = required.filter((k) => !process.env[k]);
+if (missing.length) console.warn(`Missing environment variables: ${missing.join(", ")}`);
+
 app.use(helmet());
+// Reject browser requests from any other website before they reach the handler.
+app.use((req, res, next) => {
+  const origin = req.get("origin");
+  if (origin && !allowed.includes(origin.replace(/\/+$/, ""))) {
+    return res.status(403).json({ success: false, message: "Unable to submit your request. Please try again." });
+  }
+  next();
+});
 app.use(
   cors({
     origin: (origin, cb) => cb(null, !origin || allowed.includes(origin)),
