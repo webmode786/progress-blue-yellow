@@ -34,7 +34,7 @@ function clean(payload: FormPayload) {
 }
 
 export async function submitForm(payload: FormPayload): Promise<SubmitResult> {
-  const base = (import.meta.env.VITE_API_BASE_URL ?? "").replace(/\/+$/, "");
+  const base = String(import.meta.env["VITE_API_BASE_URL"] ?? "").replace(/\/+$/, "");
   if (!base) {
     console.error("VITE_API_BASE_URL is not configured");
     return { success: false, message: FALLBACK_ERROR };
