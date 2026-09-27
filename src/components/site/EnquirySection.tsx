@@ -1,7 +1,8 @@
 import { useEffect, useState, type FormEvent } from "react";
-import { CheckCircle2, Mail, MapPin, Phone, Clock } from "lucide-react";
+import { CheckCircle2, Mail, MapPin, Phone, Clock, Loader2 } from "lucide-react";
 import { company } from "@/data/company";
 import { categories } from "@/data/catalog";
+import { submitForm } from "@/lib/api";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
@@ -13,6 +14,8 @@ const fieldClass =
 export function EnquirySection() {
   const [errors, setErrors] = useState<Errors>({});
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [message, setMessage] = useState("");
 
   /** Pre-fills the requirement when arriving from a product "Request a Quote". */
@@ -26,8 +29,9 @@ export function EnquirySection() {
   }, []);
 
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (sending) return;
     const form = e.currentTarget;
     const data = new FormData(form);
     const name = String(data.get("name") ?? "").trim();
@@ -45,8 +49,27 @@ export function EnquirySection() {
       next.message = "Please tell us a little more about your requirement.";
 
     setErrors(next);
+    setSubmitError("");
     if (Object.keys(next).length > 0) return;
 
+    setSending(true);
+    const product = new URLSearchParams(window.location.search).get("product") ?? "";
+    const result = await submitForm({
+      formType: product ? "product-enquiry" : "quote",
+      name,
+      email,
+      phone,
+      message,
+      companyName: String(data.get("company") ?? "").trim(),
+      category: String(data.get("category") ?? ""),
+      product,
+      productName: product,
+    });
+    setSending(false);
+    if (!result.success) {
+      setSubmitError(result.message);
+      return;
+    }
     setSent(true);
     setMessage("");
     form.reset();
@@ -181,11 +204,24 @@ export function EnquirySection() {
                   ) : null}
                 </div>
 
+                {submitError ? (
+                  <p role="alert" className="text-destructive text-sm">
+                    {submitError}
+                  </p>
+                ) : null}
                 <button
                   type="submit"
-                  className="bg-accent text-accent-foreground hover:shadow-lift inline-flex h-13 items-center justify-center rounded-md px-7 text-base font-bold transition-all duration-300 hover:-translate-y-0.5"
+                  disabled={sending}
+                  className="bg-accent text-accent-foreground hover:shadow-lift inline-flex h-13 items-center justify-center gap-2 rounded-md px-7 text-base font-bold transition-all duration-300 hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70"
                 >
-                  Send Enquiry
+                  {sending ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+                      Sending…
+                    </>
+                  ) : (
+                    "Send Enquiry"
+                  )}
                 </button>
               </form>
             )}
