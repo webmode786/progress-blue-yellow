@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { CheckCircle2, Loader2, Paperclip, AlertTriangle } from "lucide-react";
 import { productCategories } from "@/data/products";
+import { submitForm } from "@/lib/api";
 
 type FieldName =
   | "fullName"
@@ -34,6 +35,9 @@ export function ContactForm() {
   const [productCode, setProductCode] = useState("");
   const [category, setCategory] = useState("");
   const [message, setMessage] = useState("");
+  const [errorText, setErrorText] = useState(
+    "We couldn't submit your request right now. Please try again or contact us directly.",
+  );
   const startedAt = useRef(Date.now());
 
   useEffect(() => {
@@ -77,11 +81,33 @@ export function ContactForm() {
     setErrors(next);
     if (Object.keys(next).length > 0) return;
 
+    if (status === "sending") return;
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 700));
+    const productName = get("product");
+    const result = await submitForm({
+      formType: productName ? "product-enquiry" : "contact",
+      name: get("fullName"),
+      companyName: get("companyName"),
+      email: get("email"),
+      phone: get("phone"),
+      message: get("message"),
+      product: productName,
+      productName,
+      productId: get("productCode"),
+      category: get("category"),
+      quantity: get("quantity"),
+    });
+    if (!result.success) {
+      setErrorText(result.message);
+      setStatus("error");
+      return;
+    }
     setStatus("sent");
     form.reset();
     setMessage("");
+    setProduct("");
+    setProductCode("");
+    setCategory("");
   }
 
   if (status === "sent") {
@@ -117,8 +143,7 @@ export function ContactForm() {
           className="border-destructive/40 bg-destructive/10 text-destructive mt-5 flex items-start gap-2 rounded-md border p-3 text-sm"
         >
           <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-          We couldn't submit your enquiry. Please try again, or contact us directly
-          using the details on this page.
+          {errorText}
         </p>
       ) : null}
 

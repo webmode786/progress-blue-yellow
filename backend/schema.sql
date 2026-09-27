@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS form_submissions (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  form_type VARCHAR(40) NOT NULL,
+  name VARCHAR(120) NOT NULL,
+  company_name VARCHAR(160) NULL,
+  email VARCHAR(190) NOT NULL,
+  phone VARCHAR(40) NULL,
+  whatsapp VARCHAR(40) NULL,
+  product VARCHAR(255) NULL,
+  product_id VARCHAR(120) NULL,
+  product_name VARCHAR(255) NULL,
+  category VARCHAR(120) NULL,
+  quantity VARCHAR(120) NULL,
+  message TEXT NOT NULL,
+  source_page VARCHAR(500) NULL,
+  ip_address VARCHAR(64) NULL,
+  user_agent VARCHAR(500) NULL,
+  status VARCHAR(20) NOT NULL DEFAULT 'new',
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_form_type (form_type),
+  INDEX idx_created_at (created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
