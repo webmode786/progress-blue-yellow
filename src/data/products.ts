@@ -53,6 +53,16 @@ import imgUpvcPipe from "@/assets/products/upvc-pipe.jpg";
 import imgPprPipe from "@/assets/products/ppr-pipe.jpg";
 import imgWaterHeater from "@/assets/products/electric-storage-water-heater.jpg";
 import imgGiBolt from "@/assets/products/gi-bolt.jpg";
+import imgHrcFuse from "@/assets/products/hrc-fuse.jpg";
+import imgUps from "@/assets/products/ups.jpg";
+import imgPowerCapacitor from "@/assets/products/power-capacitor.jpg";
+import imgEnergyMeter from "@/assets/products/energy-meter.jpg";
+import imgSensor from "@/assets/products/sensor.jpg";
+import imgRemoteControlSwitch from "@/assets/products/remote-control-switch.jpg";
+import imgVfdDrive from "@/assets/products/vfd-drive.jpg";
+import imgLedCeilingGlobe from "@/assets/products/led-ceiling-globe-light.jpg";
+import imgSmdLedFloodlight from "@/assets/products/smd-led-floodlight.jpg";
+import imgFloodlightDl from "@/assets/products/floodlight-dl.jpg";
 import imgSafetyShoes from "@/assets/products/safety-shoes.jpg";
 import imgEarthRod from "@/assets/products/earth-rod.jpg";
 import imgRj45 from "@/assets/products/rj45-connector.jpg";
@@ -661,6 +671,16 @@ const productImages: Record<string, string> = {
   "lighting-lamps/round-led-panel-light": imgRoundLedPanelLight,
   "lighting-lamps/surface-led-panel": imgSurfaceLedPanel,
   "lighting-lamps/60x60-led-panel-frame": img60x60LedPanelFrame,
+  "switchgear-protection-control/hrc-fuse": imgHrcFuse,
+  "switchgear-protection-control/ups": imgUps,
+  "switchgear-protection-control/power-capacitor": imgPowerCapacitor,
+  "switchgear-protection-control/energy-meter": imgEnergyMeter,
+  "switchgear-protection-control/sensor": imgSensor,
+  "switchgear-protection-control/remote-control-switch": imgRemoteControlSwitch,
+  "switchgear-protection-control/vfd-altivar-atv212": imgVfdDrive,
+  "lighting-lamps/led-ceiling-globe-light": imgLedCeilingGlobe,
+  "lighting-lamps/smd-led-floodlight": imgSmdLedFloodlight,
+  "lighting-lamps/floodlight-dl": imgFloodlightDl,
 };
 
 const categoriesWithFeatured = new Set([
