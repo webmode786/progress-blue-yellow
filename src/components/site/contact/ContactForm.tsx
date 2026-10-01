@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { CheckCircle2, Loader2, Paperclip, AlertTriangle } from "lucide-react";
+import { CheckCircle2, Loader2, Paperclip, AlertTriangle, MessageCircle } from "lucide-react";
 import { productCategories } from "@/data/products";
 import { submitForm } from "@/lib/api";
+import { hasWhatsapp, whatsappEnquiryLink } from "@/data/company";
 
 type FieldName =
   | "fullName"
@@ -54,6 +55,47 @@ export function ContactForm() {
       );
     }
   }, []);
+
+  function validate(form: HTMLFormElement) {
+    const data = new FormData(form);
+    const get = (k: string) => String(data.get(k) ?? "").trim();
+    const next: Errors = {};
+    if (get("fullName").length < 2) next.fullName = "Please enter your full name.";
+    if (get("companyName").length < 2)
+      next.companyName = "Please enter your company name.";
+    if (!emailPattern.test(get("email")))
+      next.email = "Please enter a valid email address.";
+    if (!phonePattern.test(get("phone")))
+      next.phone = "Please enter a valid phone or WhatsApp number.";
+    if (get("message").length < 10)
+      next.message = "Please tell us a little more about your requirement.";
+    setErrors(next);
+    return { ok: Object.keys(next).length === 0, get };
+  }
+
+  function onWhatsapp(e: React.MouseEvent<HTMLButtonElement>) {
+    const form = e.currentTarget.form;
+    if (!form) return;
+    const { ok, get } = validate(form);
+    if (!ok) return;
+    const catSlug = get("category");
+    const catName = productCategories.find((c) => c.slug === catSlug)?.name ?? catSlug;
+    window.open(
+      whatsappEnquiryLink({
+        name: get("fullName"),
+        company: get("companyName"),
+        email: get("email"),
+        phone: get("phone"),
+        product: get("product"),
+        productCode: get("productCode"),
+        category: catName,
+        quantity: get("quantity"),
+        message: get("message"),
+      }),
+      "_blank",
+      "noopener,noreferrer",
+    );
+  }
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -294,6 +336,16 @@ export function ContactForm() {
             "Submit Enquiry"
           )}
         </button>
+        {hasWhatsapp ? (
+          <button
+            type="button"
+            onClick={onWhatsapp}
+            className="bg-whatsapp text-primary-foreground hover:shadow-lift -mt-2 inline-flex h-13 items-center justify-center gap-2 rounded-md px-7 text-base font-bold transition-all duration-300 hover:-translate-y-0.5"
+          >
+            <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            Send via WhatsApp
+          </button>
+        ) : null}
       </form>
     </div>
   );
