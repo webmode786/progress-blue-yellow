@@ -77,3 +77,31 @@ export const mainNav = [
   { label: "Brands", href: routes.brands, hash: "#brands" },
   { label: "Contact Us", href: routes.contact, hash: "#enquiry" },
 ] as const;
+
+/** Builds the pre-filled WhatsApp enquiry from current form values; empty optional fields are skipped. */
+export function whatsappEnquiryLink(f: {
+  name: string;
+  company?: string;
+  email: string;
+  phone: string;
+  product?: string;
+  productCode?: string;
+  category?: string;
+  quantity?: string;
+  message: string;
+}) {
+  const rows: [string, string | undefined][] = [
+    ["Name", f.name],
+    ["Company", f.company],
+    ["Email", f.email],
+    ["Phone / WhatsApp", f.phone],
+    ["Product", f.product],
+    ["Product Code", f.productCode],
+    ["Category", f.category],
+    ["Quantity", f.quantity],
+  ];
+  const lines = rows.filter(([, v]) => v && v.trim()).map(([k, v]) => `${k}: ${v!.trim()}`);
+  return waLink(
+    `Hello ${company.legalName},\n\nI would like to make an enquiry.\n\n${lines.join("\n")}\n\nMessage:\n${f.message.trim()}\n\nI would like to receive more information about this requirement.`,
+  );
+}

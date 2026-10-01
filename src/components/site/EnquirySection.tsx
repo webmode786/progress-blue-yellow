@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent } from "react";
-import { CheckCircle2, Mail, MapPin, Phone, Clock, Loader2 } from "lucide-react";
-import { company } from "@/data/company";
+import { CheckCircle2, Mail, MapPin, Phone, Clock, Loader2, MessageCircle } from "lucide-react";
+import { company, hasWhatsapp, whatsappEnquiryLink } from "@/data/company";
 import { categories } from "@/data/catalog";
 import { submitForm } from "@/lib/api";
 import { SectionHeading } from "./SectionHeading";
@@ -28,6 +28,37 @@ export function EnquirySection() {
     }
   }, []);
 
+
+  function onWhatsapp(e: React.MouseEvent<HTMLButtonElement>) {
+    const form = e.currentTarget.form;
+    if (!form) return;
+    const data = new FormData(form);
+    const get = (k: string) => String(data.get(k) ?? "").trim();
+    const next: Errors = {};
+    if (get("name").length < 2) next.name = "Please enter your name.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(get("email")))
+      next.email = "Please enter a valid email address.";
+    if (get("phone").replace(/\D/g, "").length < 7)
+      next.phone = "Please enter a valid phone number.";
+    if (get("message").length < 10)
+      next.message = "Please tell us a little more about your requirement.";
+    setErrors(next);
+    if (Object.keys(next).length > 0) return;
+    const slug = get("category");
+    window.open(
+      whatsappEnquiryLink({
+        name: get("name"),
+        company: get("company"),
+        email: get("email"),
+        phone: get("phone"),
+        product: new URLSearchParams(window.location.search).get("product") ?? "",
+        category: categories.find((c) => c.slug === slug)?.name ?? slug,
+        message: get("message"),
+      }),
+      "_blank",
+      "noopener,noreferrer",
+    );
+  }
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -223,6 +254,16 @@ export function EnquirySection() {
                     "Send Enquiry"
                   )}
                 </button>
+                {hasWhatsapp ? (
+                  <button
+                    type="button"
+                    onClick={onWhatsapp}
+                    className="bg-whatsapp text-primary-foreground hover:shadow-lift -mt-2 inline-flex h-13 items-center justify-center gap-2 rounded-md px-7 text-base font-bold transition-all duration-300 hover:-translate-y-0.5"
+                  >
+                    <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                    Send via WhatsApp
+                  </button>
+                ) : null}
               </form>
             )}
           </div>
