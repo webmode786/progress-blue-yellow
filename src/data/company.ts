@@ -14,11 +14,11 @@ export const company = {
     "Your trusted partner for quality electrical products, building materials and construction solutions.",
   // Digits only, international format, no "+" — used to build wa.me links.
   // Set to "" while unknown so WhatsApp buttons stay hidden instead of broken.
-  whatsappNumber: "",
+  whatsappNumber: "971589187575",
   whatsappMessage:
     "Hello Skyline Building Material Trading FZC, I would like to enquire about your products.",
   phone: "[Phone Number]",
-  whatsappDisplay: "[WhatsApp Number]",
+  whatsappDisplay: "+971 58 918 7575",
   email: "[Email Address]",
   address: "[Company Address]",
   workingHours: "[Working Hours]",
