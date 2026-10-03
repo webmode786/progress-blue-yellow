@@ -134,17 +134,7 @@ export const supplyAreas: SupplyArea[] = [
 ];
 
 /** Editable trust figures — no invented numbers. */
-export const aboutStats = [
-  {
-    id: "categories",
-    value: null as number | null,
-    placeholder: "[XX]+",
-    label: "Product Categories",
-  },
-  { id: "products", value: null as number | null, placeholder: "[XX]+", label: "Products" },
-  { id: "brands", value: null as number | null, placeholder: "[XX]+", label: "Brands" },
-  { id: "customers", value: null as number | null, placeholder: "[XX]+", label: "Customers" },
-];
+export { stats as aboutStats } from "./catalog";
 
 export type Milestone = { id: string; year: string; title: string; description: string };
 

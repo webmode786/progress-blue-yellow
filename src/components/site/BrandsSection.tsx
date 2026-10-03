@@ -11,8 +11,8 @@ type Props = {
 };
 
 export function BrandsSection({
-  title = "Brands We Work With",
-  description = "Brand partners are being confirmed and will be listed here.",
+  title = "Trusted Brands We Work With",
+  description = "We partner with leading brands to provide reliable, high-quality electrical and building material solutions for our customers.",
   showExplore = false,
 }: Props) {
   return (
@@ -25,7 +25,7 @@ export function BrandsSection({
           align="center"
         />
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
           {brands.map((b, i) => (
             <Reveal key={b.id} delay={i * 70} className="h-full">
               <div className="border-border bg-card hover:border-accent group flex h-24 items-center justify-center rounded-lg border transition-colors duration-500">
@@ -50,10 +50,10 @@ export function BrandsSection({
         {showExplore ? (
           <Reveal delay={120} className="mt-10 text-center">
             <a
-              href={routes.brands}
+              href={routes.products}
               className="text-primary hover:text-accent inline-flex items-center gap-2 text-sm font-bold transition-colors duration-300"
             >
-              Explore Brands
+              Explore Products
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
           </Reveal>

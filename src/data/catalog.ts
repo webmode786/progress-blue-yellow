@@ -44,12 +44,12 @@ export type Industry = {
  * Brand partners are placeholders until confirmed.
  * Replace name/logo once verified — no distributorship claims are made.
  */
-export const brands: Brand[] = Array.from({ length: 8 }, (_, i) => ({
-  id: `brand-${i + 1}`,
-  name: `[Brand ${i + 1}]`,
-  slug: `brand-${i + 1}`,
-  logo: null,
-}));
+const brandNames = ["Ducab","National (NCI)","RR","Decoduct","Top Cable Spain","Barton","MK","Tenby","Schneider","Hager"];
+/** Logos render as text until the official logo files are supplied. */
+export const brands: Brand[] = brandNames.map((name) => {
+  const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  return { id: slug, name, slug, logo: null };
+});
 
 export const industries: Industry[] = [
   {
@@ -152,13 +152,13 @@ export const whyChoose = [
 
 /** Editable placeholders — no invented numbers. */
 export const stats = [
-  { id: "products", value: null as number | null, placeholder: "[X]+", label: "Products" },
-  { id: "brands", value: null as number | null, placeholder: "[X]+", label: "Brands" },
-  { id: "customers", value: null as number | null, placeholder: "[X]+", label: "Customers" },
+  { id: "products", value: null as number | null, placeholder: "500+", label: "Products" },
+  { id: "brands", value: null as number | null, placeholder: "10+", label: "Brands" },
+  { id: "customers", value: null as number | null, placeholder: "50+", label: "Customers" },
   {
     id: "experience",
     value: null as number | null,
-    placeholder: "[X]+",
+    placeholder: "5+",
     label: "Years of Experience",
   },
 ];

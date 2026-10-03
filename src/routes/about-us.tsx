@@ -80,8 +80,8 @@ function AboutPage() {
         <WhyChoose title="Why Choose Skyline?" />
         <StatsBand items={aboutStats} />
         <BrandsSection
-          title="Brands & Product Partners"
-          description="Selected brands we supply. Listings are updated as ranges are confirmed."
+          title="Our Trusted Brands"
+          description="We work with trusted and recognized brands to deliver dependable electrical and building material solutions that meet the requirements of our customers across the UAE."
           showExplore
         />
         <ValuesSection />
