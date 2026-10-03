@@ -85,17 +85,22 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-bold tracking-[0.16em] uppercase">Contact</h3>
           <ul className="text-primary-foreground/70 mt-5 space-y-4 text-sm">
+            <li className="text-primary-foreground font-semibold">{company.legalName}</li>
             <li className="flex items-start gap-3">
               <Phone className="text-accent mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-              {company.phone}
+              <a href={`tel:${company.phoneTel}`} className="hover:text-accent">{company.phone}</a>
             </li>
             <li className="flex items-start gap-3">
               <Mail className="text-accent mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-              {company.email}
+              <a href={`mailto:${company.email}`} className="hover:text-accent">{company.email}</a>
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="text-accent mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
               {company.address}
+            </li>
+            <li className="flex items-start gap-3">
+              <Clock className="text-accent mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              {company.workingHours}
             </li>
           </ul>
         </div>

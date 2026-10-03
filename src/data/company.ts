@@ -17,11 +17,12 @@ export const company = {
   whatsappNumber: "971589187575",
   whatsappMessage:
     "Hello Skyline Building Material Trading FZC, I would like to enquire about your products.",
-  phone: "[Phone Number]",
+  phone: "+971 58 918 7575",
+  phoneTel: "+971589187575",
   whatsappDisplay: "+971 58 918 7575",
-  email: "[Email Address]",
-  address: "[Company Address]",
-  workingHours: "[Working Hours]",
+  email: "info@skylinetradingfzc.com",
+  address: "Sharjah Research Technology and Innovation Park Free Zone Authority, Sharjah",
+  workingHours: "Monday – Sunday: Open 24/7 (Always Open)",
   /** Paste a Google Maps embed URL here once the location is confirmed. */
   mapEmbedUrl: "",
   /** Optional link to the location on Google Maps. */
@@ -74,7 +75,6 @@ export const mainNav = [
   { label: "Home", href: routes.home, hash: "#top" },
   { label: "About Us", href: routes.about, hash: "#about" },
   { label: "Products", href: routes.products, hash: "#categories" },
-  { label: "Brands", href: routes.brands, hash: "#brands" },
   { label: "Contact Us", href: routes.contact, hash: "#enquiry" },
 ] as const;
 
