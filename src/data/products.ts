@@ -63,6 +63,16 @@ import imgVfdDrive from "@/assets/products/vfd-drive.jpg";
 import imgLedCeilingGlobe from "@/assets/products/led-ceiling-globe-light.jpg";
 import imgSmdLedFloodlight from "@/assets/products/smd-led-floodlight.jpg";
 import imgFloodlightDl from "@/assets/products/floodlight-dl.jpg";
+import imgSolarFloodlight from "@/assets/products/solar-floodlight.jpg";
+import imgLedHighBayLight from "@/assets/products/led-high-bay-light.jpg";
+import imgMetalHalideHighBayLight from "@/assets/products/metal-halide-high-bay-light.jpg";
+import imgPortableSiteLight from "@/assets/products/portable-site-light.jpg";
+import imgBulkheadFitting from "@/assets/products/bulkhead-fitting.jpg";
+import imgGardenLight from "@/assets/products/garden-light.jpg";
+import imgBollardLight from "@/assets/products/bollard-light.jpg";
+import imgSolarGardenLight from "@/assets/products/solar-garden-light.jpg";
+import imgUnderwaterLedStripLight from "@/assets/products/underwater-led-strip-light.jpg";
+import imgLedDownlight from "@/assets/products/led-downlight.jpg";
 import imgSafetyShoes from "@/assets/products/safety-shoes.jpg";
 import imgEarthRod from "@/assets/products/earth-rod.jpg";
 import imgRj45 from "@/assets/products/rj45-connector.jpg";
@@ -681,6 +691,16 @@ const productImages: Record<string, string> = {
   "lighting-lamps/led-ceiling-globe-light": imgLedCeilingGlobe,
   "lighting-lamps/smd-led-floodlight": imgSmdLedFloodlight,
   "lighting-lamps/floodlight-dl": imgFloodlightDl,
+  "lighting-lamps/solar-floodlight": imgSolarFloodlight,
+  "lighting-lamps/led-high-bay-light": imgLedHighBayLight,
+  "lighting-lamps/metal-halide-high-bay-light": imgMetalHalideHighBayLight,
+  "lighting-lamps/portable-site-light": imgPortableSiteLight,
+  "lighting-lamps/bulkhead-fitting": imgBulkheadFitting,
+  "lighting-lamps/garden-light": imgGardenLight,
+  "lighting-lamps/bollard-light": imgBollardLight,
+  "lighting-lamps/solar-garden-light": imgSolarGardenLight,
+  "lighting-lamps/underwater-led-strip-light": imgUnderwaterLedStripLight,
+  "lighting-lamps/led-downlight": imgLedDownlight,
 };
 
 const categoriesWithFeatured = new Set([
