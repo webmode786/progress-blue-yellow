@@ -57,9 +57,9 @@ function Index() {
         <IntroSection />
         <CategorySection />
         <FeaturedProducts />
-        <StatsBand />
         <WhyChoose />
         <BrandsSection />
+        <StatsBand />
         <IndustriesSection />
         <QuoteCTA />
         <EnquirySection />
