@@ -49,12 +49,12 @@ export type Industry = {
  */
 import ducab from "@/assets/ducab-logo.jpg";
 import nci from "@/assets/nci-logo.png";
-import rr from "@/assets/rr-logo.png";
+import rr from "@/assets/rr-logo.svg";
 import decoduct from "@/assets/decoduct-logo.png";
 import topCable from "@/assets/top-cable-spain-logo.png";
 import barton from "@/assets/barton-logo.png";
 import hager from "@/assets/hager-logo.png";
-import schneider from "@/assets/schneider-logo.png";
+import schneider from "@/assets/schneider-logo.svg";
 
 /** Official logos; null keeps a name fallback until a logo is supplied. */
 const brandList: [string, string, string | null, boolean?][] = [
