@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { brands } from "@/data/catalog";
 import { routes } from "@/data/company";
 import { SectionHeading } from "./SectionHeading";
@@ -28,14 +29,14 @@ export function BrandsSection({
         <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
           {brands.map((b, i) => (
             <Reveal key={b.id} delay={i * 70} className="h-full">
-              <div className="border-border bg-card hover:border-accent group flex h-24 items-center justify-center rounded-lg border transition-colors duration-500">
+              <div className={cn("border-border hover:border-accent group flex h-24 items-center justify-center rounded-lg border p-4 transition-colors duration-500", b.darkBg ? "bg-foreground" : "bg-card")}>
                 {b.logo ? (
                   <img
                     src={b.logo}
-                    alt={`${b.name} logo`}
+                    alt={`${b.altName ?? b.name} logo`}
                     loading="lazy"
                     decoding="async"
-                    className="max-h-10 w-auto opacity-80 grayscale transition duration-500 group-hover:opacity-100 group-hover:grayscale-0"
+                    className="max-h-12 max-w-full w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (
                   <span className="text-muted-foreground group-hover:text-primary text-sm font-semibold tracking-wide transition-colors duration-500">
