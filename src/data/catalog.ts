@@ -30,6 +30,9 @@ export type Brand = {
   slug: string;
   /** Set to a logo path once confirmed; null renders a text placeholder card. */
   logo: string | null;
+  altName?: string;
+  /** Logo is white and needs a dark tile. */
+  darkBg?: boolean;
 };
 
 export type Industry = {
@@ -44,11 +47,31 @@ export type Industry = {
  * Brand partners are placeholders until confirmed.
  * Replace name/logo once verified — no distributorship claims are made.
  */
-const brandNames = ["Ducab","National (NCI)","RR","Decoduct","Top Cable Spain","Barton","MK","Tenby","Schneider","Hager"];
-/** Logos render as text until the official logo files are supplied. */
-export const brands: Brand[] = brandNames.map((name) => {
+import ducab from "@/assets/brands/ducab.asset.json";
+import nci from "@/assets/brands/nci.asset.json";
+import rr from "@/assets/brands/rr.asset.json";
+import decoduct from "@/assets/brands/decoduct.asset.json";
+import topCable from "@/assets/brands/top-cable-spain.asset.json";
+import barton from "@/assets/brands/barton.asset.json";
+import hager from "@/assets/brands/hager.asset.json";
+import schneider from "@/assets/brands/schneider.asset.json";
+
+/** Official logos; null keeps a name fallback until a logo is supplied. */
+const brandList: [string, string, string | null, boolean?][] = [
+  ["Ducab", "Ducab", ducab.url],
+  ["National (NCI)", "National NCI", nci.url],
+  ["RR", "RR", rr.url],
+  ["Decoduct", "Decoduct", decoduct.url],
+  ["Top Cable Spain", "Top Cable Spain", topCable.url],
+  ["Barton", "Barton", barton.url, true],
+  ["MK", "MK", null],
+  ["Tenby", "Tenby", null],
+  ["Schneider", "Schneider", schneider.url],
+  ["Hager", "Hager", hager.url],
+];
+export const brands: Brand[] = brandList.map(([name, altName, logo, darkLogo]) => {
   const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-  return { id: slug, name, slug, logo: null };
+  return { id: slug, name, altName, slug, logo, darkBg: !!darkLogo };
 });
 
 export const industries: Industry[] = [
