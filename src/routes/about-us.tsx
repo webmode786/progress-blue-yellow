@@ -35,10 +35,10 @@ export const Route = createFileRoute("/about-us")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/about-us" },
+      { property: "og:url", content: "https://skylinetradingfzc.com/about-us" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/about-us" }],
+    links: [{ rel: "canonical", href: "https://skylinetradingfzc.com/about-us" }],
     scripts: [
       {
         type: "application/ld+json",

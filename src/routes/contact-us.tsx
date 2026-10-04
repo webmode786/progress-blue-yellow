@@ -23,10 +23,10 @@ export const Route = createFileRoute("/contact-us")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/contact-us" },
+      { property: "og:url", content: "https://skylinetradingfzc.com/contact-us" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/contact-us" }],
+    links: [{ rel: "canonical", href: "https://skylinetradingfzc.com/contact-us" }],
     scripts: [
       {
         type: "application/ld+json",

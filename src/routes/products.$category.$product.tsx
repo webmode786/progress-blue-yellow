@@ -31,7 +31,7 @@ export const Route = createFileRoute("/products/$category/$product")({
     const { product } = loaderData;
     const title = `${product.name} | ${product.categoryName} | Skyline Trading UAE`;
     const description = `${product.shortDescription} ${product.categoryName} supplied by Skyline Building Material & Electrical Trading. Request a quote.`;
-    const url = `/products/${product.categorySlug}/${product.slug}`;
+    const url = `https://skylinetradingfzc.com/products/${product.categorySlug}/${product.slug}`;
     return {
       meta: [
         { title },

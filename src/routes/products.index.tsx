@@ -29,10 +29,10 @@ export const Route = createFileRoute("/products/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/products" },
+      { property: "og:url", content: "https://skylinetradingfzc.com/products" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/products" }],
+    links: [{ rel: "canonical", href: "https://skylinetradingfzc.com/products" }],
     scripts: [
       {
         type: "application/ld+json",
