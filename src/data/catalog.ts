@@ -58,7 +58,7 @@ import mk from "@/assets/brands/mk.asset.json";
 import tenby from "@/assets/brands/tenby.asset.json";
 import schneider from "@/assets/schneider-logo.svg";
 
-/** Official logos; null keeps a name fallback until a logo is supplied. */
+/** Official brand logos; null keeps a name fallback until a logo is supplied. */
 const brandList: [string, string, string | null, boolean?][] = [
   ["Ducab", "Ducab", ducab],
   ["National (NCI)", "National NCI", nci],
