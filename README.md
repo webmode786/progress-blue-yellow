@@ -1090,8 +1090,7 @@ Build the homepage now and make the architecture/components reusable so we can b
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://progress-blue-yellow.lovable.app
-
+**Live app**: https://skylinetradingfzc.com
 ## Build with Lovable
 
 Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1f3d24e1-797a-4c86-8732-31ee088e3ddb).

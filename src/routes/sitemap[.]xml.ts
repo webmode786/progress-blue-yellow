@@ -10,7 +10,7 @@ import {
 import { productCategories, products } from "@/data/products";
 import { blogs } from "@/data/blogs";
 
-const BASE_URL = "https://progress-blue-yellow.lovable.app";
+const BASE_URL = "https://skylinetradingfzc.com";
 
 export const Route = createFileRoute("/sitemap.xml")({
   staticData: { sitemap: false },

@@ -8,7 +8,7 @@ import { BlogCard } from "@/components/site/blog/BlogCard";
 import { blogs } from "@/data/blogs";
 import heroImg from "@/assets/hero-construction.jpg";
 
-const SITE = "https://progress-blue-yellow.lovable.app";
+const SITE = "https://skylinetradingfzc.com";
 const title = "Electrical & Building Material Blog UAE | Skyline Trading";
 const description =
   "Guides and insights on electrical cables, supplies and building materials for contractors and businesses across the UAE, from Skyline Building Material Trading FZC.";

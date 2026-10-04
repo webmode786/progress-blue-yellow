@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://progress-blue-yellow.lovable.app/sitemap.xml
+Sitemap: https://skylinetradingfzc.com/sitemap.xml

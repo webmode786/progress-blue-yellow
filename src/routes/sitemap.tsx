@@ -6,7 +6,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { blogs } from "@/data/blogs";
 import { productCategories, products } from "@/data/products";
 
-const SITE = "https://progress-blue-yellow.lovable.app";
+const SITE = "https://skylinetradingfzc.com";
 const title = "Sitemap | Skyline Building Material Trading FZC";
 const description =
   "Browse all Skyline pages, product categories, catalogue products and electrical and building material articles.";

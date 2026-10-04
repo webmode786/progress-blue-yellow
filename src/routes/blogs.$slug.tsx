@@ -8,7 +8,7 @@ import { BlogCard } from "@/components/site/blog/BlogCard";
 import { blogs, formatBlogDate, getBlog } from "@/data/blogs";
 import { company } from "@/data/company";
 
-const SITE = "https://progress-blue-yellow.lovable.app";
+const SITE = "https://skylinetradingfzc.com";
 
 export const Route = createFileRoute("/blogs/$slug")({
   staticData: { sitemap: false },
