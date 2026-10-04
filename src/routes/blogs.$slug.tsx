@@ -11,6 +11,7 @@ import { company } from "@/data/company";
 const SITE = "https://progress-blue-yellow.lovable.app";
 
 export const Route = createFileRoute("/blogs/$slug")({
+  staticData: { sitemap: false },
   loader: ({ params }) => {
     const post = getBlog(params.slug);
     if (!post) throw notFound();
@@ -175,7 +176,7 @@ function BlogDetail() {
             <p className="text-muted-foreground mt-2">Send us your requirements and our team will prepare a quotation.</p>
             <div className="mt-5 flex flex-wrap gap-3">
               <a href="/contact-us#enquiry-form" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-5 py-2.5 text-sm font-bold">Request a Quote</a>
-              {post.links.filter((l) => !l.href.includes("enquiry")).map((l) => (
+              {post.links.filter((l: { href: string }) => !l.href.includes("enquiry")).map((l: { label: string; href: string }) => (
                 <a key={l.href} href={l.href} className="border-border hover:border-primary rounded-md border px-5 py-2.5 text-sm font-semibold">{l.label}</a>
               ))}
             </div>
