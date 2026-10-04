@@ -54,6 +54,8 @@ import decoduct from "@/assets/decoduct-logo.png";
 import topCable from "@/assets/top-cable-spain-logo.png";
 import barton from "@/assets/barton-logo.png";
 import hager from "@/assets/hager-logo.png";
+import mk from "@/assets/brands/mk.asset.json";
+import tenby from "@/assets/brands/tenby.asset.json";
 import schneider from "@/assets/schneider-logo.svg";
 
 /** Official logos; null keeps a name fallback until a logo is supplied. */
@@ -64,8 +66,8 @@ const brandList: [string, string, string | null, boolean?][] = [
   ["Decoduct", "Decoduct", decoduct],
   ["Top Cable Spain", "Top Cable Spain", topCable],
   ["Barton", "Barton", barton, true],
-  ["MK", "MK", null],
-  ["Tenby", "Tenby", null],
+  ["MK", "MK", mk.url],
+  ["Tenby", "Tenby", tenby.url],
   ["Schneider", "Schneider", schneider],
   ["Hager", "Hager", hager],
 ];
