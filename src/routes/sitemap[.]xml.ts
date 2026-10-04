@@ -8,6 +8,7 @@ import {
   type SitemapEntry,
 } from "@/lib/sitemap";
 import { productCategories, products } from "@/data/products";
+import { blogs } from "@/data/blogs";
 
 const BASE_URL = "https://progress-blue-yellow.lovable.app";
 
@@ -46,6 +47,8 @@ export const Route = createFileRoute("/sitemap.xml")({
             if (path) entries.push({ path });
           }
         }
+
+        for (const b of blogs) entries.push({ path: `/blogs/${b.slug}` });
 
         if (entries.length === 0) {
           return new Response(

@@ -9,6 +9,7 @@ import { StatsBand } from "@/components/site/StatsBand";
 import { WhyChoose } from "@/components/site/WhyChoose";
 import { BrandsSection } from "@/components/site/BrandsSection";
 import { IndustriesSection } from "@/components/site/IndustriesSection";
+import { LatestInsights } from "@/components/site/blog/LatestInsights";
 import { QuoteCTA } from "@/components/site/QuoteCTA";
 import { EnquirySection } from "@/components/site/EnquirySection";
 import { Footer } from "@/components/site/Footer";
@@ -61,6 +62,7 @@ function Index() {
         <BrandsSection />
         <StatsBand />
         <IndustriesSection />
+        <LatestInsights />
         <QuoteCTA />
         <EnquirySection />
       </main>
