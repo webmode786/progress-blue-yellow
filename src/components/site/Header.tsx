@@ -32,9 +32,11 @@ export function Header() {
     };
   }, [open]);
 
-  /** Article pages sit on a plain light background, so the header stays solid there. */
+  /** Detail pages sit on a plain light background, so the header stays solid there. */
   const isBlogArticle = /^\/blogs\/[^/]+\/?$/.test(pathname);
-  const solid = scrolled || open || isBlogArticle;
+  const isProductDetail = /^\/products\/[^/]+\/[^/]+\/?$/.test(pathname);
+  const isSitemap = /^\/sitemap\/?$/.test(pathname);
+  const solid = scrolled || open || isBlogArticle || isProductDetail || isSitemap;
 
   return (
     <header

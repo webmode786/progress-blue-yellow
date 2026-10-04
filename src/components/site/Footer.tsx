@@ -111,7 +111,12 @@ export function Footer() {
           <p>
             © {year} {company.name}. All rights reserved.
           </p>
-          <p>{company.tagline}</p>
+          <div className="flex items-center gap-4">
+            <Link to="/sitemap" className="hover:text-accent transition-colors">
+              Sitemap
+            </Link>
+            <p>{company.tagline}</p>
+          </div>
         </div>
       </div>
     </footer>
