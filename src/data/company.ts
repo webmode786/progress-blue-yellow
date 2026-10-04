@@ -67,6 +67,7 @@ export const routes = {
   products: "/products",
   brands: "/brands",
   industries: "/industries",
+  blogs: "/blogs",
   contact: "/contact-us",
   quote: "/request-a-quote",
 } as const;
@@ -75,6 +76,7 @@ export const mainNav = [
   { label: "Home", href: routes.home, hash: "#top" },
   { label: "About Us", href: routes.about, hash: "#about" },
   { label: "Products", href: routes.products, hash: "#categories" },
+  { label: "Blogs", href: routes.blogs, hash: "#insights" },
   { label: "Contact Us", href: routes.contact, hash: "#enquiry" },
 ] as const;
 
