@@ -32,7 +32,9 @@ export function Header() {
     };
   }, [open]);
 
-  const solid = scrolled || open;
+  /** Article pages sit on a plain light background, so the header stays solid there. */
+  const isBlogArticle = /^\/blogs\/[^/]+\/?$/.test(pathname);
+  const solid = scrolled || open || isBlogArticle;
 
   return (
     <header
