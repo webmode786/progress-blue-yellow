@@ -204,3 +204,7 @@
     transform: none;
   }
 }
+
+.company-logo-size{
+  height: calc(var(--spacing) * 18);
+}

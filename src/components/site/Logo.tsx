@@ -18,7 +18,7 @@ export function Logo({
         alt={company.legalName}
         width={1920}
         height={616}
-        className="h-10 w-auto sm:h-12"
+        className="h-10 w-auto sm:h-12 company-logo-size"
       />
     </span>
   );
