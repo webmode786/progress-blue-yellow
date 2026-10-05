@@ -303,6 +303,7 @@ import networkingRj11Asset from "@/assets/products/networking-rj11-connector.jpg
 import networkingPowerCableAsset from "@/assets/products/networking-power-cable.jpg.asset.json";
 import networkingDataSocketAsset from "@/assets/products/networking-data-telephone-socket.jpg.asset.json";
 import groheTempestaAsset from "@/assets/products/grohe-tempesta-100-shower-head.jpg.asset.json";
+import rubberCableAsset from "@/assets/products/rubber-cable-h07rn-f.jpg.asset.json";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -471,6 +472,7 @@ const productImages: Record<string, string> = {
   "networking-communication/power-cable": networkingPowerCableAsset.url,
   "networking-communication/data-telephone-socket": networkingDataSocketAsset.url,
   "sanitaryware-bathroom-water-heating/shower-head": groheTempestaAsset.url,
+  "rubber-pvc-armoured-cables/rubber-cable-range": rubberCableAsset.url,
   "conduit-pipes-wiring-accessories/gi-conduit-pipe": imgGiConduit,
   "cable-management-jointing-led-lighting/gi-ss-cable-tray-trunking-unistrut-channel":
     imgCableTray,
