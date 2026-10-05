@@ -301,6 +301,7 @@ import mr16FittingHolderAsset from "@/assets/products/mr16-fitting-holder.jpg.as
 import networkingFaceplateAsset from "@/assets/products/networking-faceplate.jpg.asset.json";
 import networkingRj11Asset from "@/assets/products/networking-rj11-connector.jpg.asset.json";
 import networkingPowerCableAsset from "@/assets/products/networking-power-cable.jpg.asset.json";
+import networkingDataSocketAsset from "@/assets/products/networking-data-telephone-socket.jpg.asset.json";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -467,6 +468,7 @@ const productImages: Record<string, string> = {
   "networking-communication/faceplate": networkingFaceplateAsset.url,
   "networking-communication/rj11-connector": networkingRj11Asset.url,
   "networking-communication/power-cable": networkingPowerCableAsset.url,
+  "networking-communication/data-telephone-socket": networkingDataSocketAsset.url,
   "conduit-pipes-wiring-accessories/gi-conduit-pipe": imgGiConduit,
   "cable-management-jointing-led-lighting/gi-ss-cable-tray-trunking-unistrut-channel":
     imgCableTray,
