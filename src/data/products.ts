@@ -295,6 +295,7 @@ import imgPotentiometer from "@/assets/products/potentiometer.jpg";
 import imgRoundLedPanelLight from "@/assets/products/round-led-panel-light.jpg";
 import imgSurfaceLedPanel from "@/assets/products/surface-led-panel.jpg";
 import img60x60LedPanelFrame from "@/assets/products/60x60-led-panel-frame.jpg";
+import gu10SpotAsset from "@/assets/products/gu10-spot.jpg.asset.json";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -701,6 +702,7 @@ const productImages: Record<string, string> = {
   "lighting-lamps/solar-garden-light": imgSolarGardenLight,
   "lighting-lamps/underwater-led-strip-light": imgUnderwaterLedStripLight,
   "lighting-lamps/led-downlight": imgLedDownlight,
+  "lighting-lamps/gu10-spot": gu10SpotAsset.url,
 };
 
 const categoriesWithFeatured = new Set([
