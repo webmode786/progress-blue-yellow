@@ -295,15 +295,6 @@ import imgPotentiometer from "@/assets/products/potentiometer.jpg";
 import imgRoundLedPanelLight from "@/assets/products/round-led-panel-light.jpg";
 import imgSurfaceLedPanel from "@/assets/products/surface-led-panel.jpg";
 import img60x60LedPanelFrame from "@/assets/products/60x60-led-panel-frame.jpg";
-import gu10SpotAsset from "@/assets/products/gu10-spot.jpg.asset.json";
-import trackLightAsset from "@/assets/products/track-light.jpg.asset.json";
-import mr16FittingHolderAsset from "@/assets/products/mr16-fitting-holder.jpg.asset.json";
-import networkingFaceplateAsset from "@/assets/products/networking-faceplate.jpg.asset.json";
-import networkingRj11Asset from "@/assets/products/networking-rj11-connector.jpg.asset.json";
-import networkingPowerCableAsset from "@/assets/products/networking-power-cable.jpg.asset.json";
-import networkingDataSocketAsset from "@/assets/products/networking-data-telephone-socket.jpg.asset.json";
-import groheTempestaAsset from "@/assets/products/grohe-tempesta-100-shower-head.jpg.asset.json";
-import rubberCableAsset from "@/assets/products/rubber-cable-h07rn-f.jpg.asset.json";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -467,12 +458,12 @@ const productImages: Record<string, string> = {
   "ppe-safety-site-industrial-supplies/safety-shoes": imgSafetyShoes,
   "earthing-lightning-protection/earth-rod": imgEarthRod,
   "networking-communication/rj45-connector": imgRj45,
-  "networking-communication/faceplate": networkingFaceplateAsset.url,
-  "networking-communication/rj11-connector": networkingRj11Asset.url,
-  "networking-communication/power-cable": networkingPowerCableAsset.url,
-  "networking-communication/data-telephone-socket": networkingDataSocketAsset.url,
-  "sanitaryware-bathroom-water-heating/shower-head": groheTempestaAsset.url,
-  "rubber-pvc-armoured-cables/rubber-cable-range": rubberCableAsset.url,
+  "networking-communication/faceplate": "/images/products/networking-faceplate.jpg",
+  "networking-communication/rj11-connector": "/images/products/networking-rj11-connector.jpg",
+  "networking-communication/power-cable": "/images/products/networking-power-cable.jpg",
+  "networking-communication/data-telephone-socket": "/images/products/networking-data-telephone-socket.jpg",
+  "sanitaryware-bathroom-water-heating/shower-head": "/images/products/grohe-tempesta-100-shower-head.jpg",
+  "rubber-pvc-armoured-cables/rubber-cable-range": "/images/products/rubber-cable-h07rn-f.jpg",
   "conduit-pipes-wiring-accessories/gi-conduit-pipe": imgGiConduit,
   "cable-management-jointing-led-lighting/gi-ss-cable-tray-trunking-unistrut-channel":
     imgCableTray,
@@ -716,9 +707,9 @@ const productImages: Record<string, string> = {
   "lighting-lamps/solar-garden-light": imgSolarGardenLight,
   "lighting-lamps/underwater-led-strip-light": imgUnderwaterLedStripLight,
   "lighting-lamps/led-downlight": imgLedDownlight,
-  "lighting-lamps/gu10-spot": gu10SpotAsset.url,
-  "lighting-lamps/track-light": trackLightAsset.url,
-  "lighting-lamps/mr16-fitting-holder": mr16FittingHolderAsset.url,
+  "lighting-lamps/gu10-spot": "/images/products/gu10-spot.jpg",
+  "lighting-lamps/track-light": "/images/products/track-light.jpg",
+  "lighting-lamps/mr16-fitting-holder": "/images/products/mr16-fitting-holder.jpg",
 };
 
 const categoriesWithFeatured = new Set([
