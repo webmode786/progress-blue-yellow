@@ -44,8 +44,8 @@ export const Route = createFileRoute("/products/$category/")({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-              { "@type": "ListItem", position: 2, name: "Products", item: "/products" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://skylinetradingfzc.com" },
+              { "@type": "ListItem", position: 2, name: "Products", item: "https://skylinetradingfzc.com/products" },
               { "@type": "ListItem", position: 3, name: category.name, item: url },
             ],
           }),
