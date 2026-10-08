@@ -490,6 +490,18 @@ const productImages: Record<string, string> = {
   "lighting-lamps/exit-light": "/images/products/exit-light.jpg",
   "lighting-lamps/emergency-light": "/images/products/emergency-light.jpg",
   "lighting-lamps/mr16-fitting-holder": "/images/products/mr16-fitting-holder.jpg",
+  "hardware-fasteners-fixings/cotter-pin": "/images/products/hw-cotter-pin.jpg",
+  "hardware-fasteners-fixings/door-hinge": "/images/products/hw-door-hinge.jpg",
+  "hardware-fasteners-fixings/door-stopper": "/images/products/hw-door-stopper.jpg",
+  "hardware-fasteners-fixings/hex-bolt": "/images/products/hw-hex-bolt.jpg",
+  "hardware-fasteners-fixings/jubilee-clip": "/images/products/hw-jubilee-clip.jpg",
+  "hardware-fasteners-fixings/lock": "/images/products/hw-lock.jpg",
+  "hardware-fasteners-fixings/rivet": "/images/products/hw-rivet.jpg",
+  "hardware-fasteners-fixings/stainless-chain": "/images/products/hw-stainless-chain.jpg",
+  "hardware-fasteners-fixings/thimble": "/images/products/hw-thimble.jpg",
+  "hardware-fasteners-fixings/thread-rod": "/images/products/hw-thread-rod.jpg",
+  "hardware-fasteners-fixings/wire-mesh": "/images/products/hw-wire-mesh.jpg",
+  "hardware-fasteners-fixings/wire-nail": "/images/products/hw-wire-nail.jpg",
 };
 
 const categoriesWithFeatured = new Set([
