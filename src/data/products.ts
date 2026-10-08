@@ -202,6 +202,10 @@ const productImages: Record<string, string> = {
   "networking-communication/power-cable": "/images/products/networking-power-cable.jpg",
   "networking-communication/data-telephone-socket": "/images/products/networking-data-telephone-socket.jpg",
   "sanitaryware-bathroom-water-heating/shower-head": "/images/products/grohe-tempesta-100-shower-head.jpg",
+  "sanitaryware-bathroom-water-heating/shattaf-set": "/images/products/shattaf-set.jpg",
+  "sanitaryware-bathroom-water-heating/tissue-holder": "/images/products/tissue-holder.jpg",
+  "sanitaryware-bathroom-water-heating/soap-dispenser": "/images/products/soap-dispenser.jpg",
+  "sanitaryware-bathroom-water-heating/urinal-sensor": "/images/products/urinal-sensor.jpg",
   "rubber-pvc-armoured-cables/rubber-cable-range": "/images/products/rubber-cable-h07rn-f.jpg",
   "conduit-pipes-wiring-accessories/gi-conduit-pipe": "/images/products/gi-conduit-pipe.jpg",
   "cable-management-jointing-led-lighting/gi-ss-cable-tray-trunking-unistrut-channel":
