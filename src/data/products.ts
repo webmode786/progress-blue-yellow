@@ -34,267 +34,6 @@ import { category as c18 } from "./catalogue/18-earthing-lightning-protection";
 import { category as c19 } from "./catalogue/19-networking-communication";
 
 import imgCables from "@/assets/cat-cables-wires.jpg";
-import imgControlCable from "@/assets/products/control-cable-ysly-jz.jpg";
-import imgFlatCable from "@/assets/products/flat-cable-h05vvh6-f-h07vvh6-f.jpg";
-import imgSiliconeCable from "@/assets/products/silicone-cable-fg4-2.jpg";
-import imgMulticoreSiliconeCable from "@/assets/products/multicore-silicone-cable-fg4og4-2.jpg";
-import imgArmouredCable from "@/assets/products/armoured-cables-lv-range.jpg";
-import imgMetalEnclosure from "@/assets/products/metal-enclosures.jpg";
-import imgBimetallicLugs from "@/assets/products/bimetallic-cable-lugs.jpg";
-import imgBwGlands from "@/assets/products/bw-cable-glands.jpg";
-import imgMcb from "@/assets/products/miniature-circuit-breaker-mcb.jpg";
-import imgPvcConduit from "@/assets/products/electrical-pvc-conduit-pipe.jpg";
-import imgContactor from "@/assets/products/magnetic-contactor.jpg";
-import imgLedPanel from "@/assets/products/square-recessed-led-panel.jpg";
-import imgFloodlight from "@/assets/products/led-floodlight.jpg";
-import imgLedBulb from "@/assets/products/led-bulb-e27.jpg";
-import imgExhaustFan from "@/assets/products/exhaust-fan-square.jpg";
-import imgUpvcPipe from "@/assets/products/upvc-pipe.jpg";
-import imgPprPipe from "@/assets/products/ppr-pipe.jpg";
-import imgWaterHeater from "@/assets/products/electric-storage-water-heater.jpg";
-import imgGiBolt from "@/assets/products/gi-bolt.jpg";
-import imgHrcFuse from "@/assets/products/hrc-fuse.jpg";
-import imgUps from "@/assets/products/ups.jpg";
-import imgPowerCapacitor from "@/assets/products/power-capacitor.jpg";
-import imgEnergyMeter from "@/assets/products/energy-meter.jpg";
-import imgSensor from "@/assets/products/sensor.jpg";
-import imgRemoteControlSwitch from "@/assets/products/remote-control-switch.jpg";
-import imgVfdDrive from "@/assets/products/vfd-drive.jpg";
-import imgLedCeilingGlobe from "@/assets/products/led-ceiling-globe-light.jpg";
-import imgSmdLedFloodlight from "@/assets/products/smd-led-floodlight.jpg";
-import imgFloodlightDl from "@/assets/products/floodlight-dl.jpg";
-import imgSolarFloodlight from "@/assets/products/solar-floodlight.jpg";
-import imgLedHighBayLight from "@/assets/products/led-high-bay-light.jpg";
-import imgMetalHalideHighBayLight from "@/assets/products/metal-halide-high-bay-light.jpg";
-import imgPortableSiteLight from "@/assets/products/portable-site-light.jpg";
-import imgBulkheadFitting from "@/assets/products/bulkhead-fitting.jpg";
-import imgGardenLight from "@/assets/products/garden-light.jpg";
-import imgBollardLight from "@/assets/products/bollard-light.jpg";
-import imgSolarGardenLight from "@/assets/products/solar-garden-light.jpg";
-import imgUnderwaterLedStripLight from "@/assets/products/underwater-led-strip-light.jpg";
-import imgLedDownlight from "@/assets/products/led-downlight.jpg";
-import imgSafetyShoes from "@/assets/products/safety-shoes.jpg";
-import imgEarthRod from "@/assets/products/earth-rod.jpg";
-import imgRj45 from "@/assets/products/rj45-connector.jpg";
-import imgGiConduit from "@/assets/products/gi-conduit-pipe.jpg";
-import imgCableTray from "@/assets/products/gi-cable-tray.jpg";
-import imgCeilingFan from "@/assets/products/ceiling-fan.jpg";
-import imgHandGloves from "@/assets/products/hand-gloves.jpg";
-import imgPlywood from "@/assets/products/plywood.jpg";
-import imgScrewdriver from "@/assets/products/screwdriver.jpg";
-import imgLadder from "@/assets/products/ladder.jpg";
-import imgCrimpingTool from "@/assets/products/crimping-tool.jpg";
-import imgSiliconeSealant from "@/assets/products/silicone-sealant.jpg";
-import imgInsulationTape from "@/assets/products/insulation-tape.jpg";
-import imgDrillBit from "@/assets/products/steel-drill-bit.jpg";
-import imgScreenCable from "@/assets/products/screen-cable-liycy.jpg";
-import imgRubberCable from "@/assets/products/rubber-cable-h07rn-f.jpg";
-import imgPvcFlexCable from "@/assets/products/multicore-pvc-flexible-cable-h05vv-f.jpg";
-import imgSsEnclosure from "@/assets/products/stainless-steel-enclosures.jpg";
-import imgPanelTrunking from "@/assets/products/slotted-panel-trunking.jpg";
-import imgNylonTies from "@/assets/products/nylon-cable-ties.jpg";
-import imgSsTies from "@/assets/products/stainless-steel-cable-ties.jpg";
-import imgSpiralWrap from "@/assets/products/spiral-wrap.jpg";
-import imgCopperLugs from "@/assets/products/copper-cable-lugs.jpg";
-import imgCwGlands from "@/assets/products/cw-cable-glands.jpg";
-import imgEmtConduit from "@/assets/products/emt-conduit-pipe.jpg";
-import imgGiFlexConduit from "@/assets/products/gi-flexible-conduit.jpg";
-import imgConduitBend from "@/assets/products/conduit-bend.jpg";
-import imgGiCircularBox from "@/assets/products/gi-circular-box.jpg";
-import imgGiSaddle from "@/assets/products/gi-saddle.jpg";
-import imgGiJunctionBox from "@/assets/products/gi-junction-box.jpg";
-import imgPvcJunctionBox from "@/assets/products/pvc-junction-box.jpg";
-import imgGrommet from "@/assets/products/grommet.jpg";
-import imgWeatherproofCover from "@/assets/products/weatherproof-cover.jpg";
-import imgBendingSpring from "@/assets/products/bending-spring.jpg";
-import imgGiElbow from "@/assets/products/gi-elbow.jpg";
-import imgGiAdaptor from "@/assets/products/gi-adaptor.jpg";
-import imgBrassAdaptor from "@/assets/products/brass-adaptor.jpg";
-import imgSwivelAdaptor from "@/assets/products/mechanical-swivel-adaptor-nickel.jpg";
-import imgGiCoupler from "@/assets/products/gi-coupler.jpg";
-import imgGiCovers from "@/assets/products/gi-covers.jpg";
-import imgLockNut from "@/assets/products/lock-nut-check-nut.jpg";
-import imgGiTee from "@/assets/products/gi-tee.jpg";
-import imgReducerBush from "@/assets/products/reducer-bush.jpg";
-import imgBrassBush from "@/assets/products/brass-bush.jpg";
-import imgEmtClamp from "@/assets/products/emt-two-hole-clamp.jpg";
-import imgRClamp from "@/assets/products/r-clamp.jpg";
-import imgBandItStrap from "@/assets/products/band-it-strap-carbon-steel.jpg";
-import imgPvcFlexiblePipe from "@/assets/products/pvc-flexible-pipe.jpg";
-import imgPvcBox from "@/assets/products/pvc-box.jpg";
-import imgLoopInBox from "@/assets/products/loop-in-box.jpg";
-import imgPvcConnector from "@/assets/products/pvc-connector.jpg";
-import imgPvcClip from "@/assets/products/pvc-clip.jpg";
-import imgExpansionCoupler from "@/assets/products/expansion-coupler-dd.jpg";
-import imgEndCap from "@/assets/products/end-cap.jpg";
-import imgLiftPendant from "@/assets/products/lift-2s-pendant-cable.jpg";
-import imgSiliconeSleeves from "@/assets/products/silicone-fibreglass-sleeves.jpg";
-import imgDieCastConnectors from "@/assets/products/heavy-duty-die-cast-connectors.jpg";
-import imgCableMarkers from "@/assets/products/cable-markers.jpg";
-import imgMetalIronPlugs from "@/assets/products/metal-iron-plugs.jpg";
-import imgPorcelainConnectors from "@/assets/products/porcelain-connectors.jpg";
-import imgLugsBlade from "@/assets/products/insulated-lugs-blade.jpg";
-import imgLugsPin from "@/assets/products/insulated-lugs-pin.jpg";
-import imgLugsFork from "@/assets/products/insulated-lugs-fork.jpg";
-import imgLugsRing from "@/assets/products/insulated-lugs-ring.jpg";
-import imgPinLugsFerrules from "@/assets/products/pin-lugs-copper-ferrules.jpg";
-import imgE1wGlands from "@/assets/products/e1w-cable-glands.jpg";
-import imgA1a2Glands from "@/assets/products/a1-a2-cable-glands.jpg";
-import imgNickelBrassGlands from "@/assets/products/nickel-brass-cable-glands.jpg";
-import imgNylonGlands from "@/assets/products/pvc-nylon-cable-glands.jpg";
-import imgMobilePlugSocket from "@/assets/products/mobile-plug-socket.jpg";
-import imgWallSocketPlug from "@/assets/products/wall-type-socket-plug.jpg";
-import imgPanelSocket from "@/assets/products/panel-type-socket.jpg";
-import imgExtensionPlug from "@/assets/products/extension-plug-3way.jpg";
-import imgInterlockSocket from "@/assets/products/interlock-socket-32a.jpg";
-import imgMaleFemaleIsolator from "@/assets/products/male-female-isolator-32a.jpg";
-import imgRccb from "@/assets/products/residual-current-circuit-breaker-rccb.jpg";
-import imgElcb from "@/assets/products/earth-leakage-circuit-breaker-elcb.jpg";
-import imgMccb from "@/assets/products/moulded-case-circuit-breaker-mccb.jpg";
-import imgIsolator from "@/assets/products/isolator-switch.jpg";
-import imgDistributionBoard from "@/assets/products/distribution-board.jpg";
-import imgRailConnectors from "@/assets/products/rail-connectors.jpg";
-import imgThreadedPlug from "@/assets/products/threaded-plug.jpg";
-import imgCookerSwitch from "@/assets/products/cooker-switch.jpg";
-import imgOutletSwitch from "@/assets/products/outlet-switch.jpg";
-import imgFlexOutlet from "@/assets/products/flex-outlet.jpg";
-import imgDoublePoleSurfaceSwitch from "@/assets/products/double-pole-surface-switch.jpg";
-import imgGridMountingFrame from "@/assets/products/grid-mounting-frame.jpg";
-import imgModuleSwitchPlate from "@/assets/products/module-switch-plate.jpg";
-import imgPlateAssemblyMoulded from "@/assets/products/plate-assembly-moulded.jpg";
-import imgBlankPlateAluminiumSilver from "@/assets/products/blank-plate-aluminium-silver.jpg";
-import imgMetalCladBox from "@/assets/products/metal-clad-box.jpg";
-import imgShaverSocket from "@/assets/products/shaver-socket.jpg";
-import imgResinJointKit from "@/assets/products/resin-filled-lv-cable-joint-kit.jpg";
-import imgCableSocks from "@/assets/products/cable-socks.jpg";
-import imgPullingSpring from "@/assets/products/pulling-spring.jpg";
-import imgFestoonCChannel from "@/assets/products/festoon-c-channel.jpg";
-import imgFestoonMiddleTrolley from "@/assets/products/festoon-middle-trolley.jpg";
-import imgFestoonSupportBracket from "@/assets/products/festoon-support-bracket-hanger.jpg";
-import imgFestoonTrackJoint from "@/assets/products/festoon-track-joint.jpg";
-import imgDragChain from "@/assets/products/drag-chain.jpg";
-import imgPvcShroud from "@/assets/products/pvc-shroud.jpg";
-import imgBootLug from "@/assets/products/boot-lug.jpg";
-import imgEndSleeve from "@/assets/products/end-sleeve.jpg";
-import imgHeatShrinkSleeve from "@/assets/products/heat-shrink-sleeve.jpg";
-import imgCableSleeve from "@/assets/products/cable-sleeve.jpg";
-import imgFiberSleeveWhite from "@/assets/products/fiber-sleeve-white.jpg";
-import imgSoftSleeveYellow from "@/assets/products/soft-sleeve-yellow.jpg";
-import imgHeatProofRibbonFiberglass from "@/assets/products/heat-proof-ribbon-fiberglass.jpg";
-import imgFerrule4mm from "@/assets/products/ferrule-4mm.jpg";
-import imgPreInsulatedRingTerminal from "@/assets/products/pre-insulated-ring-terminal.jpg";
-import imgSpadeTerminalFlagType from "@/assets/products/spade-terminal-flag-type.jpg";
-import imgFemaleTerminalFdd from "@/assets/products/female-terminal-fdd.jpg";
-import imgFemaleTerminalFdfd from "@/assets/products/female-terminal-fdfd.jpg";
-import imgConnectorFldnyRed from "@/assets/products/connector-fldny-red.jpg";
-import imgPinTerminalUType from "@/assets/products/pin-terminal-u-type.jpg";
-import imgWireConnector6Way from "@/assets/products/wire-connector-6-way.jpg";
-import imgScrewTerminalE5 from "@/assets/products/screw-terminal-e5.jpg";
-import imgTerminalBlockScrewStrip from "@/assets/products/terminal-block-screw-strip.jpg";
-import imgEndCoverTerminalBlock from "@/assets/products/end-cover-terminal-block.jpg";
-import imgGroundLineTerminal from "@/assets/products/ground-line-terminal.jpg";
-import imgFuseTerminalRailMounted from "@/assets/products/fuse-terminal-rail-mounted.jpg";
-import imgWaterproofConnectorStraight from "@/assets/products/waterproof-connector-straight.jpg";
-import imgCablePullingLubricant from "@/assets/products/cable-pulling-lubricant.jpg";
-import imgWaterproofConnectorTWay from "@/assets/products/waterproof-connector-t-way.jpg";
-import imgWaterproofConnector4Core from "@/assets/products/waterproof-connector-4-core.jpg";
-import imgMetalConnectorMaleFemale from "@/assets/products/metal-connector-male-female.jpg";
-import imgCapacitorDutyContactor from "@/assets/products/capacitor-duty-contactor.jpg";
-import imgAuxiliaryContactBlock from "@/assets/products/auxiliary-contact-block.jpg";
-import imgRotaryIsolator from "@/assets/products/rotary-isolator.jpg";
-import imgSwitchDisconnector from "@/assets/products/switch-disconnector.jpg";
-import imgChangeoverSwitch from "@/assets/products/changeover-switch.jpg";
-import imgReverseForwardSwitch from "@/assets/products/reverse-forward-switch.jpg";
-import imgRotarySwitch from "@/assets/products/rotary-switch.jpg";
-import imgDbBox from "@/assets/products/db-box.jpg";
-import imgModularDbBox from "@/assets/products/modular-db-box.jpg";
-import imgElcbBox from "@/assets/products/elcb-box.jpg";
-import imgTpnFlushDb from "@/assets/products/tpn-flush-db.jpg";
-import imgTpSurfaceDb from "@/assets/products/tp-surface-db.jpg";
-import imgDistributionBoardMdb from "@/assets/products/distribution-board-mdb.jpg";
-import imgMeterCabinet from "@/assets/products/meter-cabinet.jpg";
-import imgMotorCircuitBreaker from "@/assets/products/motor-circuit-breaker.jpg";
-import imgOverloadRelay from "@/assets/products/overload-relay.jpg";
-import imgSpecialTypeContactor from "@/assets/products/special-type-contactor.jpg";
-import imgIsolatorEndCap from "@/assets/products/isolator-end-cap.jpg";
-import imgCompactNsx160hMccb from "@/assets/products/compact-nsx160h-mccb.jpg";
-import imgOverCurrentRelay from "@/assets/products/over-current-relay.jpg";
-import imgUnderVoltageRelay from "@/assets/products/under-voltage-relay.jpg";
-import imgControlRelayWithBase from "@/assets/products/control-relay-with-base.jpg";
-import imgRelayBase from "@/assets/products/relay-base.jpg";
-import img24HourTimer from "@/assets/products/24-hour-timer.jpg";
-import imgTimerSwitch from "@/assets/products/timer-switch.jpg";
-import img3mWirePullingLubricant from "@/assets/products/3m-wire-pulling-lubricant.jpg";
-import imgOnOffDelayTimer from "@/assets/products/on-off-delay-timer.jpg";
-import imgStarDeltaTimer from "@/assets/products/star-delta-timer.jpg";
-import imgDelayUnit from "@/assets/products/delay-unit.jpg";
-import imgPushButton from "@/assets/products/push-button.jpg";
-import imgMushroomPushButton from "@/assets/products/mushroom-push-button.jpg";
-import imgEmergencyStopButton from "@/assets/products/emergency-stop-button.jpg";
-import imgIlluminatedPushButton from "@/assets/products/illuminated-push-button.jpg";
-import imgOnOffPushStation from "@/assets/products/on-off-push-station.jpg";
-import imgToggleSwitch from "@/assets/products/toggle-switch.jpg";
-import imgPowerPushButton from "@/assets/products/power-push-button.jpg";
-import imgSelectorSwitch from "@/assets/products/selector-switch.jpg";
-import imgControlBox from "@/assets/products/control-box.jpg";
-import imgIndicatorLamp from "@/assets/products/indicator-lamp.jpg";
-import imgLedPilotLight from "@/assets/products/led-pilot-light.jpg";
-import imgM22LedIndicator from "@/assets/products/m22-led-indicator.jpg";
-import imgM22ContactBlock from "@/assets/products/m22-contact-block.jpg";
-import imgRevolvingLight from "@/assets/products/revolving-light.jpg";
-import imgRotaryWarningLight from "@/assets/products/rotary-warning-light.jpg";
-import imgTowerLight from "@/assets/products/tower-light.jpg";
-import imgMiniSiren from "@/assets/products/mini-siren.jpg";
-import imgCopperBusbar from "@/assets/products/copper-busbar.jpg";
-import imgPvcBusbar from "@/assets/products/pvc-busbar.jpg";
-import imgBusbarInsulator from "@/assets/products/busbar-insulator.jpg";
-import imgBusbarSleeve from "@/assets/products/busbar-sleeve.jpg";
-import imgPinTypeBusbar from "@/assets/products/pin-type-busbar.jpg";
-import imgUTypeBusbar from "@/assets/products/u-type-busbar.jpg";
-import imgNeutralLink from "@/assets/products/neutral-link.jpg";
-import imgEarthBarLink from "@/assets/products/earth-bar-link.jpg";
-import imgShortLink from "@/assets/products/short-link.jpg";
-import imgWireTerminalBar from "@/assets/products/wire-terminal-bar.jpg";
-import imgBusbarEndCap from "@/assets/products/busbar-end-cap.jpg";
-import imgCurrentCollectorController from "@/assets/products/current-collector-controller.jpg";
-import imgSinglePhaseSinglePoleBusbar from "@/assets/products/single-phase-single-pole-busbar.jpg";
-import imgBottleFuse from "@/assets/products/bottle-fuse.jpg";
-import imgCeramicFuse from "@/assets/products/ceramic-fuse.jpg";
-import imgGlassFuse from "@/assets/products/glass-fuse.jpg";
-import imgCartridgeFuse from "@/assets/products/cartridge-fuse.jpg";
-import imgFuseLink10x38 from "@/assets/products/fuse-link-10x38.jpg";
-import imgFuseHolder from "@/assets/products/fuse-holder.jpg";
-import imgFuseCarrier from "@/assets/products/fuse-carrier.jpg";
-import imgFuseBase from "@/assets/products/fuse-base.jpg";
-import imgNhFuse from "@/assets/products/nh-fuse.jpg";
-import imgFuseGeneral from "@/assets/products/fuse-general.jpg";
-import imgFuseConnectionUnit from "@/assets/products/fuse-connection-unit.jpg";
-import imgBusbarMountingFuse from "@/assets/products/busbar-mounting-fuse.jpg";
-import imgControlTransformer from "@/assets/products/control-transformer.jpg";
-import imgTransformer from "@/assets/products/transformer.jpg";
-import imgSmpsPowerSupply from "@/assets/products/smps-power-supply.jpg";
-import imgDcPowerSupply from "@/assets/products/dc-power-supply.jpg";
-import imgCapacitor from "@/assets/products/capacitor.jpg";
-import imgBattery from "@/assets/products/battery.jpg";
-import imgDualCapacitor from "@/assets/products/dual-capacitor.jpg";
-import imgPfController from "@/assets/products/pf-controller.jpg";
-import imgPfRegulator from "@/assets/products/pf-regulator.jpg";
-import imgHourMeter from "@/assets/products/hour-meter.jpg";
-import imgCurrentTransformer from "@/assets/products/current-transformer.jpg";
-import imgLimitSwitch from "@/assets/products/limit-switch.jpg";
-import imgMicroLimitSwitch from "@/assets/products/micro-limit-switch.jpg";
-import imgLightMotionSensor from "@/assets/products/light-motion-sensor.jpg";
-import imgFloatSwitch from "@/assets/products/float-switch.jpg";
-import imgPressureSwitch from "@/assets/products/pressure-switch.jpg";
-import imgDolStarter from "@/assets/products/dol-starter.jpg";
-import imgDinRail from "@/assets/products/din-rail.jpg";
-import imgCarrierStrip from "@/assets/products/carrier-strip.jpg";
-import imgPanelCoolingFan from "@/assets/products/panel-cooling-fan.jpg";
-import imgCoolingFanGrill from "@/assets/products/cooling-fan-grill.jpg";
-import imgPotentiometer from "@/assets/products/potentiometer.jpg";
-import imgRoundLedPanelLight from "@/assets/products/round-led-panel-light.jpg";
-import imgSurfaceLedPanel from "@/assets/products/surface-led-panel.jpg";
-import img60x60LedPanelFrame from "@/assets/products/60x60-led-panel-frame.jpg";
 import imgElectrical from "@/assets/cat-electrical.jpg";
 import imgElectricalAccessories from "@/assets/cat-electrical-accessories.jpg";
 import imgLighting from "@/assets/cat-lighting.jpg";
@@ -435,278 +174,278 @@ const categoryIcons: Record<string, string> = {
  * Add entries here to replace a placeholder tile with a real image.
  */
 const productImages: Record<string, string> = {
-  "control-screen-specialty-cables/control-cable-ysly-jz": imgControlCable,
-  "control-screen-specialty-cables/flat-cable-h05vvh6-f-h07vvh6-f": imgFlatCable,
-  "silicone-high-temperature-cables/silicone-cable-fg4-2": imgSiliconeCable,
+  "control-screen-specialty-cables/control-cable-ysly-jz": "/images/products/control-cable-ysly-jz.jpg",
+  "control-screen-specialty-cables/flat-cable-h05vvh6-f-h07vvh6-f": "/images/products/flat-cable-h05vvh6-f-h07vvh6-f.jpg",
+  "silicone-high-temperature-cables/silicone-cable-fg4-2": "/images/products/silicone-cable-fg4-2.jpg",
   "silicone-high-temperature-cables/multicore-silicone-cable-fg4og4-2":
-    imgMulticoreSiliconeCable,
-  "rubber-pvc-armoured-cables/armoured-cables-lv-range": imgArmouredCable,
-  "enclosures-panel-accessories/metal-enclosures": imgMetalEnclosure,
-  "cable-termination/bimetallic-cable-lugs": imgBimetallicLugs,
-  "cable-termination/bw-cable-glands": imgBwGlands,
-  "industrial-plugs-sockets-switchgear/miniature-circuit-breaker-mcb": imgMcb,
-  "conduit-pipes-wiring-accessories/electrical-pvc-conduit-pipe": imgPvcConduit,
-  "switchgear-protection-control/magnetic-contactor": imgContactor,
-  "lighting-lamps/square-recessed-led-panel": imgLedPanel,
-  "lighting-lamps/led-floodlight": imgFloodlight,
-  "lighting-lamps/led-bulb-e27": imgLedBulb,
-  "fans-ventilation-hvac/exhaust-fan-square": imgExhaustFan,
-  "plumbing-pipes-fittings/upvc-pipe": imgUpvcPipe,
-  "plumbing-pipes-fittings/ppr-pipe": imgPprPipe,
-  "sanitaryware-bathroom-water-heating/electric-storage-water-heater": imgWaterHeater,
-  "hardware-fasteners-fixings/gi-bolt": imgGiBolt,
-  "ppe-safety-site-industrial-supplies/safety-shoes": imgSafetyShoes,
-  "earthing-lightning-protection/earth-rod": imgEarthRod,
-  "networking-communication/rj45-connector": imgRj45,
+    "/images/products/multicore-silicone-cable-fg4og4-2.jpg",
+  "rubber-pvc-armoured-cables/armoured-cables-lv-range": "/images/products/armoured-cables-lv-range.jpg",
+  "enclosures-panel-accessories/metal-enclosures": "/images/products/metal-enclosures.jpg",
+  "cable-termination/bimetallic-cable-lugs": "/images/products/bimetallic-cable-lugs.jpg",
+  "cable-termination/bw-cable-glands": "/images/products/bw-cable-glands.jpg",
+  "industrial-plugs-sockets-switchgear/miniature-circuit-breaker-mcb": "/images/products/miniature-circuit-breaker-mcb.jpg",
+  "conduit-pipes-wiring-accessories/electrical-pvc-conduit-pipe": "/images/products/electrical-pvc-conduit-pipe.jpg",
+  "switchgear-protection-control/magnetic-contactor": "/images/products/magnetic-contactor.jpg",
+  "lighting-lamps/square-recessed-led-panel": "/images/products/square-recessed-led-panel.jpg",
+  "lighting-lamps/led-floodlight": "/images/products/led-floodlight.jpg",
+  "lighting-lamps/led-bulb-e27": "/images/products/led-bulb-e27.jpg",
+  "fans-ventilation-hvac/exhaust-fan-square": "/images/products/exhaust-fan-square.jpg",
+  "plumbing-pipes-fittings/upvc-pipe": "/images/products/upvc-pipe.jpg",
+  "plumbing-pipes-fittings/ppr-pipe": "/images/products/ppr-pipe.jpg",
+  "sanitaryware-bathroom-water-heating/electric-storage-water-heater": "/images/products/electric-storage-water-heater.jpg",
+  "hardware-fasteners-fixings/gi-bolt": "/images/products/gi-bolt.jpg",
+  "ppe-safety-site-industrial-supplies/safety-shoes": "/images/products/safety-shoes.jpg",
+  "earthing-lightning-protection/earth-rod": "/images/products/earth-rod.jpg",
+  "networking-communication/rj45-connector": "/images/products/rj45-connector.jpg",
   "networking-communication/faceplate": "/images/products/networking-faceplate.jpg",
   "networking-communication/rj11-connector": "/images/products/networking-rj11-connector.jpg",
   "networking-communication/power-cable": "/images/products/networking-power-cable.jpg",
   "networking-communication/data-telephone-socket": "/images/products/networking-data-telephone-socket.jpg",
   "sanitaryware-bathroom-water-heating/shower-head": "/images/products/grohe-tempesta-100-shower-head.jpg",
   "rubber-pvc-armoured-cables/rubber-cable-range": "/images/products/rubber-cable-h07rn-f.jpg",
-  "conduit-pipes-wiring-accessories/gi-conduit-pipe": imgGiConduit,
+  "conduit-pipes-wiring-accessories/gi-conduit-pipe": "/images/products/gi-conduit-pipe.jpg",
   "cable-management-jointing-led-lighting/gi-ss-cable-tray-trunking-unistrut-channel":
-    imgCableTray,
-  "fans-ventilation-hvac/ceiling-fan": imgCeilingFan,
-  "ppe-safety-site-industrial-supplies/hand-gloves": imgHandGloves,
-  "building-materials-paints-chemicals/plywood": imgPlywood,
-  "building-materials-paints-chemicals/silicone-sealant": imgSiliconeSealant,
-  "building-materials-paints-chemicals/insulation-tape": imgInsulationTape,
-  "tools-equipment/screwdriver": imgScrewdriver,
-  "tools-equipment/ladder": imgLadder,
-  "tools-equipment/crimping-tool": imgCrimpingTool,
-  "tools-equipment/steel-drill-bit": imgDrillBit,
-  "control-screen-specialty-cables/screen-cable-liycy": imgScreenCable,
-  "rubber-pvc-armoured-cables/rubber-cable-h07rn-f": imgRubberCable,
-  "rubber-pvc-armoured-cables/multicore-pvc-flexible-cable-h05vv-f": imgPvcFlexCable,
-  "enclosures-panel-accessories/stainless-steel-enclosures": imgSsEnclosure,
-  "enclosures-panel-accessories/slotted-panel-trunking": imgPanelTrunking,
-  "enclosures-panel-accessories/nylon-cable-ties": imgNylonTies,
-  "enclosures-panel-accessories/stainless-steel-cable-ties": imgSsTies,
-  "enclosures-panel-accessories/spiral-wrap": imgSpiralWrap,
-  "cable-termination/copper-cable-lugs": imgCopperLugs,
-  "cable-termination/cw-cable-glands": imgCwGlands,
-  "conduit-pipes-wiring-accessories/emt-conduit-pipe": imgEmtConduit,
-  "conduit-pipes-wiring-accessories/gi-flexible-conduit": imgGiFlexConduit,
-  "conduit-pipes-wiring-accessories/conduit-bend": imgConduitBend,
-  "conduit-pipes-wiring-accessories/gi-circular-box": imgGiCircularBox,
-  "conduit-pipes-wiring-accessories/gi-saddle": imgGiSaddle,
-  "conduit-pipes-wiring-accessories/gi-junction-box": imgGiJunctionBox,
-  "conduit-pipes-wiring-accessories/pvc-junction-box": imgPvcJunctionBox,
-  "conduit-pipes-wiring-accessories/grommet": imgGrommet,
-  "conduit-pipes-wiring-accessories/weatherproof-cover": imgWeatherproofCover,
-  "conduit-pipes-wiring-accessories/bending-spring": imgBendingSpring,
-  "conduit-pipes-wiring-accessories/gi-elbow": imgGiElbow,
-  "conduit-pipes-wiring-accessories/gi-adaptor": imgGiAdaptor,
-  "conduit-pipes-wiring-accessories/brass-adaptor": imgBrassAdaptor,
-  "conduit-pipes-wiring-accessories/mechanical-swivel-adaptor-nickel": imgSwivelAdaptor,
-  "conduit-pipes-wiring-accessories/gi-coupler": imgGiCoupler,
-  "conduit-pipes-wiring-accessories/gi-covers": imgGiCovers,
-  "conduit-pipes-wiring-accessories/lock-nut-check-nut": imgLockNut,
-  "conduit-pipes-wiring-accessories/gi-tee": imgGiTee,
-  "conduit-pipes-wiring-accessories/reducer-bush": imgReducerBush,
-  "conduit-pipes-wiring-accessories/brass-bush": imgBrassBush,
-  "conduit-pipes-wiring-accessories/emt-two-hole-clamp": imgEmtClamp,
-  "conduit-pipes-wiring-accessories/r-clamp": imgRClamp,
-  "conduit-pipes-wiring-accessories/band-it-strap-carbon-steel": imgBandItStrap,
-  "conduit-pipes-wiring-accessories/pvc-flexible-pipe": imgPvcFlexiblePipe,
-  "conduit-pipes-wiring-accessories/pvc-box": imgPvcBox,
-  "conduit-pipes-wiring-accessories/loop-in-box": imgLoopInBox,
-  "conduit-pipes-wiring-accessories/pvc-connector": imgPvcConnector,
-  "conduit-pipes-wiring-accessories/pvc-clip": imgPvcClip,
-  "conduit-pipes-wiring-accessories/expansion-coupler-dd": imgExpansionCoupler,
-  "conduit-pipes-wiring-accessories/end-cap": imgEndCap,
-  "control-screen-specialty-cables/lift-2s-pendant-cable": imgLiftPendant,
+    "/images/products/gi-cable-tray.jpg",
+  "fans-ventilation-hvac/ceiling-fan": "/images/products/ceiling-fan.jpg",
+  "ppe-safety-site-industrial-supplies/hand-gloves": "/images/products/hand-gloves.jpg",
+  "building-materials-paints-chemicals/plywood": "/images/products/plywood.jpg",
+  "building-materials-paints-chemicals/silicone-sealant": "/images/products/silicone-sealant.jpg",
+  "building-materials-paints-chemicals/insulation-tape": "/images/products/insulation-tape.jpg",
+  "tools-equipment/screwdriver": "/images/products/screwdriver.jpg",
+  "tools-equipment/ladder": "/images/products/ladder.jpg",
+  "tools-equipment/crimping-tool": "/images/products/crimping-tool.jpg",
+  "tools-equipment/steel-drill-bit": "/images/products/steel-drill-bit.jpg",
+  "control-screen-specialty-cables/screen-cable-liycy": "/images/products/screen-cable-liycy.jpg",
+  "rubber-pvc-armoured-cables/rubber-cable-h07rn-f": "/images/products/rubber-cable-h07rn-f.jpg",
+  "rubber-pvc-armoured-cables/multicore-pvc-flexible-cable-h05vv-f": "/images/products/multicore-pvc-flexible-cable-h05vv-f.jpg",
+  "enclosures-panel-accessories/stainless-steel-enclosures": "/images/products/stainless-steel-enclosures.jpg",
+  "enclosures-panel-accessories/slotted-panel-trunking": "/images/products/slotted-panel-trunking.jpg",
+  "enclosures-panel-accessories/nylon-cable-ties": "/images/products/nylon-cable-ties.jpg",
+  "enclosures-panel-accessories/stainless-steel-cable-ties": "/images/products/stainless-steel-cable-ties.jpg",
+  "enclosures-panel-accessories/spiral-wrap": "/images/products/spiral-wrap.jpg",
+  "cable-termination/copper-cable-lugs": "/images/products/copper-cable-lugs.jpg",
+  "cable-termination/cw-cable-glands": "/images/products/cw-cable-glands.jpg",
+  "conduit-pipes-wiring-accessories/emt-conduit-pipe": "/images/products/emt-conduit-pipe.jpg",
+  "conduit-pipes-wiring-accessories/gi-flexible-conduit": "/images/products/gi-flexible-conduit.jpg",
+  "conduit-pipes-wiring-accessories/conduit-bend": "/images/products/conduit-bend.jpg",
+  "conduit-pipes-wiring-accessories/gi-circular-box": "/images/products/gi-circular-box.jpg",
+  "conduit-pipes-wiring-accessories/gi-saddle": "/images/products/gi-saddle.jpg",
+  "conduit-pipes-wiring-accessories/gi-junction-box": "/images/products/gi-junction-box.jpg",
+  "conduit-pipes-wiring-accessories/pvc-junction-box": "/images/products/pvc-junction-box.jpg",
+  "conduit-pipes-wiring-accessories/grommet": "/images/products/grommet.jpg",
+  "conduit-pipes-wiring-accessories/weatherproof-cover": "/images/products/weatherproof-cover.jpg",
+  "conduit-pipes-wiring-accessories/bending-spring": "/images/products/bending-spring.jpg",
+  "conduit-pipes-wiring-accessories/gi-elbow": "/images/products/gi-elbow.jpg",
+  "conduit-pipes-wiring-accessories/gi-adaptor": "/images/products/gi-adaptor.jpg",
+  "conduit-pipes-wiring-accessories/brass-adaptor": "/images/products/brass-adaptor.jpg",
+  "conduit-pipes-wiring-accessories/mechanical-swivel-adaptor-nickel": "/images/products/mechanical-swivel-adaptor-nickel.jpg",
+  "conduit-pipes-wiring-accessories/gi-coupler": "/images/products/gi-coupler.jpg",
+  "conduit-pipes-wiring-accessories/gi-covers": "/images/products/gi-covers.jpg",
+  "conduit-pipes-wiring-accessories/lock-nut-check-nut": "/images/products/lock-nut-check-nut.jpg",
+  "conduit-pipes-wiring-accessories/gi-tee": "/images/products/gi-tee.jpg",
+  "conduit-pipes-wiring-accessories/reducer-bush": "/images/products/reducer-bush.jpg",
+  "conduit-pipes-wiring-accessories/brass-bush": "/images/products/brass-bush.jpg",
+  "conduit-pipes-wiring-accessories/emt-two-hole-clamp": "/images/products/emt-two-hole-clamp.jpg",
+  "conduit-pipes-wiring-accessories/r-clamp": "/images/products/r-clamp.jpg",
+  "conduit-pipes-wiring-accessories/band-it-strap-carbon-steel": "/images/products/band-it-strap-carbon-steel.jpg",
+  "conduit-pipes-wiring-accessories/pvc-flexible-pipe": "/images/products/pvc-flexible-pipe.jpg",
+  "conduit-pipes-wiring-accessories/pvc-box": "/images/products/pvc-box.jpg",
+  "conduit-pipes-wiring-accessories/loop-in-box": "/images/products/loop-in-box.jpg",
+  "conduit-pipes-wiring-accessories/pvc-connector": "/images/products/pvc-connector.jpg",
+  "conduit-pipes-wiring-accessories/pvc-clip": "/images/products/pvc-clip.jpg",
+  "conduit-pipes-wiring-accessories/expansion-coupler-dd": "/images/products/expansion-coupler-dd.jpg",
+  "conduit-pipes-wiring-accessories/end-cap": "/images/products/end-cap.jpg",
+  "control-screen-specialty-cables/lift-2s-pendant-cable": "/images/products/lift-2s-pendant-cable.jpg",
   "silicone-high-temperature-cables/silicone-fibreglass-sleeves-fg4t2-2":
-    imgSiliconeSleeves,
-  "enclosures-panel-accessories/heavy-duty-die-cast-connectors": imgDieCastConnectors,
-  "enclosures-panel-accessories/cable-markers": imgCableMarkers,
-  "enclosures-panel-accessories/metal-iron-plugs": imgMetalIronPlugs,
-  "enclosures-panel-accessories/porcelain-connectors": imgPorcelainConnectors,
-  "cable-termination/insulated-cable-lugs-blade-type": imgLugsBlade,
-  "cable-termination/insulated-cable-lugs-pin-type": imgLugsPin,
-  "cable-termination/insulated-cable-lugs-fork-type": imgLugsFork,
-  "cable-termination/insulated-cable-lugs-ring-type": imgLugsRing,
-  "cable-termination/pin-type-cable-lugs-copper-ferrules": imgPinLugsFerrules,
-  "cable-termination/e1w-cable-glands": imgE1wGlands,
-  "cable-termination/a1-a2-cable-glands": imgA1a2Glands,
-  "cable-termination/nickel-plated-brass-cable-glands": imgNickelBrassGlands,
-  "cable-termination/pvc-nylon-cable-glands": imgNylonGlands,
-  "industrial-plugs-sockets-switchgear/mobile-type-plug-socket": imgMobilePlugSocket,
-  "industrial-plugs-sockets-switchgear/wall-type-socket-plug": imgWallSocketPlug,
-  "industrial-plugs-sockets-switchgear/panel-type-socket": imgPanelSocket,
-  "industrial-plugs-sockets-switchgear/2-way-3-way-extension-plug": imgExtensionPlug,
-  "industrial-plugs-sockets-switchgear/32-amp-3-pin-interlock-socket": imgInterlockSocket,
-  "industrial-plugs-sockets-switchgear/32-amp-3-pin-male-female-isolator": imgMaleFemaleIsolator,
-  "industrial-plugs-sockets-switchgear/residual-current-circuit-breaker-rccb": imgRccb,
-  "industrial-plugs-sockets-switchgear/earth-leakage-circuit-breaker-elcb": imgElcb,
-  "industrial-plugs-sockets-switchgear/moulded-case-circuit-breaker-mccb": imgMccb,
-  "industrial-plugs-sockets-switchgear/contactor-magnetic-contactor": imgContactor,
-  "industrial-plugs-sockets-switchgear/isolator": imgIsolator,
-  "industrial-plugs-sockets-switchgear/distribution-board": imgDistributionBoard,
-  "industrial-plugs-sockets-switchgear/rail-connectors": imgRailConnectors,
-  "conduit-pipes-wiring-accessories/threaded-plug": imgThreadedPlug,
-  "conduit-pipes-wiring-accessories/cooker-switch": imgCookerSwitch,
-  "conduit-pipes-wiring-accessories/outlet-switch": imgOutletSwitch,
-  "conduit-pipes-wiring-accessories/flex-outlet": imgFlexOutlet,
-  "conduit-pipes-wiring-accessories/double-pole-surface-switch": imgDoublePoleSurfaceSwitch,
-  "conduit-pipes-wiring-accessories/grid-mounting-frame": imgGridMountingFrame,
-  "conduit-pipes-wiring-accessories/module-switch-plate": imgModuleSwitchPlate,
-  "conduit-pipes-wiring-accessories/plate-assembly-moulded": imgPlateAssemblyMoulded,
-  "conduit-pipes-wiring-accessories/blank-plate-aluminium-silver": imgBlankPlateAluminiumSilver,
-  "conduit-pipes-wiring-accessories/metal-clad-box": imgMetalCladBox,
-  "conduit-pipes-wiring-accessories/shaver-socket": imgShaverSocket,
-  "cable-management-jointing-led-lighting/resin-filled-lv-cable-joint-kit": imgResinJointKit,
-  "cable-management-jointing-led-lighting/cable-socks": imgCableSocks,
-  "cable-management-jointing-led-lighting/pulling-spring": imgPullingSpring,
-  "cable-management-jointing-led-lighting/festoon-c-channel": imgFestoonCChannel,
-  "cable-management-jointing-led-lighting/festoon-middle-trolley": imgFestoonMiddleTrolley,
-  "cable-management-jointing-led-lighting/festoon-support-bracket-hanger": imgFestoonSupportBracket,
-  "cable-management-jointing-led-lighting/festoon-track-joint": imgFestoonTrackJoint,
-  "cable-management-jointing-led-lighting/drag-chain": imgDragChain,
-  "cable-management-jointing-led-lighting/pvc-shroud": imgPvcShroud,
-  "cable-management-jointing-led-lighting/boot-lug": imgBootLug,
-  "cable-management-jointing-led-lighting/end-sleeve": imgEndSleeve,
-  "cable-management-jointing-led-lighting/heat-shrink-sleeve": imgHeatShrinkSleeve,
-  "cable-management-jointing-led-lighting/cable-sleeve": imgCableSleeve,
-  "cable-management-jointing-led-lighting/fiber-sleeve-white": imgFiberSleeveWhite,
-  "cable-management-jointing-led-lighting/soft-sleeve-yellow": imgSoftSleeveYellow,
-  "cable-management-jointing-led-lighting/heat-proof-ribbon-fiberglass": imgHeatProofRibbonFiberglass,
-  "cable-management-jointing-led-lighting/ferrule-4mm": imgFerrule4mm,
-  "cable-management-jointing-led-lighting/pre-insulated-ring-terminal": imgPreInsulatedRingTerminal,
-  "cable-management-jointing-led-lighting/spade-terminal-flag-type": imgSpadeTerminalFlagType,
-  "cable-management-jointing-led-lighting/female-terminal-fdd": imgFemaleTerminalFdd,
-  "cable-management-jointing-led-lighting/female-terminal-fdfd": imgFemaleTerminalFdfd,
-  "cable-management-jointing-led-lighting/connector-fldny-red": imgConnectorFldnyRed,
-  "cable-management-jointing-led-lighting/pin-terminal-u-type": imgPinTerminalUType,
-  "cable-management-jointing-led-lighting/wire-connector-6-way": imgWireConnector6Way,
-  "cable-management-jointing-led-lighting/screw-terminal-e5": imgScrewTerminalE5,
-  "cable-management-jointing-led-lighting/terminal-block-screw-strip": imgTerminalBlockScrewStrip,
-  "cable-management-jointing-led-lighting/end-cover-terminal-block": imgEndCoverTerminalBlock,
-  "cable-management-jointing-led-lighting/ground-line-terminal": imgGroundLineTerminal,
-  "cable-management-jointing-led-lighting/fuse-terminal-rail-mounted": imgFuseTerminalRailMounted,
-  "cable-management-jointing-led-lighting/waterproof-connector-straight": imgWaterproofConnectorStraight,
-  "cable-management-jointing-led-lighting/cable-pulling-lubricant": imgCablePullingLubricant,
-  "cable-management-jointing-led-lighting/waterproof-connector-t-way": imgWaterproofConnectorTWay,
-  "cable-management-jointing-led-lighting/waterproof-connector-4-core": imgWaterproofConnector4Core,
-  "cable-management-jointing-led-lighting/metal-connector-male-female": imgMetalConnectorMaleFemale,
-  "switchgear-protection-control/capacitor-duty-contactor": imgCapacitorDutyContactor,
-  "switchgear-protection-control/auxiliary-contact-block": imgAuxiliaryContactBlock,
-  "switchgear-protection-control/rotary-isolator": imgRotaryIsolator,
-  "switchgear-protection-control/switch-disconnector": imgSwitchDisconnector,
-  "switchgear-protection-control/changeover-switch": imgChangeoverSwitch,
-  "switchgear-protection-control/reverse-forward-switch": imgReverseForwardSwitch,
-  "switchgear-protection-control/rotary-switch": imgRotarySwitch,
-  "switchgear-protection-control/db-box": imgDbBox,
-  "switchgear-protection-control/modular-db-box": imgModularDbBox,
-  "switchgear-protection-control/elcb-box": imgElcbBox,
-  "switchgear-protection-control/tpn-flush-db": imgTpnFlushDb,
-  "switchgear-protection-control/tp-surface-db": imgTpSurfaceDb,
-  "switchgear-protection-control/distribution-board-mdb": imgDistributionBoardMdb,
-  "switchgear-protection-control/meter-cabinet": imgMeterCabinet,
-  "switchgear-protection-control/motor-circuit-breaker": imgMotorCircuitBreaker,
-  "switchgear-protection-control/overload-relay": imgOverloadRelay,
-  "switchgear-protection-control/special-type-contactor": imgSpecialTypeContactor,
-  "switchgear-protection-control/isolator-end-cap": imgIsolatorEndCap,
-  "switchgear-protection-control/mccb": imgMccb,
-  "switchgear-protection-control/compact-nsx160h-mccb": imgCompactNsx160hMccb,
-  "switchgear-protection-control/over-current-relay": imgOverCurrentRelay,
-  "switchgear-protection-control/under-voltage-relay": imgUnderVoltageRelay,
-  "switchgear-protection-control/control-relay-with-base": imgControlRelayWithBase,
-  "switchgear-protection-control/relay-base": imgRelayBase,
-  "switchgear-protection-control/24-hour-timer": img24HourTimer,
-  "switchgear-protection-control/timer-switch": imgTimerSwitch,
-  "cable-management-jointing-led-lighting/3m-wire-pulling-lubricant": img3mWirePullingLubricant,
-  "switchgear-protection-control/on-off-delay-timer": imgOnOffDelayTimer,
-  "switchgear-protection-control/star-delta-timer": imgStarDeltaTimer,
-  "switchgear-protection-control/delay-unit": imgDelayUnit,
-  "switchgear-protection-control/push-button": imgPushButton,
-  "switchgear-protection-control/mushroom-push-button": imgMushroomPushButton,
-  "switchgear-protection-control/emergency-stop-button": imgEmergencyStopButton,
-  "switchgear-protection-control/illuminated-push-button": imgIlluminatedPushButton,
-  "switchgear-protection-control/on-off-push-station": imgOnOffPushStation,
-  "switchgear-protection-control/toggle-switch": imgToggleSwitch,
-  "switchgear-protection-control/power-push-button": imgPowerPushButton,
-  "switchgear-protection-control/selector-switch": imgSelectorSwitch,
-  "switchgear-protection-control/control-box": imgControlBox,
-  "switchgear-protection-control/indicator-lamp": imgIndicatorLamp,
-  "switchgear-protection-control/led-pilot-light": imgLedPilotLight,
-  "switchgear-protection-control/m22-led-indicator": imgM22LedIndicator,
-  "switchgear-protection-control/m22-contact-block": imgM22ContactBlock,
-  "switchgear-protection-control/revolving-light": imgRevolvingLight,
-  "switchgear-protection-control/rotary-warning-light": imgRotaryWarningLight,
-  "switchgear-protection-control/tower-light": imgTowerLight,
-  "switchgear-protection-control/mini-siren": imgMiniSiren,
-  "switchgear-protection-control/copper-busbar": imgCopperBusbar,
-  "switchgear-protection-control/pvc-busbar": imgPvcBusbar,
-  "switchgear-protection-control/busbar-insulator": imgBusbarInsulator,
-  "switchgear-protection-control/busbar-sleeve": imgBusbarSleeve,
-  "switchgear-protection-control/pin-type-busbar": imgPinTypeBusbar,
-  "switchgear-protection-control/u-type-busbar": imgUTypeBusbar,
-  "switchgear-protection-control/neutral-link": imgNeutralLink,
-  "switchgear-protection-control/earth-bar-link": imgEarthBarLink,
-  "switchgear-protection-control/short-link": imgShortLink,
-  "switchgear-protection-control/wire-terminal-bar": imgWireTerminalBar,
-  "switchgear-protection-control/busbar-end-cap": imgBusbarEndCap,
-  "switchgear-protection-control/current-collector-controller": imgCurrentCollectorController,
-  "switchgear-protection-control/single-phase-single-pole-busbar": imgSinglePhaseSinglePoleBusbar,
-  "switchgear-protection-control/bottle-fuse": imgBottleFuse,
-  "switchgear-protection-control/ceramic-fuse": imgCeramicFuse,
-  "switchgear-protection-control/glass-fuse": imgGlassFuse,
-  "switchgear-protection-control/cartridge-fuse": imgCartridgeFuse,
-  "switchgear-protection-control/fuse-link-10x38": imgFuseLink10x38,
-  "switchgear-protection-control/fuse-holder": imgFuseHolder,
-  "switchgear-protection-control/fuse-carrier": imgFuseCarrier,
-  "switchgear-protection-control/fuse-base": imgFuseBase,
-  "switchgear-protection-control/nh-fuse": imgNhFuse,
-  "switchgear-protection-control/fuse-general": imgFuseGeneral,
-  "switchgear-protection-control/fuse-connection-unit": imgFuseConnectionUnit,
-  "switchgear-protection-control/busbar-mounting-fuse": imgBusbarMountingFuse,
-  "switchgear-protection-control/control-transformer": imgControlTransformer,
-  "switchgear-protection-control/transformer": imgTransformer,
-  "switchgear-protection-control/smps-power-supply": imgSmpsPowerSupply,
-  "switchgear-protection-control/dc-power-supply": imgDcPowerSupply,
-  "switchgear-protection-control/capacitor": imgCapacitor,
-  "switchgear-protection-control/battery": imgBattery,
-  "switchgear-protection-control/dual-capacitor": imgDualCapacitor,
-  "switchgear-protection-control/pf-controller": imgPfController,
-  "switchgear-protection-control/pf-regulator": imgPfRegulator,
-  "switchgear-protection-control/hour-meter": imgHourMeter,
-  "switchgear-protection-control/current-transformer": imgCurrentTransformer,
-  "switchgear-protection-control/limit-switch": imgLimitSwitch,
-  "switchgear-protection-control/micro-limit-switch": imgMicroLimitSwitch,
-  "switchgear-protection-control/light-motion-sensor": imgLightMotionSensor,
-  "switchgear-protection-control/float-switch": imgFloatSwitch,
-  "switchgear-protection-control/pressure-switch": imgPressureSwitch,
-  "switchgear-protection-control/dol-starter": imgDolStarter,
-  "switchgear-protection-control/din-rail": imgDinRail,
-  "switchgear-protection-control/carrier-strip": imgCarrierStrip,
-  "switchgear-protection-control/panel-cooling-fan": imgPanelCoolingFan,
-  "switchgear-protection-control/cooling-fan-grill": imgCoolingFanGrill,
-  "switchgear-protection-control/potentiometer": imgPotentiometer,
-  "lighting-lamps/round-led-panel-light": imgRoundLedPanelLight,
-  "lighting-lamps/surface-led-panel": imgSurfaceLedPanel,
-  "lighting-lamps/60x60-led-panel-frame": img60x60LedPanelFrame,
-  "switchgear-protection-control/hrc-fuse": imgHrcFuse,
-  "switchgear-protection-control/ups": imgUps,
-  "switchgear-protection-control/power-capacitor": imgPowerCapacitor,
-  "switchgear-protection-control/energy-meter": imgEnergyMeter,
-  "switchgear-protection-control/sensor": imgSensor,
-  "switchgear-protection-control/remote-control-switch": imgRemoteControlSwitch,
-  "switchgear-protection-control/vfd-altivar-atv212": imgVfdDrive,
-  "lighting-lamps/led-ceiling-globe-light": imgLedCeilingGlobe,
-  "lighting-lamps/smd-led-floodlight": imgSmdLedFloodlight,
-  "lighting-lamps/floodlight-dl": imgFloodlightDl,
-  "lighting-lamps/solar-floodlight": imgSolarFloodlight,
-  "lighting-lamps/led-high-bay-light": imgLedHighBayLight,
-  "lighting-lamps/metal-halide-high-bay-light": imgMetalHalideHighBayLight,
-  "lighting-lamps/portable-site-light": imgPortableSiteLight,
-  "lighting-lamps/bulkhead-fitting": imgBulkheadFitting,
-  "lighting-lamps/garden-light": imgGardenLight,
-  "lighting-lamps/bollard-light": imgBollardLight,
-  "lighting-lamps/solar-garden-light": imgSolarGardenLight,
-  "lighting-lamps/underwater-led-strip-light": imgUnderwaterLedStripLight,
-  "lighting-lamps/led-downlight": imgLedDownlight,
+    "/images/products/silicone-fibreglass-sleeves.jpg",
+  "enclosures-panel-accessories/heavy-duty-die-cast-connectors": "/images/products/heavy-duty-die-cast-connectors.jpg",
+  "enclosures-panel-accessories/cable-markers": "/images/products/cable-markers.jpg",
+  "enclosures-panel-accessories/metal-iron-plugs": "/images/products/metal-iron-plugs.jpg",
+  "enclosures-panel-accessories/porcelain-connectors": "/images/products/porcelain-connectors.jpg",
+  "cable-termination/insulated-cable-lugs-blade-type": "/images/products/insulated-lugs-blade.jpg",
+  "cable-termination/insulated-cable-lugs-pin-type": "/images/products/insulated-lugs-pin.jpg",
+  "cable-termination/insulated-cable-lugs-fork-type": "/images/products/insulated-lugs-fork.jpg",
+  "cable-termination/insulated-cable-lugs-ring-type": "/images/products/insulated-lugs-ring.jpg",
+  "cable-termination/pin-type-cable-lugs-copper-ferrules": "/images/products/pin-lugs-copper-ferrules.jpg",
+  "cable-termination/e1w-cable-glands": "/images/products/e1w-cable-glands.jpg",
+  "cable-termination/a1-a2-cable-glands": "/images/products/a1-a2-cable-glands.jpg",
+  "cable-termination/nickel-plated-brass-cable-glands": "/images/products/nickel-brass-cable-glands.jpg",
+  "cable-termination/pvc-nylon-cable-glands": "/images/products/pvc-nylon-cable-glands.jpg",
+  "industrial-plugs-sockets-switchgear/mobile-type-plug-socket": "/images/products/mobile-plug-socket.jpg",
+  "industrial-plugs-sockets-switchgear/wall-type-socket-plug": "/images/products/wall-type-socket-plug.jpg",
+  "industrial-plugs-sockets-switchgear/panel-type-socket": "/images/products/panel-type-socket.jpg",
+  "industrial-plugs-sockets-switchgear/2-way-3-way-extension-plug": "/images/products/extension-plug-3way.jpg",
+  "industrial-plugs-sockets-switchgear/32-amp-3-pin-interlock-socket": "/images/products/interlock-socket-32a.jpg",
+  "industrial-plugs-sockets-switchgear/32-amp-3-pin-male-female-isolator": "/images/products/male-female-isolator-32a.jpg",
+  "industrial-plugs-sockets-switchgear/residual-current-circuit-breaker-rccb": "/images/products/residual-current-circuit-breaker-rccb.jpg",
+  "industrial-plugs-sockets-switchgear/earth-leakage-circuit-breaker-elcb": "/images/products/earth-leakage-circuit-breaker-elcb.jpg",
+  "industrial-plugs-sockets-switchgear/moulded-case-circuit-breaker-mccb": "/images/products/moulded-case-circuit-breaker-mccb.jpg",
+  "industrial-plugs-sockets-switchgear/contactor-magnetic-contactor": "/images/products/magnetic-contactor.jpg",
+  "industrial-plugs-sockets-switchgear/isolator": "/images/products/isolator-switch.jpg",
+  "industrial-plugs-sockets-switchgear/distribution-board": "/images/products/distribution-board.jpg",
+  "industrial-plugs-sockets-switchgear/rail-connectors": "/images/products/rail-connectors.jpg",
+  "conduit-pipes-wiring-accessories/threaded-plug": "/images/products/threaded-plug.jpg",
+  "conduit-pipes-wiring-accessories/cooker-switch": "/images/products/cooker-switch.jpg",
+  "conduit-pipes-wiring-accessories/outlet-switch": "/images/products/outlet-switch.jpg",
+  "conduit-pipes-wiring-accessories/flex-outlet": "/images/products/flex-outlet.jpg",
+  "conduit-pipes-wiring-accessories/double-pole-surface-switch": "/images/products/double-pole-surface-switch.jpg",
+  "conduit-pipes-wiring-accessories/grid-mounting-frame": "/images/products/grid-mounting-frame.jpg",
+  "conduit-pipes-wiring-accessories/module-switch-plate": "/images/products/module-switch-plate.jpg",
+  "conduit-pipes-wiring-accessories/plate-assembly-moulded": "/images/products/plate-assembly-moulded.jpg",
+  "conduit-pipes-wiring-accessories/blank-plate-aluminium-silver": "/images/products/blank-plate-aluminium-silver.jpg",
+  "conduit-pipes-wiring-accessories/metal-clad-box": "/images/products/metal-clad-box.jpg",
+  "conduit-pipes-wiring-accessories/shaver-socket": "/images/products/shaver-socket.jpg",
+  "cable-management-jointing-led-lighting/resin-filled-lv-cable-joint-kit": "/images/products/resin-filled-lv-cable-joint-kit.jpg",
+  "cable-management-jointing-led-lighting/cable-socks": "/images/products/cable-socks.jpg",
+  "cable-management-jointing-led-lighting/pulling-spring": "/images/products/pulling-spring.jpg",
+  "cable-management-jointing-led-lighting/festoon-c-channel": "/images/products/festoon-c-channel.jpg",
+  "cable-management-jointing-led-lighting/festoon-middle-trolley": "/images/products/festoon-middle-trolley.jpg",
+  "cable-management-jointing-led-lighting/festoon-support-bracket-hanger": "/images/products/festoon-support-bracket-hanger.jpg",
+  "cable-management-jointing-led-lighting/festoon-track-joint": "/images/products/festoon-track-joint.jpg",
+  "cable-management-jointing-led-lighting/drag-chain": "/images/products/drag-chain.jpg",
+  "cable-management-jointing-led-lighting/pvc-shroud": "/images/products/pvc-shroud.jpg",
+  "cable-management-jointing-led-lighting/boot-lug": "/images/products/boot-lug.jpg",
+  "cable-management-jointing-led-lighting/end-sleeve": "/images/products/end-sleeve.jpg",
+  "cable-management-jointing-led-lighting/heat-shrink-sleeve": "/images/products/heat-shrink-sleeve.jpg",
+  "cable-management-jointing-led-lighting/cable-sleeve": "/images/products/cable-sleeve.jpg",
+  "cable-management-jointing-led-lighting/fiber-sleeve-white": "/images/products/fiber-sleeve-white.jpg",
+  "cable-management-jointing-led-lighting/soft-sleeve-yellow": "/images/products/soft-sleeve-yellow.jpg",
+  "cable-management-jointing-led-lighting/heat-proof-ribbon-fiberglass": "/images/products/heat-proof-ribbon-fiberglass.jpg",
+  "cable-management-jointing-led-lighting/ferrule-4mm": "/images/products/ferrule-4mm.jpg",
+  "cable-management-jointing-led-lighting/pre-insulated-ring-terminal": "/images/products/pre-insulated-ring-terminal.jpg",
+  "cable-management-jointing-led-lighting/spade-terminal-flag-type": "/images/products/spade-terminal-flag-type.jpg",
+  "cable-management-jointing-led-lighting/female-terminal-fdd": "/images/products/female-terminal-fdd.jpg",
+  "cable-management-jointing-led-lighting/female-terminal-fdfd": "/images/products/female-terminal-fdfd.jpg",
+  "cable-management-jointing-led-lighting/connector-fldny-red": "/images/products/connector-fldny-red.jpg",
+  "cable-management-jointing-led-lighting/pin-terminal-u-type": "/images/products/pin-terminal-u-type.jpg",
+  "cable-management-jointing-led-lighting/wire-connector-6-way": "/images/products/wire-connector-6-way.jpg",
+  "cable-management-jointing-led-lighting/screw-terminal-e5": "/images/products/screw-terminal-e5.jpg",
+  "cable-management-jointing-led-lighting/terminal-block-screw-strip": "/images/products/terminal-block-screw-strip.jpg",
+  "cable-management-jointing-led-lighting/end-cover-terminal-block": "/images/products/end-cover-terminal-block.jpg",
+  "cable-management-jointing-led-lighting/ground-line-terminal": "/images/products/ground-line-terminal.jpg",
+  "cable-management-jointing-led-lighting/fuse-terminal-rail-mounted": "/images/products/fuse-terminal-rail-mounted.jpg",
+  "cable-management-jointing-led-lighting/waterproof-connector-straight": "/images/products/waterproof-connector-straight.jpg",
+  "cable-management-jointing-led-lighting/cable-pulling-lubricant": "/images/products/cable-pulling-lubricant.jpg",
+  "cable-management-jointing-led-lighting/waterproof-connector-t-way": "/images/products/waterproof-connector-t-way.jpg",
+  "cable-management-jointing-led-lighting/waterproof-connector-4-core": "/images/products/waterproof-connector-4-core.jpg",
+  "cable-management-jointing-led-lighting/metal-connector-male-female": "/images/products/metal-connector-male-female.jpg",
+  "switchgear-protection-control/capacitor-duty-contactor": "/images/products/capacitor-duty-contactor.jpg",
+  "switchgear-protection-control/auxiliary-contact-block": "/images/products/auxiliary-contact-block.jpg",
+  "switchgear-protection-control/rotary-isolator": "/images/products/rotary-isolator.jpg",
+  "switchgear-protection-control/switch-disconnector": "/images/products/switch-disconnector.jpg",
+  "switchgear-protection-control/changeover-switch": "/images/products/changeover-switch.jpg",
+  "switchgear-protection-control/reverse-forward-switch": "/images/products/reverse-forward-switch.jpg",
+  "switchgear-protection-control/rotary-switch": "/images/products/rotary-switch.jpg",
+  "switchgear-protection-control/db-box": "/images/products/db-box.jpg",
+  "switchgear-protection-control/modular-db-box": "/images/products/modular-db-box.jpg",
+  "switchgear-protection-control/elcb-box": "/images/products/elcb-box.jpg",
+  "switchgear-protection-control/tpn-flush-db": "/images/products/tpn-flush-db.jpg",
+  "switchgear-protection-control/tp-surface-db": "/images/products/tp-surface-db.jpg",
+  "switchgear-protection-control/distribution-board-mdb": "/images/products/distribution-board-mdb.jpg",
+  "switchgear-protection-control/meter-cabinet": "/images/products/meter-cabinet.jpg",
+  "switchgear-protection-control/motor-circuit-breaker": "/images/products/motor-circuit-breaker.jpg",
+  "switchgear-protection-control/overload-relay": "/images/products/overload-relay.jpg",
+  "switchgear-protection-control/special-type-contactor": "/images/products/special-type-contactor.jpg",
+  "switchgear-protection-control/isolator-end-cap": "/images/products/isolator-end-cap.jpg",
+  "switchgear-protection-control/mccb": "/images/products/moulded-case-circuit-breaker-mccb.jpg",
+  "switchgear-protection-control/compact-nsx160h-mccb": "/images/products/compact-nsx160h-mccb.jpg",
+  "switchgear-protection-control/over-current-relay": "/images/products/over-current-relay.jpg",
+  "switchgear-protection-control/under-voltage-relay": "/images/products/under-voltage-relay.jpg",
+  "switchgear-protection-control/control-relay-with-base": "/images/products/control-relay-with-base.jpg",
+  "switchgear-protection-control/relay-base": "/images/products/relay-base.jpg",
+  "switchgear-protection-control/24-hour-timer": "/images/products/24-hour-timer.jpg",
+  "switchgear-protection-control/timer-switch": "/images/products/timer-switch.jpg",
+  "cable-management-jointing-led-lighting/3m-wire-pulling-lubricant": "/images/products/3m-wire-pulling-lubricant.jpg",
+  "switchgear-protection-control/on-off-delay-timer": "/images/products/on-off-delay-timer.jpg",
+  "switchgear-protection-control/star-delta-timer": "/images/products/star-delta-timer.jpg",
+  "switchgear-protection-control/delay-unit": "/images/products/delay-unit.jpg",
+  "switchgear-protection-control/push-button": "/images/products/push-button.jpg",
+  "switchgear-protection-control/mushroom-push-button": "/images/products/mushroom-push-button.jpg",
+  "switchgear-protection-control/emergency-stop-button": "/images/products/emergency-stop-button.jpg",
+  "switchgear-protection-control/illuminated-push-button": "/images/products/illuminated-push-button.jpg",
+  "switchgear-protection-control/on-off-push-station": "/images/products/on-off-push-station.jpg",
+  "switchgear-protection-control/toggle-switch": "/images/products/toggle-switch.jpg",
+  "switchgear-protection-control/power-push-button": "/images/products/power-push-button.jpg",
+  "switchgear-protection-control/selector-switch": "/images/products/selector-switch.jpg",
+  "switchgear-protection-control/control-box": "/images/products/control-box.jpg",
+  "switchgear-protection-control/indicator-lamp": "/images/products/indicator-lamp.jpg",
+  "switchgear-protection-control/led-pilot-light": "/images/products/led-pilot-light.jpg",
+  "switchgear-protection-control/m22-led-indicator": "/images/products/m22-led-indicator.jpg",
+  "switchgear-protection-control/m22-contact-block": "/images/products/m22-contact-block.jpg",
+  "switchgear-protection-control/revolving-light": "/images/products/revolving-light.jpg",
+  "switchgear-protection-control/rotary-warning-light": "/images/products/rotary-warning-light.jpg",
+  "switchgear-protection-control/tower-light": "/images/products/tower-light.jpg",
+  "switchgear-protection-control/mini-siren": "/images/products/mini-siren.jpg",
+  "switchgear-protection-control/copper-busbar": "/images/products/copper-busbar.jpg",
+  "switchgear-protection-control/pvc-busbar": "/images/products/pvc-busbar.jpg",
+  "switchgear-protection-control/busbar-insulator": "/images/products/busbar-insulator.jpg",
+  "switchgear-protection-control/busbar-sleeve": "/images/products/busbar-sleeve.jpg",
+  "switchgear-protection-control/pin-type-busbar": "/images/products/pin-type-busbar.jpg",
+  "switchgear-protection-control/u-type-busbar": "/images/products/u-type-busbar.jpg",
+  "switchgear-protection-control/neutral-link": "/images/products/neutral-link.jpg",
+  "switchgear-protection-control/earth-bar-link": "/images/products/earth-bar-link.jpg",
+  "switchgear-protection-control/short-link": "/images/products/short-link.jpg",
+  "switchgear-protection-control/wire-terminal-bar": "/images/products/wire-terminal-bar.jpg",
+  "switchgear-protection-control/busbar-end-cap": "/images/products/busbar-end-cap.jpg",
+  "switchgear-protection-control/current-collector-controller": "/images/products/current-collector-controller.jpg",
+  "switchgear-protection-control/single-phase-single-pole-busbar": "/images/products/single-phase-single-pole-busbar.jpg",
+  "switchgear-protection-control/bottle-fuse": "/images/products/bottle-fuse.jpg",
+  "switchgear-protection-control/ceramic-fuse": "/images/products/ceramic-fuse.jpg",
+  "switchgear-protection-control/glass-fuse": "/images/products/glass-fuse.jpg",
+  "switchgear-protection-control/cartridge-fuse": "/images/products/cartridge-fuse.jpg",
+  "switchgear-protection-control/fuse-link-10x38": "/images/products/fuse-link-10x38.jpg",
+  "switchgear-protection-control/fuse-holder": "/images/products/fuse-holder.jpg",
+  "switchgear-protection-control/fuse-carrier": "/images/products/fuse-carrier.jpg",
+  "switchgear-protection-control/fuse-base": "/images/products/fuse-base.jpg",
+  "switchgear-protection-control/nh-fuse": "/images/products/nh-fuse.jpg",
+  "switchgear-protection-control/fuse-general": "/images/products/fuse-general.jpg",
+  "switchgear-protection-control/fuse-connection-unit": "/images/products/fuse-connection-unit.jpg",
+  "switchgear-protection-control/busbar-mounting-fuse": "/images/products/busbar-mounting-fuse.jpg",
+  "switchgear-protection-control/control-transformer": "/images/products/control-transformer.jpg",
+  "switchgear-protection-control/transformer": "/images/products/transformer.jpg",
+  "switchgear-protection-control/smps-power-supply": "/images/products/smps-power-supply.jpg",
+  "switchgear-protection-control/dc-power-supply": "/images/products/dc-power-supply.jpg",
+  "switchgear-protection-control/capacitor": "/images/products/capacitor.jpg",
+  "switchgear-protection-control/battery": "/images/products/battery.jpg",
+  "switchgear-protection-control/dual-capacitor": "/images/products/dual-capacitor.jpg",
+  "switchgear-protection-control/pf-controller": "/images/products/pf-controller.jpg",
+  "switchgear-protection-control/pf-regulator": "/images/products/pf-regulator.jpg",
+  "switchgear-protection-control/hour-meter": "/images/products/hour-meter.jpg",
+  "switchgear-protection-control/current-transformer": "/images/products/current-transformer.jpg",
+  "switchgear-protection-control/limit-switch": "/images/products/limit-switch.jpg",
+  "switchgear-protection-control/micro-limit-switch": "/images/products/micro-limit-switch.jpg",
+  "switchgear-protection-control/light-motion-sensor": "/images/products/light-motion-sensor.jpg",
+  "switchgear-protection-control/float-switch": "/images/products/float-switch.jpg",
+  "switchgear-protection-control/pressure-switch": "/images/products/pressure-switch.jpg",
+  "switchgear-protection-control/dol-starter": "/images/products/dol-starter.jpg",
+  "switchgear-protection-control/din-rail": "/images/products/din-rail.jpg",
+  "switchgear-protection-control/carrier-strip": "/images/products/carrier-strip.jpg",
+  "switchgear-protection-control/panel-cooling-fan": "/images/products/panel-cooling-fan.jpg",
+  "switchgear-protection-control/cooling-fan-grill": "/images/products/cooling-fan-grill.jpg",
+  "switchgear-protection-control/potentiometer": "/images/products/potentiometer.jpg",
+  "lighting-lamps/round-led-panel-light": "/images/products/round-led-panel-light.jpg",
+  "lighting-lamps/surface-led-panel": "/images/products/surface-led-panel.jpg",
+  "lighting-lamps/60x60-led-panel-frame": "/images/products/60x60-led-panel-frame.jpg",
+  "switchgear-protection-control/hrc-fuse": "/images/products/hrc-fuse.jpg",
+  "switchgear-protection-control/ups": "/images/products/ups.jpg",
+  "switchgear-protection-control/power-capacitor": "/images/products/power-capacitor.jpg",
+  "switchgear-protection-control/energy-meter": "/images/products/energy-meter.jpg",
+  "switchgear-protection-control/sensor": "/images/products/sensor.jpg",
+  "switchgear-protection-control/remote-control-switch": "/images/products/remote-control-switch.jpg",
+  "switchgear-protection-control/vfd-altivar-atv212": "/images/products/vfd-drive.jpg",
+  "lighting-lamps/led-ceiling-globe-light": "/images/products/led-ceiling-globe-light.jpg",
+  "lighting-lamps/smd-led-floodlight": "/images/products/smd-led-floodlight.jpg",
+  "lighting-lamps/floodlight-dl": "/images/products/floodlight-dl.jpg",
+  "lighting-lamps/solar-floodlight": "/images/products/solar-floodlight.jpg",
+  "lighting-lamps/led-high-bay-light": "/images/products/led-high-bay-light.jpg",
+  "lighting-lamps/metal-halide-high-bay-light": "/images/products/metal-halide-high-bay-light.jpg",
+  "lighting-lamps/portable-site-light": "/images/products/portable-site-light.jpg",
+  "lighting-lamps/bulkhead-fitting": "/images/products/bulkhead-fitting.jpg",
+  "lighting-lamps/garden-light": "/images/products/garden-light.jpg",
+  "lighting-lamps/bollard-light": "/images/products/bollard-light.jpg",
+  "lighting-lamps/solar-garden-light": "/images/products/solar-garden-light.jpg",
+  "lighting-lamps/underwater-led-strip-light": "/images/products/underwater-led-strip-light.jpg",
+  "lighting-lamps/led-downlight": "/images/products/led-downlight.jpg",
   "lighting-lamps/gu10-spot": "/images/products/gu10-spot.jpg",
   "lighting-lamps/track-light": "/images/products/track-light.jpg",
   "lighting-lamps/mr16-fitting-holder": "/images/products/mr16-fitting-holder.jpg",
