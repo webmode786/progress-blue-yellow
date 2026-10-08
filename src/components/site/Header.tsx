@@ -6,7 +6,7 @@ import { hasWhatsapp, mainNav, routes, whatsappLink } from "@/data/company";
 import { productCategories } from "@/data/products";
 import { Logo } from "./Logo";
 
-export function Header() {
+export function Header({ forceSolid = false }: { forceSolid?: boolean } = {}) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
@@ -36,7 +36,7 @@ export function Header() {
   const isBlogArticle = /^\/blogs\/[^/]+\/?$/.test(pathname);
   const isProductDetail = /^\/products\/[^/]+\/[^/]+\/?$/.test(pathname);
   const isSitemap = /^\/sitemap\/?$/.test(pathname);
-  const solid = scrolled || open || isBlogArticle || isProductDetail || isSitemap;
+  const solid = forceSolid || scrolled || open || isBlogArticle || isProductDetail || isSitemap;
 
   return (
     <header
