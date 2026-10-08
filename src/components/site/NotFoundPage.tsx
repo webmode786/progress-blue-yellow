@@ -82,7 +82,7 @@ export function NotFoundPage() {
           </div>
         </section>
 
-        <section className="py-14">
+        <section className="px-4 py-14">
           <div className="container mx-auto max-w-3xl rounded-xl bg-primary px-6 py-10 text-center text-primary-foreground">
             <h2 className="font-display text-2xl font-bold">Need Help Finding the Right Product?</h2>
             <p className="mx-auto mt-3 max-w-2xl opacity-90">
