@@ -448,6 +448,7 @@ const productImages: Record<string, string> = {
   "lighting-lamps/led-downlight": "/images/products/led-downlight.jpg",
   "lighting-lamps/gu10-spot": "/images/products/gu10-spot.jpg",
   "lighting-lamps/track-light": "/images/products/track-light.jpg",
+  "lighting-lamps/starter": "/images/products/fluorescent-starter-s10.jpg",
   "lighting-lamps/mr16-fitting-holder": "/images/products/mr16-fitting-holder.jpg",
 };
 
