@@ -449,6 +449,18 @@ const productImages: Record<string, string> = {
   "lighting-lamps/gu10-spot": "/images/products/gu10-spot.jpg",
   "lighting-lamps/track-light": "/images/products/track-light.jpg",
   "lighting-lamps/starter": "/images/products/fluorescent-starter-s10.jpg",
+  "lighting-lamps/spot-lamp": "/images/products/spot-lamp.jpg",
+  "lighting-lamps/mirror-light": "/images/products/mirror-light.jpg",
+  "lighting-lamps/table-lamp-dimmer": "/images/products/table-lamp-dimmer.jpg",
+  "lighting-lamps/led-lamp-e27": "/images/products/led-lamp-e27.jpg",
+  "lighting-lamps/gls-lamp": "/images/products/gls-lamp.jpg",
+  "lighting-lamps/halogen-lamp": "/images/products/halogen-lamp.jpg",
+  "lighting-lamps/metal-halide-hql-lamp": "/images/products/metal-halide-hql-lamp.jpg",
+  "lighting-lamps/ballast": "/images/products/ballast.jpg",
+  "lighting-lamps/led-driver": "/images/products/led-driver.jpg",
+  "lighting-lamps/led-strip-light": "/images/products/led-strip-light.jpg",
+  "lighting-lamps/exit-light": "/images/products/exit-light.jpg",
+  "lighting-lamps/emergency-light": "/images/products/emergency-light.jpg",
   "lighting-lamps/mr16-fitting-holder": "/images/products/mr16-fitting-holder.jpg",
 };
 
