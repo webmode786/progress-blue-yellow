@@ -10,3 +10,5 @@
 <!-- LOVABLE:END -->
 
 - Build the human-readable sitemap from the central product and blog data so it remains synchronized with catalogue changes.
+
+- AI-readable Markdown (*.md), /llms.txt and /llms-full.txt are generated per request by a request middleware in src/start.ts from src/lib/markdown.ts — keeps them in sync with the product/blog data without a build step.
