@@ -47,6 +47,14 @@ function isH3SwallowedErrorBody(body: string): boolean {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const { pathname } = new URL(request.url);
+      if (request.method === "GET" && (pathname.endsWith(".md") || pathname === "/llms.txt" || pathname === "/llms-full.txt")) {
+        const md = await import("./lib/markdown");
+        if (pathname === "/llms.txt") return md.textResponse(md.llmsTxt(), "text/plain");
+        if (pathname === "/llms-full.txt") return md.textResponse(md.llmsFullTxt(), "text/plain");
+        const body = md.markdownForPath(pathname);
+        if (body) return md.textResponse(body, "text/markdown");
+      }
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);
