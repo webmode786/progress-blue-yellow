@@ -14,3 +14,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://skylinetradingfzc.com/sitemap.xml
+
+# AI-readable versions: https://skylinetradingfzc.com/llms.txt (add .md to any page URL)
