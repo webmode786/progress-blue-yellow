@@ -133,9 +133,9 @@ export function markdownForPath(pathname: string): string | null {
   if (path === "/contact-us") return contactMd();
   if (path === "/products") return productsMd();
   if (path === "/blogs") return blogsMd();
-  if (seg[0] === "products" && seg.length === 2) return categoryMd(seg[1]);
-  if (seg[0] === "products" && seg.length === 3) return productMd(seg[1], seg[2]);
-  if (seg[0] === "blogs" && seg.length === 2) return blogMd(seg[1]);
+  if (seg[0] === "products" && seg.length === 2) return categoryMd(seg[1]!);
+  if (seg[0] === "products" && seg.length === 3) return productMd(seg[1]!, seg[2]!);
+  if (seg[0] === "blogs" && seg.length === 2) return blogMd(seg[1]!);
   return null;
 }
 
